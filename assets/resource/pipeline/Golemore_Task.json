@@ -1,0 +1,896 @@
+{
+    "$__mpe_config_Golemore_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786013429905,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Golemore_Task.json",
+            "savedViewport": {
+                "x": -32,
+                "y": -203,
+                "zoom": 0.92
+            },
+            "filename": "Golemore_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "$__mpe_external_返回龍城_Golemore_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4691,
+                "y": 1625
+            }
+        }
+    },
+    "Golemore_Task": {
+        "next": [
+            "進入龍城_礦區",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 363,
+                "y": 595
+            }
+        }
+    },
+    "使用第一位協力": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    142,
+                    505,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確定協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2908,
+                "y": 759
+            }
+        }
+    },
+    "使用第三位協力": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    540,
+                    499,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確定協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2914,
+                "y": 405
+            }
+        }
+    },
+    "使用第二位協力": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    334,
+                    503,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確定協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2910,
+                "y": 580
+            }
+        }
+    },
+    "使用第五位協力": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    337,
+                    764,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確定協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2916,
+                "y": 47
+            }
+        }
+    },
+    "使用第四位協力": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    140,
+                    759,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確定協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2914,
+                "y": 228
+            }
+        }
+    },
+    "公會協助": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    1031,
+                    129,
+                    82
+                ],
+                "expected": [
+                    "公會協助"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "使用第五位協力",
+            "使用第四位協力",
+            "使用第三位協力",
+            "使用第二位協力",
+            "使用第一位協力",
+            "協力用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2578,
+                "y": 546
+            }
+        }
+    },
+    "出擊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    289,
+                    654,
+                    140,
+                    98
+                ],
+                "expected": [
+                    "出擊"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認協力清剿訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3444,
+                "y": 529
+            }
+        }
+    },
+    "協力用盡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    576,
+                    103,
+                    141,
+                    140
+                ],
+                "template": [
+                    "關閉鈕.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "領取礦區寶藏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3439,
+                "y": 911
+            }
+        }
+    },
+    "嘗試公會協力": {
+        "next": [
+            "已全部擊敗",
+            "公會協助"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2320,
+                "y": 773
+            }
+        }
+    },
+    "嘗試快速清剿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    557,
+                    739,
+                    151,
+                    78
+                ],
+                "expected": [
+                    "快速清剿"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "發現夥伴用盡",
+            "確定快速清剿",
+            "自動清剿"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1492,
+                "y": 571
+            }
+        }
+    },
+    "嘗試開啟礦區寶箱": {
+        "next": [
+            "開啟第一個礦區寶箱",
+            "開啟第二個礦區寶箱",
+            "開啟第三個礦區寶箱",
+            "返回礦區"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3747,
+                "y": 1068
+            }
+        }
+    },
+    "已全部擊敗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    100,
+                    322,
+                    517,
+                    250
+                ],
+                "expected": [
+                    "已全部擊敗"
+                ]
+            }
+        },
+        "next": [
+            "領取礦區寶藏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2597,
+                "y": 1030
+            }
+        }
+    },
+    "挖到礦區寶箱訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    246,
+                    734,
+                    216,
+                    152
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2321,
+                "y": 179
+            }
+        }
+    },
+    "未能擊敗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    275,
+                    659,
+                    175,
+                    96
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "嘗試公會協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2025,
+                "y": 482
+            }
+        }
+    },
+    "發現夥伴用盡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    238,
+                    1024,
+                    227,
+                    118
+                ],
+                "expected": [
+                    "無可出戰夥伴"
+                ]
+            }
+        },
+        "next": [
+            "嘗試公會協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2055,
+                "y": 764
+            }
+        }
+    },
+    "確定協力": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    261,
+                    967,
+                    184,
+                    107
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "出擊",
+            "協力用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3203,
+                "y": 526
+            }
+        }
+    },
+    "確定快速清剿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    398,
+                    659,
+                    213,
+                    122
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認清剿訊息",
+            "未能擊敗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1754,
+                "y": 501
+            }
+        }
+    },
+    "確認協力清剿訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    250,
+                    782,
+                    219,
+                    88
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "嘗試公會協力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3689,
+                "y": 532
+            }
+        }
+    },
+    "確認清剿訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    225,
+                    862,
+                    271,
+                    223
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "嘗試公會協力",
+            "[JumpBack]挖到礦區寶箱訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2022,
+                "y": 228
+            }
+        }
+    },
+    "確認礦區寶箱訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    246,
+                    734,
+                    216,
+                    152
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4417,
+                "y": 1041
+            }
+        }
+    },
+    "自動清剿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    574,
+                    830,
+                    106,
+                    84
+                ],
+                "expected": [
+                    "自動"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "timeout": 120000,
+        "next": [
+            "發現夥伴用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1753,
+                "y": 742
+            }
+        }
+    },
+    "返回礦區": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4430,
+                "y": 1580
+            }
+        }
+    },
+    "進入礦區": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    581,
+                    720,
+                    126
+                ],
+                "expected": [
+                    "魔晶礦區"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "進入開採"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 964,
+                "y": 566
+            }
+        }
+    },
+    "進入開採": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    289,
+                    1009,
+                    141,
+                    107
+                ],
+                "expected": [
+                    "開採"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "已全部擊敗",
+            "嘗試快速清剿"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1223,
+                "y": 572
+            }
+        }
+    },
+    "進入龍城_礦區": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入礦區",
+            "[JumpBack]重整畫面_礦區"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 633,
+                "y": 551
+            }
+        }
+    },
+    "重整畫面_礦區": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    620,
+                    150
+                ],
+                "end": [
+                    [
+                        310,
+                        150
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 961,
+                "y": 347
+            }
+        }
+    },
+    "開啟消息欄": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1114,
+                    85,
+                    81
+                ],
+                "template": [
+                    "消息欄.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "嘗試開啟礦區寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3503,
+                "y": 1226
+            }
+        }
+    },
+    "開啟第一個礦區寶箱": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    556,
+                    374,
+                    140,
+                    124
+                ],
+                "template": [
+                    "礦區寶箱.png"
+                ],
+                "threshold": [
+                    0.3
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]確認礦區寶箱訊息",
+            "嘗試開啟礦區寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4055,
+                "y": 688
+            }
+        }
+    },
+    "開啟第三個礦區寶箱": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    546,
+                    699,
+                    151,
+                    119
+                ],
+                "template": [
+                    "礦區寶箱.png"
+                ],
+                "threshold": [
+                    0.3
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]確認礦區寶箱訊息",
+            "嘗試開啟礦區寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4054,
+                "y": 1296
+            }
+        }
+    },
+    "開啟第二個礦區寶箱": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    554,
+                    537,
+                    141,
+                    122
+                ],
+                "template": [
+                    "礦區寶箱.png"
+                ],
+                "threshold": [
+                    0.3
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]確認礦區寶箱訊息",
+            "嘗試開啟礦區寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4053,
+                "y": 987
+            }
+        }
+    },
+    "領取礦區寶藏": {
+        "next": [
+            "開啟消息欄"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3257,
+                "y": 1217
+            }
+        }
+    },
+    "$__mpe_external_嘗試重置畫面_Golemore_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 636,
+                "y": 446
+            }
+        }
+    }
+}

@@ -1,0 +1,1690 @@
+{
+    "$__mpe_config_Fishing_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786019769963,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Fishing_Task.json",
+            "savedViewport": {
+                "x": -432,
+                "y": -777,
+                "zoom": 0.7
+            },
+            "filename": "Fishing_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "$__mpe_anchor_回來領魚餌_Fishing_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4492,
+                "y": 2339
+            }
+        }
+    },
+    "$__mpe_external_嘗試重置畫面_Fishing_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 287,
+                "y": 505
+            }
+        }
+    },
+    "Fishing_Task": {
+        "next": [
+            "進入村莊_釣魚",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6,
+                "y": 653
+            }
+        }
+    },
+    "人魚許願": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    619,
+                    586,
+                    94,
+                    79
+                ],
+                "template": [
+                    "驚嘆號.png"
+                ],
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    600,
+                    637,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]跳過動畫",
+            "進行許願"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1291,
+                "y": 430
+            }
+        }
+    },
+    "使用魚餌": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進行撒網",
+            "[JumpBack]切換釣具",
+            "關閉切換魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3159,
+                "y": 2130
+            }
+        }
+    },
+    "切換至普通魚餌": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    235,
+                    483,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認是普通魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2629,
+                "y": 2137
+            }
+        }
+    },
+    "切換至高級魚餌": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    434,
+                    475,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認是高級魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2658,
+                "y": 2526
+            }
+        }
+    },
+    "切換釣具": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    581,
+                    827,
+                    139,
+                    90
+                ],
+                "expected": [
+                    "切換釣具"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3540,
+                "y": 1914
+            }
+        }
+    },
+    "切換釣點": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    589,
+                    592,
+                    131,
+                    80
+                ],
+                "expected": [
+                    "切換釣點"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    662,
+                    593,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "嘗試切換釣點"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3227,
+                "y": 1533
+            }
+        }
+    },
+    "前往釣點": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    597,
+                    1076,
+                    121,
+                    94
+                ],
+                "expected": [
+                    "前往"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    657,
+                    1077,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "準備釣魚",
+            "已在釣點"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1538,
+                "y": 2411
+            }
+        }
+    },
+    "前往魚群聚集處": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    257,
+                    861,
+                    201,
+                    95
+                ],
+                "expected": [
+                    "立即前往"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進行撒網_魚群"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3224,
+                "y": 1273
+            }
+        }
+    },
+    "向上翻頁釣點": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    629,
+                    52,
+                    86,
+                    72
+                ],
+                "template": [
+                    "釣魚向上翻頁.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1252,
+                "y": 1978
+            }
+        }
+    },
+    "向下翻頁釣點": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    627,
+                    866,
+                    88,
+                    75
+                ],
+                "template": [
+                    "釣魚向下翻頁.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1246,
+                "y": 2190
+            }
+        }
+    },
+    "嘗試使用高級魚餌": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "更換魚餌"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認是高級魚餌",
+            "切換至高級魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2381,
+                "y": 2508
+            }
+        }
+    },
+    "嘗試切換釣點": {
+        "next": [
+            "進入指定釣點",
+            "[JumpBack]向上翻頁釣點",
+            "[JumpBack]向下翻頁釣點"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 855,
+                "y": 1979
+            }
+        }
+    },
+    "嘗試領取釣魚任務": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    257,
+                    994,
+                    85,
+                    80
+                ],
+                "template": [
+                    "綠勾勾.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "領取釣魚任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4763,
+                "y": 2311
+            }
+        }
+    },
+    "完成水晶貝任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2003,
+                "y": 3262
+            }
+        }
+    },
+    "完成釣魚任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4764,
+                "y": 2557
+            }
+        }
+    },
+    "完成釣魚點數任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1841,
+                "y": 3841
+            }
+        }
+    },
+    "完成魚群聚集": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4209,
+                "y": 1207
+            }
+        }
+    },
+    "已在釣點": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1168,
+                    134,
+                    112
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "準備釣魚"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1811,
+                "y": 2415
+            }
+        }
+    },
+    "成功返回村莊": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3026,
+                "y": 1024
+            }
+        }
+    },
+    "檢查魚餌": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    575,
+                    699,
+                    145,
+                    105
+                ],
+                "expected": [
+                    "更換魚餌"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認是普通魚餌",
+            "切換至普通魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2374,
+                "y": 2127
+            }
+        }
+    },
+    "檢查點_處理切換釣點": {
+        "next": [
+            "切換釣點",
+            "準備釣魚"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2924,
+                "y": 1569
+            }
+        }
+    },
+    "檢查點_處理魚群聚集": {
+        "next": [
+            "檢查點_處理切換釣點"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2640,
+                "y": 1571
+            }
+        }
+    },
+    "檢查點_領取魚餌": {
+        "post_wait_freezes": {
+            "time": 1000,
+            "target": [
+                400,
+                527,
+                82,
+                111
+            ]
+        },
+        "next": [
+            "確認領取魚餌訊息",
+            "沒有魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1644,
+                "y": 1528
+            }
+        }
+    },
+    "水晶貝任務": {
+        "next": [
+            "進入觀賞缸_水晶貝"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1205,
+                "y": 3185
+            }
+        }
+    },
+    "沒有釣魚點數": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    121,
+                    954,
+                    192,
+                    126
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "next": [
+            "完成釣魚點數任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1498,
+                "y": 3953
+            }
+        }
+    },
+    "沒有魚餌": {
+        "next": [
+            "進入拋竿"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2009,
+                "y": 1669
+            }
+        }
+    },
+    "準備釣魚": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    589,
+                    592,
+                    131,
+                    80
+                ],
+                "expected": [
+                    "切換釣點"
+                ]
+            }
+        },
+        "next": [
+            "檢查魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2069,
+                "y": 2144
+            }
+        }
+    },
+    "準備領取釣魚任務": {
+        "next": [
+            "[JumpBack]嘗試領取釣魚任務",
+            "完成釣魚任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4491,
+                "y": 2437
+            }
+        }
+    },
+    "滑動合集視窗_釣魚": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    350,
+                    520,
+                    15,
+                    15
+                ],
+                "end": [
+                    [
+                        350,
+                        420,
+                        15,
+                        15
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 914,
+                "y": 864
+            }
+        }
+    },
+    "確定釣魚訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    208,
+                    1060,
+                    309,
+                    192
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]釣魚等級提升",
+            "進行撒網"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3937,
+                "y": 2025
+            }
+        }
+    },
+    "確定釣魚訊息_魚群": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    208,
+                    1060,
+                    309,
+                    192
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]釣魚等級提升",
+            "完成魚群聚集"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3846,
+                "y": 1275
+            }
+        }
+    },
+    "確認是普通魚餌": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    277,
+                    589,
+                    163,
+                    88
+                ],
+                "expected": [
+                    "普通魚餌"
+                ]
+            }
+        },
+        "next": [
+            "使用魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2883,
+                "y": 2129
+            }
+        }
+    },
+    "確認是高級魚餌": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    277,
+                    589,
+                    163,
+                    88
+                ],
+                "expected": [
+                    "高級魚餌"
+                ]
+            }
+        },
+        "next": [
+            "使用魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2928,
+                "y": 2520
+            }
+        }
+    },
+    "確認水晶貝訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    257,
+                    727,
+                    213,
+                    105
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1989,
+                "y": 2974
+            }
+        }
+    },
+    "確認返回村莊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "next": [
+            "成功返回村莊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2771,
+                "y": 1013
+            }
+        }
+    },
+    "確認釣魚任務訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    257,
+                    727,
+                    213,
+                    105
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5268,
+                "y": 2315
+            }
+        }
+    },
+    "確認領取魚餌訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": {
+            "time": 1000,
+            "target": [
+                400,
+                527,
+                82,
+                111
+            ]
+        },
+        "next": [
+            "進入拋竿"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2010,
+                "y": 1463
+            }
+        }
+    },
+    "處理魚群聚集": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    885,
+                    156,
+                    75
+                ],
+                "expected": [
+                    "剩餘次數"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "前往魚群聚集處"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2923,
+                "y": 1273
+            }
+        }
+    },
+    "跳過動畫": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    255,
+                    1114,
+                    84,
+                    82
+                ],
+                "template": [
+                    "一鍵遊玩.png"
+                ],
+                "threshold": [
+                    0.7
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1616,
+                "y": 165
+            }
+        }
+    },
+    "轉換釣魚點數": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    200,
+                    935,
+                    465,
+                    160
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 2,
+        "repeat_delay": 1500,
+        "post_wait_freezes": 500,
+        "next": [
+            "完成釣魚點數任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1497,
+                "y": 3671
+            }
+        }
+    },
+    "返回村莊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "確認返回村莊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2516,
+                "y": 992
+            }
+        }
+    },
+    "返回釣魚頁面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[Anchor]回來領魚餌",
+            "準備領取釣魚任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4166,
+                "y": 2390
+            }
+        }
+    },
+    "返回釣魚頁面_水晶貝": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "完成水晶貝任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1755,
+                "y": 3256
+            }
+        }
+    },
+    "進入拋竿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    536,
+                    1063,
+                    142,
+                    99
+                ],
+                "expected": [
+                    "抛竿"
+                ],
+                "threshold": 0.3
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "檢查點_處理魚群聚集"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2343,
+                "y": 1537
+            }
+        }
+    },
+    "進入指定釣點": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    50,
+                    720,
+                    756
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "前往釣點"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1250,
+                "y": 2428
+            }
+        }
+    },
+    "進入村莊_釣魚": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1151,
+                    155,
+                    129
+                ],
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入玩法合集_釣魚"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 283,
+                "y": 608
+            }
+        }
+    },
+    "進入水晶貝任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 2526,
+                "y": 692
+            }
+        }
+    },
+    "進入玩法合集_釣魚": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    564,
+                    1030,
+                    156,
+                    91
+                ],
+                "expected": [
+                    "模擬玩法合集"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入釣魚",
+            "[JumpBack]滑動合集視窗_釣魚"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 568,
+                "y": 610
+            }
+        }
+    },
+    "進入觀賞缸_水晶貝": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    118,
+                    495,
+                    138,
+                    95
+                ],
+                "expected": [
+                    "觀賞缸"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]領取水晶貝",
+            "返回釣魚頁面_水晶貝"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1500,
+                "y": 3145
+            }
+        }
+    },
+    "進入釣魚": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    113,
+                    696,
+                    693
+                ],
+                "expected": [
+                    "釣魚"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]關閉魚群聚集",
+            "[JumpBack]人魚許願",
+            "開始釣魚事務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 914,
+                "y": 443
+            }
+        }
+    },
+    "進入釣魚任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 2524,
+                "y": 552
+            }
+        }
+    },
+    "進入釣魚點數任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 2521,
+                "y": 833
+            }
+        }
+    },
+    "進行撒網": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    505,
+                    1017,
+                    122,
+                    91
+                ],
+                "expected": [
+                    "撒網"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]釣到金冠",
+            "確定釣魚訊息",
+            "魚餌用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3540,
+                "y": 2122
+            }
+        }
+    },
+    "進行撒網_魚群": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    505,
+                    1017,
+                    122,
+                    91
+                ],
+                "expected": [
+                    "撒網"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]釣到金冠",
+            "確定釣魚訊息_魚群",
+            "魚餌用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3530,
+                "y": 1269
+            }
+        }
+    },
+    "進行許願": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    267,
+                    960,
+                    189,
+                    106
+                ],
+                "expected": [
+                    "免費"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "點擊任意處_許願"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1630,
+                "y": 489
+            }
+        }
+    },
+    "釣到金冠": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    255,
+                    683,
+                    206,
+                    250
+                ],
+                "template": [
+                    "對話箭頭.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3939,
+                "y": 1803
+            }
+        }
+    },
+    "釣魚任務": {
+        "next": [
+            "領取魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1018,
+                "y": 1472
+            }
+        }
+    },
+    "釣魚等級提升": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4355,
+                "y": 1628
+            }
+        }
+    },
+    "釣魚點數任務": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    421,
+                    323,
+                    123,
+                    81
+                ],
+                "expected": [
+                    "研究台"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "next": [
+            "轉換釣魚點數",
+            "沒有釣魚點數"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1158,
+                "y": 3811
+            }
+        }
+    },
+    "開始釣魚事務": {
+        "next": [
+            "[JumpBack]進入釣魚任務",
+            "[JumpBack]進入水晶貝任務",
+            "[JumpBack]進入釣魚點數任務",
+            "返回村莊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2193,
+                "y": 843
+            }
+        }
+    },
+    "關閉切換魚餌": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "魚餌用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3544,
+                "y": 2396
+            }
+        }
+    },
+    "關閉魚群聚集": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    544,
+                    187,
+                    111,
+                    120
+                ],
+                "template": [
+                    "關閉鈕_圓形.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 1283,
+                "y": 176
+            }
+        }
+    },
+    "領取水晶貝": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    367,
+                    826,
+                    87,
+                    90
+                ],
+                "template": [
+                    "水晶貝.png"
+                ],
+                "threshold": [
+                    0.6
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認水晶貝訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1750,
+                "y": 2945
+            }
+        }
+    },
+    "領取釣魚任務": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    296,
+                    753,
+                    131,
+                    98
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認釣魚任務訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5017,
+                "y": 2309
+            }
+        }
+    },
+    "領取魚餌": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    181,
+                    705,
+                    120,
+                    104
+                ],
+                "template": [
+                    "領取魚餌.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": {
+            "回來領魚餌": " "
+        },
+        "next": [
+            "[JumpBack]魚餌上限無法領取",
+            "檢查點_領取魚餌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1283,
+                "y": 1427
+            }
+        }
+    },
+    "魚餌上限無法領取": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    166,
+                    562,
+                    396,
+                    179
+                ],
+                "expected": [
+                    "上限"
+                ]
+            }
+        },
+        "anchor": {
+            "回來領魚餌": "領取魚餌"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1643,
+                "y": 1260
+            }
+        }
+    },
+    "魚餌用盡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回釣魚頁面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3889,
+                "y": 2400
+            }
+        }
+    },
+    "點擊任意處_許願": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    183,
+                    1238,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1922,
+                "y": 489
+            }
+        }
+    }
+}

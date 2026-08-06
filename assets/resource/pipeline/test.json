@@ -1,0 +1,84 @@
+{
+    "$__mpe_config_test": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786016918925,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\test.json",
+            "savedViewport": {
+                "x": 198,
+                "y": -303,
+                "zoom": 0.82
+            },
+            "filename": "test",
+            "version": "v1.7.4"
+        }
+    },
+    "測試": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "倉庫.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "成功"
+        ],
+        "on_error": [
+            "失敗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 385,
+                "y": 574
+            }
+        }
+    },
+    "成功": {
+        "$__mpe_code": {
+            "position": {
+                "x": 661,
+                "y": 517
+            }
+        }
+    },
+    "失敗": {
+        "max_hit": 2,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "測試"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 674
+            }
+        }
+    },
+    "新建节点293": {
+        "timeout": 5000,
+        "next": [
+            "測試"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 102,
+                "y": 588
+            }
+        }
+    }
+}

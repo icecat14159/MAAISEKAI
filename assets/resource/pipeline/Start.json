@@ -1,0 +1,390 @@
+{
+    "$__mpe_config_Start": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786004556603,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Start.json",
+            "savedViewport": {
+                "x": 872,
+                "y": 273,
+                "zoom": 0.76
+            },
+            "filename": "Start",
+            "version": "v1.7.4"
+        }
+    },
+    "StartGame_Task": {
+        "next": [
+            "[JumpBack]關閉維護公告",
+            "點擊標題進入遊戲",
+            "檢查點_是否進入遊戲"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -869,
+                "y": 60
+            }
+        }
+    },
+    "勾選今日不再提醒": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    190,
+                    1075,
+                    330,
+                    170
+                ],
+                "expected": [
+                    "今天不再提醒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 720,
+                "y": -148
+            }
+        }
+    },
+    "啟動遊戲": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.jfg.isekaitw"
+            }
+        },
+        "timeout": 60000,
+        "next": [
+            "確認遊戲開啟"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -544,
+                "y": -256
+            }
+        }
+    },
+    "成功進入自宅": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1279,
+                "y": 207
+            }
+        }
+    },
+    "成功開啟遊戲": {
+        "$__mpe_code": {
+            "position": {
+                "x": -8,
+                "y": -230
+            }
+        }
+    },
+    "檢查點_是否進入遊戲": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "自宅.png"
+                ]
+            }
+        },
+        "post_wait_freezes": 5000,
+        "next": [
+            "關閉各項通知"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -300,
+                "y": -17
+            }
+        }
+    },
+    "確認已進入自宅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    90,
+                    865,
+                    130,
+                    125
+                ],
+                "template": [
+                    "自宅_支援部.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "next": [
+            "成功進入自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 971,
+                "y": 151
+            }
+        }
+    },
+    "確認藏品/使魔訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    240,
+                    716,
+                    238,
+                    300
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 245,
+                "y": -145
+            }
+        }
+    },
+    "確認遊戲開啟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "遊戲標題.png"
+                ]
+            }
+        },
+        "post_wait_freezes": 5000,
+        "next": [
+            "成功開啟遊戲"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -273,
+                "y": -257
+            }
+        }
+    },
+    "購買心願免費禮包": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    455,
+                    590,
+                    183,
+                    103
+                ],
+                "expected": [
+                    "免費"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 965,
+                "y": -149
+            }
+        }
+    },
+    "關閉各項通知": {
+        "post_wait_freezes": 5000,
+        "next": [
+            "[JumpBack]確認藏品/使魔訊息",
+            "[JumpBack]領取離線收益",
+            "[JumpBack]勾選今日不再提醒",
+            "[JumpBack]購買心願免費禮包",
+            "[JumpBack]關閉首儲廣告/活動提醒",
+            "[JumpBack]關閉命定羈絆提醒",
+            "[JumpBack]關閉道具過期提示",
+            "確認已進入自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -23,
+                "y": -36
+            }
+        }
+    },
+    "關閉命定羈絆提醒": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    560,
+                    305,
+                    150,
+                    145
+                ],
+                "template": [
+                    "關閉命定羈絆.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 474,
+                "y": 169
+            }
+        }
+    },
+    "關閉維護公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    84,
+                    888,
+                    552,
+                    392
+                ],
+                "expected": [
+                    "關閉"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -574,
+                "y": -40
+            }
+        }
+    },
+    "關閉道具過期提示": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    535,
+                    163,
+                    185,
+                    312
+                ],
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 725,
+                "y": 168
+            }
+        }
+    },
+    "關閉首儲廣告/活動提醒": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    480,
+                    0,
+                    240,
+                    300
+                ],
+                "template": [
+                    "關閉鈕_圓形.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 240,
+                "y": 170
+            }
+        }
+    },
+    "領取離線收益": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    240,
+                    716,
+                    238,
+                    150
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 483,
+                "y": -145
+            }
+        }
+    },
+    "點擊標題進入遊戲": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    78,
+                    805,
+                    565,
+                    236
+                ],
+                "template": [
+                    "遊戲標題.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 2,
+        "timeout": 180000,
+        "next": [
+            "檢查點_是否進入遊戲"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -572,
+                "y": 136
+            }
+        }
+    }
+}

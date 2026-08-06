@@ -4,7 +4,7 @@
     // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
     // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
-    "name": "MaaXXX",
+    "name": "MaaIsekai",
     "description": "这是一个使用 MaaFramework 创建的新项目。",
     "contact": "QQ群: 123456789",
     "license": "MIT",
@@ -38,16 +38,9 @@
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "繁中服",
             "path": [
                 "./resource"
-            ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "./resource"
-                // "./resource_bilibili"
             ]
         }
     ],
@@ -58,6 +51,459 @@
     //         "./agent/main.py"
     //     ]
     // },
+    "task": [
+        {
+            "name": "啟動遊戲",
+            "entry": "啟動遊戲",
+            "description": "請先開啟模擬器"
+        },
+        {
+            "name": "進入遊戲",
+            "entry": "StartGame_Task",
+            "description": "本任務須從標題畫面開始"
+        },
+        {
+            "name": "領取評級獎勵",
+            "entry": "ReceiveRatingReward_Task"
+        },
+        {
+            "name": "傑出者祝賀",
+            "entry": "ReceiveBless_Task"
+        },
+        {
+            "name": "排行榜膜拜",
+            "entry": "ReceiveRanking_Task"
+        },
+        {
+            "name": "公會事務",
+            "entry": "GuildAffairs_Task",
+            "description": "添加本任務時請確保帳號已有公會",
+            "option": [
+                "公會事務選項"
+            ]
+        },
+        {
+            "name": "自動遊玩",
+            "entry": "Roaming_Task",
+            "description": "添加本任務時請確保帳號達到15級"
+        },
+        {
+            "name": "礦區清剿",
+            "entry": "Golemore_Task"
+        },
+        {
+            "name": "釣魚事務",
+            "entry": "Fishing_Task",
+            "description": "添加本任務時請確保已啟用一鍵連釣功能",
+            "option": [
+                "釣魚選項",
+                "釣魚地點"
+            ]
+        },
+        {
+            "name": "魔法農莊",
+            "entry": "Fram_Task",
+            "description": "添加本任務時請確保已啟用一鍵種植功能",
+            "option": [
+                "空閒田地種植選項"
+            ]
+        },
+        {
+            "name": "魔王挑戰",
+            "entry": "Archdemon_Task",
+            "description": "本任務會直接使用上次陣型出戰"
+        },
+        {
+            "name": "其他日常任務",
+            "entry": "Daily_Task",
+            "option": [
+                "日常任務雜項"
+            ]
+        }
+        /*
+        {
+            "name": "迷宮商店購買",
+            "entry": "Store_Task_Maze",
+            "description": "本任務暫不支援"
+        }*/
+    ],
+    "option": {
+        "公會事務選項": {
+            "type": "checkbox",
+            "default_case": [
+                "金幣捐贈",
+                "領取公會禮物",
+                "進行雜務委託"
+            ],
+            "cases": [
+                {
+                    "name": "金幣捐贈",
+                    "pipeline_override": {
+                        "進入捐贈任務": {
+                            "next": "捐贈任務"
+                        }
+                    }
+                },
+                {
+                    "name": "領取公會禮物",
+                    "pipeline_override": {
+                        "進入公會禮物任務": {
+                            "next": "公會禮物任務"
+                        }
+                    }
+                },
+                {
+                    "name": "進行雜務委託",
+                    "pipeline_override": {
+                        "進入雜務委託任務": {
+                            "next": "雜務委託任務"
+                        }
+                    }
+                }
+            ]
+        },
+        "釣魚地點": {
+            "type": "select",
+            "label": "選擇指定釣點",
+            "default_case": "不指定",
+            "cases": [
+                {
+                    "name": "不指定",
+                    "pipeline_override": {
+                        "檢查點_處理切換釣點": {
+                            "next": "準備釣魚"
+                        }
+                    }
+                },
+                {
+                    "name": "村邊小河",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "村邊小河"
+                        }
+                    }
+                },
+                {
+                    "name": "龍城河岸",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "龍城河岸"
+                        }
+                    }
+                },
+                {
+                    "name": "龍城湖心",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "龍城湖心"
+                        }
+                    }
+                },
+                {
+                    "name": "龍城內湖",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "龍城內湖"
+                        }
+                    }
+                },
+                {
+                    "name": "海島沙灘",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "海島沙灘"
+                        }
+                    }
+                },
+                {
+                    "name": "礁石中心",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "礁石中心"
+                        }
+                    }
+                },
+                {
+                    "name": "海島邊際",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "海島邊際"
+                        }
+                    }
+                },
+                {
+                    "name": "碎冰灘",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "碎冰灘"
+                        }
+                    }
+                },
+                {
+                    "name": "沉冰灣",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "沉冰灣"
+                        }
+                    }
+                },
+                {
+                    "name": "深海不凍窟",
+                    "pipeline_override": {
+                        "進入指定釣點": {
+                            "expected": "深海不凍窟"
+                        }
+                    }
+                }
+            ]
+        },
+        "釣魚選項": {
+            "type": "checkbox",
+            "description": "請勾選要啟用的功能",
+            "default_case": [
+                "釣魚",
+                "在魚群聚集處撒網一次",
+                "領水晶貝",
+                "轉換釣魚點數"
+            ],
+            "cases": [
+                {
+                    "name": "釣魚",
+                    "pipeline_override": {
+                        "進入釣魚任務": {
+                            "next": "釣魚任務"
+                        }
+                    }
+                },
+                {
+                    "name": "在魚群聚集處撒網一次",
+                    "description": "魚群聚集事件出現時，先前往該釣點撒網一次，然後才前往指定釣點",
+                    "pipeline_override": {
+                        "檢查點_處理魚群聚集": {
+                            "next": [
+                                "[JumpBack]處理魚群聚集",
+                                "檢查點_處理切換釣點"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "使用高級魚餌",
+                    "pipeline_override": {
+                        "魚餌用盡": {
+                            "next": [
+                                "嘗試使用高級魚餌",
+                                "返回釣魚頁面"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "領水晶貝",
+                    "pipeline_override": {
+                        "進入水晶貝任務": {
+                            "next": "水晶貝任務"
+                        }
+                    }
+                },
+                {
+                    "name": "轉換釣魚點數",
+                    "pipeline_override": {
+                        "進入釣魚點數任務": {
+                            "next": "釣魚點數任務"
+                        }
+                    }
+                }
+            ]
+        },
+        "空閒田地種植選項": {
+            "type": "select",
+            "description": "訂單都種植完後，剩餘的農田要種植的項目",
+            "default_case": "陪伴型蘑菇",
+            "cases": [
+                {
+                    "name": "布丁鳳梨",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "布丁鳳梨"
+                        }
+                    }
+                },
+                {
+                    "name": "營養豐富史萊姆",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "營養豐富史萊姆"
+                        }
+                    }
+                },
+                {
+                    "name": "彩色玫瑰",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "彩色玫瑰"
+                        }
+                    }
+                },
+                {
+                    "name": "沙袋茄子",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "沙袋茄子"
+                        }
+                    }
+                },
+                {
+                    "name": "劍舌蘭",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "劍舌蘭"
+                        }
+                    }
+                },
+                {
+                    "name": "閃電魔杖草",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "閃電魔杖草"
+                        }
+                    }
+                },
+                {
+                    "name": "鬼臉南瓜",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "鬼臉南瓜"
+                        }
+                    }
+                },
+                {
+                    "name": "陪伴型蘑菇",
+                    "pipeline_override": {
+                        "選擇指定植物": {
+                            "expected": "陪伴型蘑菇"
+                        }
+                    }
+                }
+            ]
+        },
+        "日常任務雜項": {
+            "type": "checkbox",
+            "description": "請勾選要執行的任務",
+            "default_case": [
+                "洗一次藏品",
+                "升級一次夥伴"
+            ],
+            "cases": [
+                {
+                    "name": "洗一次藏品",
+                    "description": "默認選擇第一個藏品第一個技能槽，以金幣洗一次",
+                    "option": [
+                        "指定藏品"
+                    ],
+                    "pipeline_override": {
+                        "進入洗一次藏品任務": {
+                            "next": "洗一次藏品任務"
+                        }
+                    }
+                },
+                {
+                    "name": "升級一次夥伴",
+                    "description": "默認選擇實力排序中最弱的夥伴升級一次，如遇到突破會往前找，最多找十次",
+                    "option": [
+                        "指定夥伴"
+                    ],
+                    "pipeline_override": {
+                        "進入升一次夥伴任務": {
+                            "next": "升一次夥伴任務"
+                        }
+                    }
+                }
+            ]
+        },
+        "指定藏品": {
+            "type": "switch",
+            "description": "以預設排序，從第一個開始向右切換的次數。例如:輸入2，會向右切換2次，即第三個藏品",
+            "default_case": "No",
+            "cases": [
+                {
+                    "name": "No"
+                },
+                {
+                    "name": "Yes",
+                    "option": [
+                        "輸入藏品序號"
+                    ]
+                }
+            ]
+        },
+        "輸入藏品序號": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "藏品序號",
+                    "pipeline_type": "int",
+                    "verify": "^\\d+$"
+                }
+            ],
+            "pipeline_override": {
+                "進入藏品": {
+                    "next": [
+                        "已是藏品預設排序",
+                        "更換藏品排序"
+                    ]
+                },
+                "進入第一個藏品": {
+                    "next": [
+                        "[JumpBack]切換到下個藏品",
+                        "選擇第一格插槽"
+                    ]
+                },
+                "切換到下個藏品": {
+                    "max_hit": "{藏品序號}"
+                }
+            }
+        },
+        "指定夥伴": {
+            "type": "switch",
+            "default_case": "No",
+            "cases": [
+                {
+                    "name": "No"
+                },
+                {
+                    "name": "Yes",
+                    "option": [
+                        "輸入指定夥伴"
+                    ]
+                }
+            ]
+        },
+        "輸入指定夥伴": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "夥伴全名",
+                    "pattern_msg": "$請輸入夥伴全名",
+                    "pipeline_type": "string",
+                    "verify": "^.+$"
+                }
+            ],
+            "pipeline_override": {
+                "進入夥伴": {
+                    "next": [
+                        "點擊指定夥伴",
+                        "[JumpBack]滑動夥伴選單"
+                    ]
+                },
+                "點擊指定夥伴": {
+                    "expected": "{夥伴全名}"
+                }
+            }
+        }
+    },
+    // 任務示例
+    /*
     "task": [
         {
             "name": "普通任务",
@@ -106,4 +552,61 @@
             ]
         }
     }
+    */
+    "preset": [
+        {
+            "name": "全套日常",
+            "description": "請注意部分任務需要前置條件",
+            "task": [
+                {
+                    "name": "啟動遊戲",
+                    "enabled": true
+                },
+                {
+                    "name": "進入遊戲",
+                    "enabled": true
+                },
+                {
+                    "name": "領取評級獎勵",
+                    "enabled": true
+                },
+                {
+                    "name": "傑出者祝賀",
+                    "enabled": true
+                },
+                {
+                    "name": "排行榜膜拜",
+                    "enabled": true
+                },
+                {
+                    "name": "公會事務",
+                    "enabled": true
+                },
+                {
+                    "name": "自動遊玩",
+                    "enabled": true
+                },
+                {
+                    "name": "礦區清剿",
+                    "enabled": true
+                },
+                {
+                    "name": "釣魚事務",
+                    "enabled": true
+                },
+                {
+                    "name": "魔法農莊",
+                    "enabled": true
+                },
+                {
+                    "name": "魔王挑戰",
+                    "enabled": true
+                },
+                {
+                    "name": "其他日常任務",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
 }

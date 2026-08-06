@@ -1,0 +1,265 @@
+{
+    "$__mpe_config_Reset": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786013356251,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Reset.json",
+            "savedViewport": {
+                "x": -488,
+                "y": -814,
+                "zoom": 0.8
+            },
+            "filename": "Reset",
+            "version": "v1.7.4"
+        }
+    },
+    "嘗試一般關閉鈕": {
+        "max_hit": 20,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1664,
+                "y": 1050
+            }
+        }
+    },
+    "嘗試任意處返回": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "任意位置"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1663,
+                "y": 794
+            }
+        }
+    },
+    "嘗試前進對話": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "對話箭頭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1670,
+                "y": 370
+            }
+        }
+    },
+    "嘗試取消": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1652,
+                "y": 1900
+            }
+        }
+    },
+    "嘗試圓形關閉鈕": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕_圓形.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1664,
+                "y": 1268
+            }
+        }
+    },
+    "嘗試跳過": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "SKIP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1667,
+                "y": 166
+            }
+        }
+    },
+    "嘗試返回按鈕": {
+        "max_hit": 20,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1655,
+                "y": 2109
+            }
+        }
+    },
+    "嘗試重置畫面": {
+        "next": [
+            "[JumpBack]嘗試跳過",
+            "[JumpBack]嘗試前進對話",
+            "[JumpBack]嘗試點擊螢幕繼續",
+            "[JumpBack]嘗試任意處返回",
+            "[JumpBack]嘗試一般關閉鈕",
+            "[JumpBack]嘗試圓形關閉鈕",
+            "[JumpBack]嘗試離開鈕",
+            "[JumpBack]嘗試關閉羈絆提醒",
+            "[JumpBack]嘗試取消",
+            "[JumpBack]嘗試返回按鈕",
+            "完成畫面重置"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 986,
+                "y": 1456
+            }
+        }
+    },
+    "嘗試關閉羈絆提醒": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉命定羈絆.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1654,
+                "y": 1687
+            }
+        }
+    },
+    "嘗試離開鈕": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉雜務.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1658,
+                "y": 1476
+            }
+        }
+    },
+    "嘗試點擊螢幕繼續": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 200,
+        "$__mpe_code": {
+            "position": {
+                "x": 1666,
+                "y": 577
+            }
+        }
+    },
+    "完成畫面重置": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1656,
+                "y": 2322
+            }
+        }
+    }
+}

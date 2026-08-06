@@ -1,0 +1,219 @@
+{
+    "$__mpe_config_Store_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1785915640776,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Store_Task.json",
+            "savedViewport": {
+                "x": 621,
+                "y": 235,
+                "zoom": 0.87
+            },
+            "filename": "Store_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "Store_Task_Maze": {
+        "next": [
+            "進入龍城_迷宮商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -523,
+                "y": -79
+            }
+        }
+    },
+    "尋找商品": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "商店商品/黃魔礦.png",
+                    "商店商品/幸運石.png",
+                    "商店商品/農田改建圖殘頁.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    100,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]關閉視窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -218,
+                "y": 229
+            }
+        }
+    },
+    "滑動商店": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    455,
+                    830
+                ],
+                "end": [
+                    [
+                        455,
+                        440
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -218,
+                "y": 442
+            }
+        }
+    },
+    "瀏覽商店": {
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "尋找商品",
+            "滑動商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -512,
+                "y": 123
+            }
+        }
+    },
+    "進入迷宮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "迷宮"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "進入迷宮商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 219,
+                "y": -83
+            }
+        }
+    },
+    "進入迷宮商店": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "商店"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "瀏覽商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 478,
+                "y": -80
+            }
+        }
+    },
+    "進入龍城_迷宮商店": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "重整畫面_迷宮商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -267,
+                "y": -107
+            }
+        }
+    },
+    "重整畫面_迷宮商店": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    110,
+                    150
+                ],
+                "end": [
+                    [
+                        620,
+                        150
+                    ]
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "next": [
+            "進入迷宮"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -25,
+                "y": -113
+            }
+        }
+    },
+    "關閉視窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 53,
+                "y": 239
+            }
+        }
+    }
+}

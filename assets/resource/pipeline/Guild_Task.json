@@ -1,0 +1,847 @@
+{
+    "$__mpe_config_Guild_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786013446730,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Guild_Task.json",
+            "savedViewport": {
+                "x": 8,
+                "y": -116,
+                "zoom": 0.92
+            },
+            "filename": "Guild_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "$__mpe_external_返回龍城_Guild_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1567,
+                "y": 623
+            }
+        }
+    },
+    "GuildAffairs_Task": {
+        "next": [
+            "進入龍城_公會",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 295,
+                "y": 536
+            }
+        }
+    },
+    "公會禮物任務": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    580,
+                    936,
+                    140,
+                    88
+                ],
+                "expected": [
+                    "公會禮物"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "發現公會禮物",
+            "領取豪華寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1814,
+                "y": 821
+            }
+        }
+    },
+    "勾選自動處理委託": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    273,
+                    937,
+                    78,
+                    77
+                ],
+                "template": [
+                    "自動委託.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": 811
+            }
+        }
+    },
+    "完成公會禮物任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2943,
+                "y": 1077
+            }
+        }
+    },
+    "完成捐贈任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1682,
+                "y": 1525
+            }
+        }
+    },
+    "完成雜務委託任務": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4080,
+                "y": 1147
+            }
+        }
+    },
+    "捐贈任務": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    566,
+                    986,
+                    154,
+                    169
+                ],
+                "template": [
+                    "捐贈.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "開始捐贈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 35,
+                "y": 989
+            }
+        }
+    },
+    "未開啟豪華寶箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    33,
+                    494,
+                    242,
+                    286
+                ],
+                "template": [
+                    "框框左下角落.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    102,
+                    890,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "退出公會禮物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2411,
+                "y": 1276
+            }
+        }
+    },
+    "發現公會禮物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    477,
+                    385,
+                    219,
+                    635
+                ],
+                "template": [
+                    "捐贈寶箱.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "next": [
+            "領取禮物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2107,
+                "y": 810
+            }
+        }
+    },
+    "發現寶箱未開啟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    120,
+                    129,
+                    406,
+                    47
+                ],
+                "template": [
+                    "框框左下角落.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    176,
+                    375,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "退出捐贈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1177,
+                "y": 1238
+            }
+        }
+    },
+    "確認公會禮物訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    234,
+                    725,
+                    248,
+                    109
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "領取豪華寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2609,
+                "y": 792
+            }
+        }
+    },
+    "確認捐贈獎勵訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    234,
+                    725,
+                    248,
+                    109
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "領取捐贈獎勵"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1170,
+                "y": 1003
+            }
+        }
+    },
+    "確認捐贈訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    234,
+                    725,
+                    248,
+                    109
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "開始捐贈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 861,
+                "y": 831
+            }
+        }
+    },
+    "確認豪華寶箱訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    234,
+                    725,
+                    248,
+                    109
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "退出公會禮物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2408,
+                "y": 1043
+            }
+        }
+    },
+    "處理雜務委託": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    253,
+                    968,
+                    211,
+                    112
+                ],
+                "expected": [
+                    "處理委託"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 10,
+        "repeat_delay": 200,
+        "post_wait_freezes": 3000,
+        "next": [
+            "退出雜務委託"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3578,
+                "y": 1095
+            }
+        }
+    },
+    "退出公會禮物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "完成公會禮物任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2693,
+                "y": 1043
+            }
+        }
+    },
+    "退出捐贈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "完成捐贈任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1417,
+                "y": 1490
+            }
+        }
+    },
+    "退出雜務委託": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    545,
+                    187,
+                    84,
+                    83
+                ],
+                "template": [
+                    "關閉雜務.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "完成雜務委託任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3833,
+                "y": 1113
+            }
+        }
+    },
+    "進入公會": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    747,
+                    720,
+                    131
+                ],
+                "expected": [
+                    "冒險者公會"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]關閉公告",
+            "開始公會事務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 864,
+                "y": 516
+            }
+        }
+    },
+    "進入公會禮物任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 1565,
+                "y": 311
+            }
+        }
+    },
+    "進入捐贈任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 1565,
+                "y": 155
+            }
+        }
+    },
+    "進入雜務委託任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 1565,
+                "y": 469
+            }
+        }
+    },
+    "進入龍城_公會": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入公會",
+            "[JumpBack]重整畫面_公會"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 570,
+                "y": 507
+            }
+        }
+    },
+    "重整畫面_公會": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    620,
+                    150
+                ],
+                "end": [
+                    [
+                        310,
+                        150
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 861,
+                "y": 322
+            }
+        }
+    },
+    "金幣捐贈": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    507,
+                    492,
+                    180,
+                    89
+                ],
+                "expected": [
+                    "1000"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認捐贈訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 618,
+                "y": 830
+            }
+        }
+    },
+    "金幣捐贈完畢": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    507,
+                    492,
+                    180,
+                    89
+                ],
+                "expected": [
+                    "已捐贈"
+                ]
+            }
+        },
+        "next": [
+            "領取捐贈獎勵",
+            "退出捐贈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 613,
+                "y": 1085
+            }
+        }
+    },
+    "開始公會事務": {
+        "next": [
+            "[JumpBack]進入捐贈任務",
+            "[JumpBack]進入公會禮物任務",
+            "[JumpBack]進入雜務委託任務",
+            "返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1153,
+                "y": 347
+            }
+        }
+    },
+    "開始捐贈": {
+        "post_wait_freezes": 1500,
+        "next": [
+            "金幣捐贈",
+            "金幣捐贈完畢"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 320,
+                "y": 997
+            }
+        }
+    },
+    "關閉公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    231,
+                    1011,
+                    267,
+                    254
+                ],
+                "expected": [
+                    "確認"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 1144,
+                "y": 584
+            }
+        }
+    },
+    "雜務委託任務": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    307,
+                    456,
+                    142,
+                    79
+                ],
+                "expected": [
+                    "雜務委託"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]勾選自動處理委託",
+            "處理雜務委託"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3292,
+                "y": 815
+            }
+        }
+    },
+    "領取捐贈獎勵": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    119,
+                    143,
+                    591,
+                    138
+                ],
+                "template": [
+                    "捐贈寶箱.png"
+                ],
+                "threshold": [
+                    0.3
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "timeout": 10000,
+        "next": [
+            "確認捐贈獎勵訊息",
+            "發現寶箱未開啟",
+            "退出捐贈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 878,
+                "y": 1122
+            }
+        }
+    },
+    "領取禮物": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    392,
+                    1042,
+                    290,
+                    147
+                ],
+                "expected": [
+                    "一鍵領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認公會禮物訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2357,
+                "y": 788
+            }
+        }
+    },
+    "領取豪華寶箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    513,
+                    140,
+                    196,
+                    180
+                ],
+                "template": [
+                    "公會禮物.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認豪華寶箱訊息",
+            "未開啟豪華寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2113,
+                "y": 1103
+            }
+        }
+    },
+    "$__mpe_external_嘗試重置畫面_Guild_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 571,
+                "y": 405
+            }
+        }
+    }
+}

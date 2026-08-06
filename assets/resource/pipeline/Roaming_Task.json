@@ -1,0 +1,435 @@
+{
+    "$__mpe_config_Roaming_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786013795017,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Roaming_Task.json",
+            "savedViewport": {
+                "x": 157,
+                "y": 13,
+                "zoom": 0.61
+            },
+            "filename": "Roaming_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "$__mpe_external_嘗試重置畫面_Roaming_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 81,
+                "y": 210
+            }
+        }
+    },
+    "$__mpe_external_返回龍城_Roaming_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1510,
+                "y": 861
+            }
+        }
+    },
+    "Roaming_Task": {
+        "next": [
+            "進入龍城_遊玩",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -192,
+                "y": 368
+            }
+        }
+    },
+    "出發": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    504,
+                    1043,
+                    157,
+                    104
+                ],
+                "expected": [
+                    "出發"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    591,
+                    1022,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "確認遊玩訊息",
+            "發現沒有遊玩次數",
+            "[JumpBack]關閉體力藥禮包"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 882,
+                "y": 509
+            }
+        }
+    },
+    "勾選一鍵遊玩": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    241,
+                    1092,
+                    83,
+                    83
+                ],
+                "template": [
+                    "一鍵遊玩.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 883,
+                "y": 231
+            }
+        }
+    },
+    "完成相遇事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    250,
+                    880,
+                    210,
+                    390
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "點擊任意處_遊玩"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2051,
+                "y": 630
+            }
+        }
+    },
+    "發現來信": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    415,
+                    420,
+                    126,
+                    109
+                ],
+                "template": [
+                    "來信.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "timeout": 30000,
+        "next": [
+            "處理相遇事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1464,
+                "y": 448
+            }
+        }
+    },
+    "發現沒有遊玩次數": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    590,
+                    328,
+                    110,
+                    185
+                ],
+                "template": [
+                    "關閉鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1219,
+                "y": 824
+            }
+        }
+    },
+    "確認遊玩訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    191,
+                    1026,
+                    333,
+                    253
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]發現來信",
+            "出發",
+            "[JumpBack]處理相遇事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1215,
+                "y": 583
+            }
+        }
+    },
+    "處理相遇事件": {
+        "next": [
+            "[JumpBack]跳過相遇事件",
+            "[JumpBack]跳過對話",
+            "完成相遇事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1721,
+                "y": 544
+            }
+        }
+    },
+    "跳過對話": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    323,
+                    979,
+                    92,
+                    72
+                ],
+                "template": [
+                    "對話箭頭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2046,
+                "y": 438
+            }
+        }
+    },
+    "跳過相遇事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    540,
+                    37,
+                    180,
+                    92
+                ],
+                "expected": [
+                    "SKIP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 2048,
+                "y": 231
+            }
+        }
+    },
+    "進入遊玩": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    907,
+                    720,
+                    113
+                ],
+                "expected": [
+                    "遊玩"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]勾選一鍵遊玩",
+            "出發"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 481,
+                "y": 376
+            }
+        }
+    },
+    "進入龍城_遊玩": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入遊玩",
+            "[JumpBack]重整畫面_遊玩"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 76,
+                "y": 346
+            }
+        }
+    },
+    "重整畫面_遊玩": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    110,
+                    150
+                ],
+                "end": [
+                    [
+                        320,
+                        150
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 469,
+                "y": 177
+            }
+        }
+    },
+    "關閉體力藥禮包": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    576,
+                    129,
+                    117,
+                    118
+                ],
+                "template": [
+                    "關閉鈕_圓形.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1215,
+                "y": 1050
+            }
+        }
+    },
+    "點擊任意處_遊玩": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    210,
+                    1234,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2316,
+                "y": 643
+            }
+        }
+    }
+}

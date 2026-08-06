@@ -1,0 +1,807 @@
+{
+    "$__mpe_config_Receive_Task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786013460206,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Receive_Task.json",
+            "savedViewport": {
+                "x": 579,
+                "y": 145,
+                "zoom": 0.3
+            },
+            "filename": "Receive_Task",
+            "version": "v1.7.4"
+        }
+    },
+    "ReceiveBless_Task": {
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入龍城_祝賀",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -421,
+                "y": 323
+            }
+        }
+    },
+    "ReceiveRanking_Task": {
+        "next": [
+            "進入龍城_膜拜",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -411,
+                "y": 904
+            }
+        }
+    },
+    "ReceiveRatingReward_Task": {
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入自宅",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -433,
+                "y": -177
+            }
+        }
+    },
+    "尋找未膜拜排行榜": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "紅點.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -30,
+                    30,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "開始膜拜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1111,
+                "y": 1219
+            }
+        }
+    },
+    "已領取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    585,
+                    695,
+                    135,
+                    125
+                ],
+                "template": [
+                    "寶箱_已開啟.png"
+                ]
+            }
+        },
+        "focus": "評級獎勵已經領取",
+        "next": [
+            "返回自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 690,
+                "y": 65
+            }
+        }
+    },
+    "恭喜": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    279,
+                    1025,
+                    158,
+                    98
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "點擊任意處_恭喜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1074,
+                "y": 311
+            }
+        }
+    },
+    "成功返回自宅": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1617,
+                "y": -147
+            }
+        }
+    },
+    "成功返回龍城": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2062,
+                "y": 621
+            }
+        }
+    },
+    "新魔王消息": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    179,
+                    183,
+                    225
+                ],
+                "template": [
+                    "新魔王消息.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "恭喜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 820,
+                "y": 310
+            }
+        }
+    },
+    "發現已膜拜": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    500,
+                    1068,
+                    164,
+                    109
+                ],
+                "expected": [
+                    "已膜拜"
+                ]
+            }
+        },
+        "next": [
+            "尋找未膜拜排行榜",
+            "返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 802,
+                "y": 1178
+            }
+        }
+    },
+    "確認恭喜訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    741,
+                    188,
+                    75
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1625,
+                "y": 314
+            }
+        }
+    },
+    "確認祝賀/祝福訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    741,
+                    188,
+                    75
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    177,
+                    1057,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_wait_freezes": 3000,
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1331,
+                "y": 561
+            }
+        }
+    },
+    "確認膜拜訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    741,
+                    188,
+                    75
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    254,
+                    1106,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat_wait_freezes": 3000,
+        "post_wait_freezes": 1000,
+        "next": [
+            "開始膜拜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1084,
+                "y": 880
+            }
+        }
+    },
+    "確認評級訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    741,
+                    188,
+                    75
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 828,
+                "y": -187
+            }
+        }
+    },
+    "確認返回自宅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "自宅_支援部.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "next": [
+            "成功返回自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1349,
+                "y": -163
+            }
+        }
+    },
+    "確認返回龍城": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "next": [
+            "成功返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1818,
+                "y": 608
+            }
+        }
+    },
+    "祝賀": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    258,
+                    970,
+                    198,
+                    196
+                ],
+                "template": [
+                    "祝賀.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "點擊任意處_祝賀"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 822,
+                "y": 586
+            }
+        }
+    },
+    "膜拜": {
+        "max_hit": 4,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    500,
+                    1068,
+                    164,
+                    109
+                ],
+                "expected": [
+                    "膜拜"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "timeout": 5000,
+        "next": [
+            "確認膜拜訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 825,
+                "y": 873
+            }
+        }
+    },
+    "返回自宅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "確認返回自宅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1096,
+                "y": -177
+            }
+        }
+    },
+    "返回龍城": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "確認返回龍城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1582,
+                "y": 589
+            }
+        }
+    },
+    "進入傑出者大廳": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    656,
+                    624,
+                    114
+                ],
+                "expected": [
+                    "傑出者大廳"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "[JumpBack]新魔王消息",
+            "祝賀"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 262,
+                "y": 318
+            }
+        }
+    },
+    "進入排行榜": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    363,
+                    720,
+                    114
+                ],
+                "expected": [
+                    "排行榜"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "開始膜拜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 268,
+                "y": 891
+            }
+        }
+    },
+    "進入自宅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "自宅.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "點擊頭像位置"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16,
+                "y": -190
+            }
+        }
+    },
+    "進入龍城_祝賀": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入傑出者大廳",
+            "[JumpBack]重整畫面_祝賀"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -24,
+                "y": 296
+            }
+        }
+    },
+    "進入龍城_膜拜": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    445,
+                    1142,
+                    184,
+                    138
+                ],
+                "template": [
+                    "龍城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入排行榜",
+            "[JumpBack]重整畫面_祝賀"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -24,
+                "y": 874
+            }
+        }
+    },
+    "重整畫面_祝賀": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    110,
+                    150
+                ],
+                "end": [
+                    [
+                        320,
+                        150
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 267,
+                "y": 630
+            }
+        }
+    },
+    "開始膜拜": {
+        "next": [
+            "發現已膜拜",
+            "膜拜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 558,
+                "y": 941
+            }
+        }
+    },
+    "領取評級獎勵": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    585,
+                    695,
+                    135,
+                    125
+                ],
+                "template": [
+                    "寶箱_未開啟.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1500,
+        "next": [
+            "確認評級訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 559,
+                "y": -188
+            }
+        }
+    },
+    "點擊任意處_恭喜": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    55,
+                    909,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "確認恭喜訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1350,
+                "y": 331
+            }
+        }
+    },
+    "點擊任意處_祝賀": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    55,
+                    909,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "確認祝賀/祝福訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1074,
+                "y": 602
+            }
+        }
+    },
+    "點擊頭像位置": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    55,
+                    65,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "領取評級獎勵",
+            "已領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 288,
+                "y": -183
+            }
+        }
+    },
+    "$__mpe_external_嘗試重置畫面_Receive_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": -19,
+                "y": 133
+            }
+        }
+    }
+}
