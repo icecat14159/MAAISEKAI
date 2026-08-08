@@ -119,6 +119,13 @@
             "option": [
                 "日常任務雜項"
             ]
+        },
+        {
+            "name": "領取日常獎勵",
+            "entry": "ReceiveDaily_Task",
+            "option": [
+                "領取日常雜項"
+            ]
         }
         /*
         {
@@ -392,7 +399,8 @@
             "description": "請勾選要執行的任務",
             "default_case": [
                 "洗一次藏品",
-                "升級一次夥伴"
+                "升級一次夥伴",
+                "好友贈禮"
             ],
             "cases": [
                 {
@@ -416,6 +424,14 @@
                     "pipeline_override": {
                         "進入升一次夥伴任務": {
                             "next": "升一次夥伴任務"
+                        }
+                    }
+                },
+                {
+                    "name": "好友贈禮",
+                    "pipeline_override": {
+                        "進入好友贈禮任務": {
+                            "next": "好友贈禮任務"
                         }
                     }
                 }
@@ -500,6 +516,33 @@
                     "expected": "{夥伴全名}"
                 }
             }
+        },
+        "領取日常雜項": {
+            "type": "checkbox",
+            "description": "勾選要執行的任務",
+            "default_case": [
+                "要領取每日任務",
+                "要領取免費月卡"
+            ],
+            "cases": [
+                {
+                    "name": "要領取每日任務",
+                    "pipeline_override": {
+                        "進入領取日任務": {
+                            "next": "領取日任務"
+                        }
+                    }
+                },
+                {
+                    "name": "要領取免費月卡",
+                    "description": "包含活動月卡",
+                    "pipeline_override": {
+                        "進入領取月卡": {
+                            "next": "領取月卡"
+                        }
+                    }
+                }
+            ]
         }
     },
     // 任務示例
@@ -559,10 +602,6 @@
             "description": "請注意部分任務需要前置條件",
             "task": [
                 {
-                    "name": "啟動遊戲",
-                    "enabled": true
-                },
-                {
                     "name": "進入遊戲",
                     "enabled": true
                 },
@@ -604,6 +643,10 @@
                 },
                 {
                     "name": "其他日常任務",
+                    "enabled": true
+                },
+                {
+                    "name": "領取日常獎勵",
                     "enabled": true
                 }
             ]

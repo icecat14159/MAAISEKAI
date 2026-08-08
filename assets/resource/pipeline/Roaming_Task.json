@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786013795017,
+            "lastSyncTime": 1786182791605,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Roaming_Task.json",
             "savedViewport": {
-                "x": 157,
-                "y": 13,
-                "zoom": 0.61
+                "x": -117,
+                "y": -80,
+                "zoom": 0.52
             },
             "filename": "Roaming_Task",
             "version": "v1.7.4"
@@ -23,11 +23,11 @@
             }
         }
     },
-    "$__mpe_external_返回龍城_Roaming_Task": {
+    "$__mpe_external_返回主介面_Roaming_Task": {
         "$__mpe_code": {
             "position": {
-                "x": 1510,
-                "y": 861
+                "x": 1499,
+                "y": 876
             }
         }
     },
@@ -191,7 +191,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "返回龍城"
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {

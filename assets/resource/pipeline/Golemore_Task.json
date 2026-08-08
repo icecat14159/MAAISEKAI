@@ -3,23 +3,31 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786013429905,
+            "lastSyncTime": 1786182531666,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Golemore_Task.json",
             "savedViewport": {
-                "x": -32,
-                "y": -203,
-                "zoom": 0.92
+                "x": -2120,
+                "y": -727,
+                "zoom": 0.69
             },
             "filename": "Golemore_Task",
             "version": "v1.7.4"
         }
     },
-    "$__mpe_external_返回龍城_Golemore_Task": {
+    "$__mpe_external_嘗試重置畫面_Golemore_Task": {
         "$__mpe_code": {
             "position": {
-                "x": 4691,
-                "y": 1625
+                "x": 636,
+                "y": 446
+            }
+        }
+    },
+    "$__mpe_external_返回主介面_Golemore_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4336,
+                "y": 1645
             }
         }
     },
@@ -306,7 +314,7 @@
             "開啟第一個礦區寶箱",
             "開啟第二個礦區寶箱",
             "開啟第三個礦區寶箱",
-            "返回礦區"
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
@@ -595,35 +603,6 @@
             }
         }
     },
-    "返回礦區": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    1155,
-                    166,
-                    125
-                ],
-                "template": [
-                    "返回按鈕.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "返回龍城"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4430,
-                "y": 1580
-            }
-        }
-    },
     "進入礦區": {
         "recognition": {
             "type": "OCR",
@@ -882,14 +861,6 @@
             "position": {
                 "x": 3257,
                 "y": 1217
-            }
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Golemore_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 636,
-                "y": 446
             }
         }
     }

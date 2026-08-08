@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786004556603,
+            "lastSyncTime": 1786204591498,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Start.json",
             "savedViewport": {
                 "x": 872,
-                "y": 273,
-                "zoom": 0.76
+                "y": 352,
+                "zoom": 0.91
             },
             "filename": "Start",
             "version": "v1.7.4"
@@ -84,8 +84,8 @@
     "成功開啟遊戲": {
         "$__mpe_code": {
             "position": {
-                "x": -8,
-                "y": -230
+                "x": -10,
+                "y": -231
             }
         }
     },
@@ -104,8 +104,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -300,
-                "y": -17
+                "x": -296,
+                "y": -15
             }
         }
     },

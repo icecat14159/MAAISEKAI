@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785915640776,
+            "lastSyncTime": 1786182822471,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Store_Task.json",
             "savedViewport": {
-                "x": 621,
-                "y": 235,
-                "zoom": 0.87
+                "x": 665,
+                "y": 165,
+                "zoom": 0.79
             },
             "filename": "Store_Task",
             "version": "v1.7.4"

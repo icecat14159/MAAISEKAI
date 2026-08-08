@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786019769963,
+            "lastSyncTime": 1786182412107,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Fishing_Task.json",
             "savedViewport": {
-                "x": -432,
-                "y": -777,
-                "zoom": 0.7
+                "x": -2714,
+                "y": -892,
+                "zoom": 1.2
             },
             "filename": "Fishing_Task",
             "version": "v1.7.4"
@@ -466,14 +466,6 @@
             }
         }
     },
-    "成功返回村莊": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3026,
-                "y": 1024
-            }
-        }
-    },
     "檢查魚餌": {
         "recognition": {
             "type": "OCR",
@@ -799,25 +791,6 @@
             }
         }
     },
-    "確認返回村莊": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "我的村莊.png"
-                ]
-            }
-        },
-        "next": [
-            "成功返回村莊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2771,
-                "y": 1013
-            }
-        }
-    },
     "確認釣魚任務訊息": {
         "recognition": {
             "type": "OCR",
@@ -962,35 +935,6 @@
             "position": {
                 "x": 1497,
                 "y": 3671
-            }
-        }
-    },
-    "返回村莊": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    1155,
-                    166,
-                    125
-                ],
-                "template": [
-                    "返回按鈕.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1500,
-        "next": [
-            "確認返回村莊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2516,
-                "y": 992
             }
         }
     },
@@ -1464,7 +1408,7 @@
             "[JumpBack]進入釣魚任務",
             "[JumpBack]進入水晶貝任務",
             "[JumpBack]進入釣魚點數任務",
-            "返回村莊"
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
@@ -1606,7 +1550,7 @@
             "type": "Click"
         },
         "anchor": {
-            "回來領魚餌": " "
+            "回來領魚餌": ""
         },
         "next": [
             "[JumpBack]魚餌上限無法領取",
@@ -1684,6 +1628,14 @@
             "position": {
                 "x": 1922,
                 "y": 489
+            }
+        }
+    },
+    "$__mpe_external_返回主介面_Fishing_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2524,
+                "y": 1030
             }
         }
     }

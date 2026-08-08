@@ -3,19 +3,27 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786013389757,
+            "lastSyncTime": 1786205698578,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Farm_Task.json",
             "savedViewport": {
-                "x": 43,
-                "y": -127,
-                "zoom": 0.8
+                "x": -2692,
+                "y": -627,
+                "zoom": 1.38
             },
             "filename": "Farm_Task",
             "version": "v1.7.4"
         }
     },
-    "$__mpe_external_返回村莊_Farm_Task": {
+    "$__mpe_external_嘗試重置畫面_Farm_Task": {
+        "$__mpe_code": {
+            "position": {
+                "x": 385,
+                "y": 557
+            }
+        }
+    },
+    "$__mpe_external_返回主介面_Farm_Task": {
         "$__mpe_code": {
             "position": {
                 "x": 4404,
@@ -60,8 +68,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2114,
-                "y": 536
+                "x": 2113,
+                "y": 541
             }
         }
     },
@@ -173,7 +181,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "返回村莊"
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
@@ -230,8 +238,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2376,
-                "y": 766
+                "x": 2375,
+                "y": 754
             }
         }
     },
@@ -385,12 +393,6 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": [
-                    259,
-                    756,
-                    204,
-                    88
-                ],
                 "expected": [
                     "點擊螢幕繼續"
                 ]
@@ -487,7 +489,7 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "返回村莊"
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
@@ -724,14 +726,6 @@
             "position": {
                 "x": 1307,
                 "y": 569
-            }
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Farm_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 385,
-                "y": 557
             }
         }
     }
