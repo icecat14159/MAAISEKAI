@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786204459086,
+            "lastSyncTime": 1786722121200,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Daily_Task.json",
             "savedViewport": {
-                "x": -901,
-                "y": 65,
-                "zoom": 0.79
+                "x": -2022,
+                "y": -2569,
+                "zoom": 1
             },
             "filename": "Daily_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Daily_Task": {
@@ -42,6 +42,68 @@
             "position": {
                 "x": 1486,
                 "y": 24
+            }
+        }
+    },
+    "一鍵贈送好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    62,
+                    1071,
+                    215,
+                    76
+                ],
+                "expected": [
+                    "贈送"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一鍵贈送"
+        },
+        "next": [
+            "一鍵領取好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2190,
+                "y": 2854
+            }
+        }
+    },
+    "一鍵領取好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    452,
+                    1070,
+                    204,
+                    73
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]確認領取好友訊息",
+            "返回主介面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2464,
+                "y": 2844
             }
         }
     },
@@ -148,6 +210,7 @@
         }
     },
     "升一次夥伴任務": {
+        "focus": "開始升級一次夥伴",
         "next": [
             "進入夥伴",
             "[JumpBack]嘗試重置畫面"
@@ -178,8 +241,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1976,
-                "y": 1643
+                "x": 1973,
+                "y": 1682
             }
         }
     },
@@ -198,13 +261,14 @@
                 ]
             }
         },
+        "focus": "發現夥伴滿級",
         "next": [
             "找下一位夥伴"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3029,
-                "y": 2525
+                "x": 3023,
+                "y": 2545
             }
         }
     },
@@ -223,6 +287,7 @@
                 ]
             }
         },
+        "focus": "發現夥伴需要突破",
         "next": [
             "找下一位夥伴"
         ],
@@ -230,6 +295,19 @@
             "position": {
                 "x": 3026,
                 "y": 2319
+            }
+        }
+    },
+    "好友贈禮任務": {
+        "focus": "開始好友贈禮",
+        "next": [
+            "進入自宅_贈禮",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1362,
+                "y": 2866
             }
         }
     },
@@ -261,7 +339,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 1975,
-                "y": 1455
+                "y": 1478
             }
         }
     },
@@ -313,8 +391,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2249,
-                "y": 999
+                "x": 2251,
+                "y": 1015
             }
         }
     },
@@ -460,6 +538,7 @@
         }
     },
     "洗一次藏品任務": {
+        "focus": "開始洗一次藏品",
         "next": [
             "進入自宅_洗藏品",
             "[JumpBack]嘗試重置畫面"
@@ -472,6 +551,7 @@
         }
     },
     "滑動夥伴選單": {
+        "max_hit": 50,
         "action": {
             "type": "Swipe",
             "param": {
@@ -490,7 +570,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 2768,
-                "y": 1681
+                "y": 1651
             }
         }
     },
@@ -507,10 +587,42 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "處理經營能力彈窗"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 3582,
                 "y": 2159
+            }
+        }
+    },
+    "確認領取好友訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    236,
+                    717,
+                    238,
+                    132
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一鍵領取"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2730,
+                "y": 2675
             }
         }
     },
@@ -541,6 +653,9 @@
             }
         },
         "post_wait_freezes": 500,
+        "focus": {
+            "Node.Action.Succeeded": "完成更變夥伴排序為實力"
+        },
         "next": [
             "點擊第一位夥伴"
         ],
@@ -578,6 +693,9 @@
             }
         },
         "post_wait_freezes": 500,
+        "focus": {
+            "Node.Action.Succeeded": "完成更變藏品排序為預設"
+        },
         "next": [
             "進入第一個藏品"
         ],
@@ -635,6 +753,51 @@
             }
         }
     },
+    "進入好友": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    568,
+                    872,
+                    152,
+                    154
+                ],
+                "template": [
+                    "自宅好友.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "進入好友贈禮"
+        },
+        "next": [
+            "一鍵贈送好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1922,
+                "y": 2829
+            }
+        }
+    },
+    "進入好友贈禮任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 1786,
+                "y": 178
+            }
+        }
+    },
     "進入洗一次藏品任務": {
         "max_hit": 1,
         "$__mpe_code": {
@@ -662,8 +825,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2796,
-                "y": 1250
+                "x": 2795,
+                "y": 1247
             }
         }
     },
@@ -707,6 +870,43 @@
             }
         }
     },
+    "進入自宅_贈禮": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1135,
+                    173,
+                    145
+                ],
+                "template": [
+                    "自宅.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1650,
+                "y": 2836
+            }
+        }
+    },
     "進入藏品": {
         "recognition": {
             "type": "OCR",
@@ -726,6 +926,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "進入藏品介面"
+        },
         "next": [
             "進入第一個藏品"
         ],
@@ -755,6 +958,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次重塑"
+        },
         "next": [
             "返回主介面"
         ],
@@ -784,14 +990,17 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次升級"
+        },
         "next": [
             "[JumpBack]確定解鎖經營訊息",
             "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3286,
-                "y": 2087
+                "x": 3282,
+                "y": 2080
             }
         }
     },
@@ -836,13 +1045,17 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Action.Succeeded": "找到指定夥伴",
+            "Node.Recognition.Failed": "未找到指定夥伴"
+        },
         "next": [
             "切換為升級1次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2770,
-                "y": 1867
+                "x": 2768,
+                "y": 1855
             }
         }
     },
@@ -859,189 +1072,16 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "點擊第一位夥伴"
+        },
         "next": [
             "找最弱的夥伴"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2520,
-                "y": 2091
-            }
-        }
-    },
-    "進入好友贈禮任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1786,
-                "y": 178
-            }
-        }
-    },
-    "好友贈禮任務": {
-        "next": [
-            "進入自宅_贈禮",
-            "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1362,
-                "y": 2866
-            }
-        }
-    },
-    "進入自宅_贈禮": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    1135,
-                    173,
-                    145
-                ],
-                "template": [
-                    "自宅.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    10,
-                    10,
-                    -20,
-                    -20
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "進入好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1650,
-                "y": 2836
-            }
-        }
-    },
-    "進入好友": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    568,
-                    872,
-                    152,
-                    154
-                ],
-                "template": [
-                    "自宅好友.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.55
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "一鍵贈送好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1922,
-                "y": 2829
-            }
-        }
-    },
-    "一鍵贈送好友": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    62,
-                    1071,
-                    215,
-                    76
-                ],
-                "expected": [
-                    "贈送"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "一鍵領取好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2202,
-                "y": 2842
-            }
-        }
-    },
-    "一鍵領取好友": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    452,
-                    1070,
-                    204,
-                    73
-                ],
-                "expected": [
-                    "領取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "[JumpBack]確認領取好友訊息",
-            "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2464,
-                "y": 2844
-            }
-        }
-    },
-    "確認領取好友訊息": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    236,
-                    717,
-                    238,
-                    132
-                ],
-                "expected": [
-                    "點擊螢幕繼續"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 2737,
-                "y": 2701
+                "x": 2508,
+                "y": 2104
             }
         }
     }

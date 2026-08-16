@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786203415803,
+            "lastSyncTime": 1786888123668,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Receive_Task.json",
             "savedViewport": {
-                "x": 567,
-                "y": -762,
-                "zoom": 0.69
+                "x": 457,
+                "y": -872,
+                "zoom": 0.53
             },
             "filename": "Receive_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Receive_Task": {
@@ -44,6 +44,18 @@
             }
         }
     },
+    "ReceiveDaily_Task": {
+        "next": [
+            "進入自宅_日領取",
+            "[JumpBack]嘗試重置畫面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -647,
+                "y": 1409
+            }
+        }
+    },
     "ReceiveRanking_Task": {
         "next": [
             "進入龍城_膜拜",
@@ -66,6 +78,67 @@
             "position": {
                 "x": -433,
                 "y": -177
+            }
+        }
+    },
+    "免費月卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    526,
+                    245,
+                    155,
+                    104
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": "領取月卡",
+        "next": [
+            "確認免費月卡訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 534,
+                "y": 2286
+            }
+        }
+    },
+    "完成日任務領取": {
+        "focus": "完成每日任務領取",
+        "next": [
+            "返回主介面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1646,
+                "y": 2095
+            }
+        }
+    },
+    "完成日常領取": {
+        "$__mpe_code": {
+            "position": {
+                "x": -107,
+                "y": 1577
+            }
+        }
+    },
+    "完成月卡領取": {
+        "next": [
+            "返回主介面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1653,
+                "y": 2473
             }
         }
     },
@@ -114,7 +187,7 @@
                 ]
             }
         },
-        "focus": "評級獎勵已經領取",
+        "focus": "評級獎勵已領取過",
         "next": [
             "返回主介面"
         ],
@@ -122,6 +195,33 @@
             "position": {
                 "x": 828,
                 "y": 58
+            }
+        }
+    },
+    "已領取免費月卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    526,
+                    245,
+                    155,
+                    104
+                ],
+                "expected": [
+                    "已領取"
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入活動月卡",
+            "完成月卡領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 535,
+                "y": 2569
             }
         }
     },
@@ -173,6 +273,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "發現新魔王消息",
         "next": [
             "恭喜"
         ],
@@ -180,6 +281,77 @@
             "position": {
                 "x": 820,
                 "y": 310
+            }
+        }
+    },
+    "未開啟活躍寶箱": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    274,
+                    1208,
+                    51,
+                    51
+                ]
+            }
+        },
+        "focus": "活躍寶箱未開啟",
+        "next": [
+            "完成日任務領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1342,
+                "y": 2084
+            }
+        }
+    },
+    "沒有可開啟活躍寶箱": {
+        "focus": "活躍寶箱已開啟過",
+        "next": [
+            "完成日任務領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1116,
+                "y": 2245
+            }
+        }
+    },
+    "準備開啟活躍寶箱": {
+        "next": [
+            "領取活躍寶箱",
+            "沒有可開啟活躍寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 778,
+                "y": 1904
+            }
+        }
+    },
+    "準備領取月卡": {
+        "next": [
+            "已領取免費月卡",
+            "免費月卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 302,
+                "y": 2348
+            }
+        }
+    },
+    "無日任務可領取": {
+        "focus": "沒有可領取獎勵",
+        "next": [
+            "準備開啟活躍寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 499,
+                "y": 2059
             }
         }
     },
@@ -209,6 +381,30 @@
             }
         }
     },
+    "確認免費月卡訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入活動月卡",
+            "完成月卡領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 809,
+                "y": 2299
+            }
+        }
+    },
     "確認恭喜訊息": {
         "recognition": {
             "type": "OCR",
@@ -232,6 +428,56 @@
             "position": {
                 "x": 1625,
                 "y": 314
+            }
+        }
+    },
+    "確認日任務領取訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 777,
+                "y": 1682
+            }
+        }
+    },
+    "確認活躍寶箱訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": "領取活躍寶箱",
+        "next": [
+            "完成日任務領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1342,
+                "y": 1829
             }
         }
     },
@@ -264,13 +510,10 @@
         "repeat": 2,
         "repeat_wait_freezes": 3000,
         "post_wait_freezes": 1000,
-        "next": [
-            "返回主介面"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1331,
-                "y": 561
+                "x": 1421,
+                "y": 579
             }
         }
     },
@@ -302,13 +545,14 @@
         },
         "repeat_wait_freezes": 3000,
         "post_wait_freezes": 1000,
+        "focus": "完成一次膜拜",
         "next": [
             "開始膜拜"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1084,
-                "y": 880
+                "x": 1064,
+                "y": 873
             }
         }
     },
@@ -331,13 +575,14 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "領取評級獎勵",
         "next": [
             "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 828,
-                "y": -187
+                "x": 825,
+                "y": -197
             }
         }
     },
@@ -360,13 +605,14 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "進行祝賀",
         "next": [
             "點擊任意處_祝賀"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 822,
-                "y": 586
+                "x": 814,
+                "y": 576
             }
         }
     },
@@ -420,6 +666,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "進入傑出者大廳",
         "next": [
             "[JumpBack]新魔王消息",
             "祝賀"
@@ -450,13 +697,107 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "進入排行榜",
         "next": [
             "開始膜拜"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 268,
-                "y": 891
+                "x": 266,
+                "y": 880
+            }
+        }
+    },
+    "進入權益卡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    93,
+                    720,
+                    183
+                ],
+                "template": [
+                    "自宅權益卡.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "進入權益卡"
+        },
+        "next": [
+            "準備領取月卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 62,
+                "y": 2334
+            }
+        }
+    },
+    "進入活動月卡": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    251,
+                    85,
+                    162,
+                    105
+                ],
+                "expected": [
+                    "活動權益"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "準備領取月卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1027,
+                "y": 2567
+            }
+        }
+    },
+    "進入自宅_日領取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1155,
+                    166,
+                    125
+                ],
+                "template": [
+                    "自宅.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "[JumpBack]進入領取日任務",
+            "[JumpBack]進入領取月卡",
+            "完成日常領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -379,
+                "y": 1379
             }
         }
     },
@@ -484,8 +825,61 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 16,
-                "y": -190
+                "x": -47,
+                "y": -193
+            }
+        }
+    },
+    "進入自宅任務": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    567,
+                    670,
+                    153,
+                    156
+                ],
+                "template": [
+                    "自宅任務.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": "進入自宅任務",
+        "next": [
+            "開始領取日任務",
+            "無日任務可領取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 167,
+                "y": 1758
+            }
+        }
+    },
+    "進入領取日任務": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": -111,
+                "y": 1280
+            }
+        }
+    },
+    "進入領取月卡": {
+        "max_hit": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": -111,
+                "y": 1425
             }
         }
     },
@@ -600,6 +994,94 @@
             }
         }
     },
+    "開始領取日任務": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    501,
+                    399,
+                    186,
+                    129
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": "領取每日任務獎勵",
+        "next": [
+            "準備開啟活躍寶箱",
+            "[JumpBack]確認日任務領取訊息"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 501,
+                "y": 1782
+            }
+        }
+    },
+    "領取日任務": {
+        "focus": "開始領取每日任務",
+        "next": [
+            "進入自宅任務"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -178,
+                "y": 1816
+            }
+        }
+    },
+    "領取月卡": {
+        "focus": "開始領取月卡",
+        "next": [
+            "進入權益卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -201,
+                "y": 2363
+            }
+        }
+    },
+    "領取活躍寶箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    203,
+                    125,
+                    505,
+                    161
+                ],
+                "template": [
+                    "捐贈寶箱.png"
+                ],
+                "threshold": [
+                    0.4
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "確認活躍寶箱訊息",
+            "未開啟活躍寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1035,
+                "y": 1838
+            }
+        }
+    },
     "領取評級獎勵": {
         "recognition": {
             "type": "TemplateMatch",
@@ -664,12 +1146,13 @@
             }
         },
         "next": [
-            "確認祝賀/祝福訊息"
+            "[JumpBack]確認祝賀/祝福訊息",
+            "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1074,
-                "y": 602
+                "x": 1104,
+                "y": 598
             }
         }
     },
@@ -692,453 +1175,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 288,
-                "y": -183
-            }
-        }
-    },
-    "領取日任務": {
-        "next": [
-            "進入自宅任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -191,
-                "y": 1787
-            }
-        }
-    },
-    "進入自宅任務": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    567,
-                    670,
-                    153,
-                    156
-                ],
-                "template": [
-                    "自宅任務.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.4
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "開始領取日任務",
-            "無日任務可領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 167,
-                "y": 1758
-            }
-        }
-    },
-    "開始領取日任務": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    501,
-                    399,
-                    186,
-                    129
-                ],
-                "expected": [
-                    "領取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "準備開啟活躍寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 501,
-                "y": 1782
-            }
-        }
-    },
-    "無日任務可領取": {
-        "next": [
-            "準備開啟活躍寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 498,
-                "y": 2009
-            }
-        }
-    },
-    "領取活躍寶箱": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    203,
-                    125,
-                    505,
-                    161
-                ],
-                "template": [
-                    "捐贈寶箱.png"
-                ],
-                "threshold": [
-                    0.4
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "確認活躍寶箱訊息",
-            "未開啟活躍寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1053,
-                "y": 1845
-            }
-        }
-    },
-    "確認活躍寶箱訊息": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "expected": [
-                    "點擊螢幕繼續"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "完成日任務領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1331,
-                "y": 1827
-            }
-        }
-    },
-    "未開啟活躍寶箱": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    274,
-                    1208,
-                    51,
-                    51
-                ]
-            }
-        },
-        "next": [
-            "完成日任務領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1327,
-                "y": 2050
-            }
-        }
-    },
-    "準備開啟活躍寶箱": {
-        "next": [
-            "領取活躍寶箱",
-            "沒有可開啟活躍寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 778,
-                "y": 1904
-            }
-        }
-    },
-    "沒有可開啟活躍寶箱": {
-        "next": [
-            "完成日任務領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1164,
-                "y": 2246
-            }
-        }
-    },
-    "ReceiveDaily_Task": {
-        "next": [
-            "進入自宅_日領取",
-            "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -650,
-                "y": 1392
-            }
-        }
-    },
-    "領取月卡": {
-        "next": [
-            "進入權益卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -192,
-                "y": 2363
-            }
-        }
-    },
-    "進入領取日任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": -111,
-                "y": 1280
-            }
-        }
-    },
-    "進入領取月卡": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": -111,
-                "y": 1425
-            }
-        }
-    },
-    "進入自宅_日領取": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    1155,
-                    166,
-                    125
-                ],
-                "template": [
-                    "自宅.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 3000,
-        "next": [
-            "[JumpBack]進入領取日任務",
-            "[JumpBack]進入領取月卡",
-            "完成日常領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -379,
-                "y": 1379
-            }
-        }
-    },
-    "完成日任務領取": {
-        "next": [
-            "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1646,
-                "y": 2095
-            }
-        }
-    },
-    "進入權益卡": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    93,
-                    720,
-                    183
-                ],
-                "template": [
-                    "自宅權益卡.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "準備領取月卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 62,
-                "y": 2334
-            }
-        }
-    },
-    "免費月卡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    526,
-                    245,
-                    155,
-                    104
-                ],
-                "expected": [
-                    "領取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "確認免費月卡訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 539,
-                "y": 2298
-            }
-        }
-    },
-    "確認免費月卡訊息": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "點擊螢幕繼續"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "進入活動月卡",
-            "完成月卡領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 811,
-                "y": 2309
-            }
-        }
-    },
-    "已領取免費月卡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    526,
-                    245,
-                    155,
-                    104
-                ],
-                "expected": [
-                    "已領取"
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "進入活動月卡",
-            "完成月卡領取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 540,
-                "y": 2574
-            }
-        }
-    },
-    "進入活動月卡": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    251,
-                    85,
-                    162,
-                    105
-                ],
-                "expected": [
-                    "活動權益"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "準備領取月卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1032,
-                "y": 2564
-            }
-        }
-    },
-    "準備領取月卡": {
-        "next": [
-            "已領取免費月卡",
-            "免費月卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 302,
-                "y": 2348
-            }
-        }
-    },
-    "完成月卡領取": {
-        "next": [
-            "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1653,
-                "y": 2473
-            }
-        }
-    },
-    "完成日常領取": {
-        "$__mpe_code": {
-            "position": {
-                "x": -107,
-                "y": 1577
+                "x": 268,
+                "y": -182
             }
         }
     }

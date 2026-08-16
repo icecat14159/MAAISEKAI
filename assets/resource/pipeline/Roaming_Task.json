@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786182791605,
+            "lastSyncTime": 1786812543831,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Roaming_Task.json",
             "savedViewport": {
-                "x": -117,
-                "y": -80,
-                "zoom": 0.52
+                "x": 387,
+                "y": -84,
+                "zoom": 0.44
             },
             "filename": "Roaming_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Roaming_Task": {
@@ -70,6 +70,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "出發"
+        },
         "next": [
             "確認遊玩訊息",
             "發現沒有遊玩次數",
@@ -161,13 +164,14 @@
         },
         "post_wait_freezes": 1500,
         "timeout": 30000,
+        "focus": "發現來信",
         "next": [
             "處理相遇事件"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1464,
-                "y": 448
+                "x": 1472,
+                "y": 434
             }
         }
     },
@@ -190,13 +194,16 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "遊玩次數用盡"
+        },
         "next": [
             "返回主介面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1219,
-                "y": 824
+                "x": 1216,
+                "y": 825
             }
         }
     },
@@ -232,6 +239,7 @@
         }
     },
     "處理相遇事件": {
+        "focus": "處理相遇事件",
         "next": [
             "[JumpBack]跳過相遇事件",
             "[JumpBack]跳過對話",
@@ -314,14 +322,17 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "進入遊玩"
+        },
         "next": [
             "[JumpBack]勾選一鍵遊玩",
             "出發"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 481,
-                "y": 376
+                "x": 469,
+                "y": 374
             }
         }
     },
@@ -358,8 +369,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 76,
-                "y": 346
+                "x": 82,
+                "y": 338
             }
         }
     },
@@ -405,10 +416,11 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "關閉體力藥禮包",
         "$__mpe_code": {
             "position": {
-                "x": 1215,
-                "y": 1050
+                "x": 1216,
+                "y": 1083
             }
         }
     },

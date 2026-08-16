@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786182531666,
+            "lastSyncTime": 1786811252571,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Golemore_Task.json",
             "savedViewport": {
-                "x": -2120,
-                "y": -727,
-                "zoom": 0.69
+                "x": -1938,
+                "y": -533,
+                "zoom": 0.66
             },
             "filename": "Golemore_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Golemore_Task": {
@@ -57,6 +57,7 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": "使用第一位公會協力",
         "next": [
             "確定協力"
         ],
@@ -81,6 +82,7 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": "使用第三位公會協力",
         "next": [
             "確定協力"
         ],
@@ -105,6 +107,7 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": "使用第二位公會協力",
         "next": [
             "確定協力"
         ],
@@ -129,6 +132,7 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": "使用第五位公會協力",
         "next": [
             "確定協力"
         ],
@@ -153,6 +157,7 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": "使用第四位公會協力",
         "next": [
             "確定協力"
         ],
@@ -248,13 +253,14 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "協力次數用盡",
         "next": [
             "領取礦區寶藏"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3439,
-                "y": 911
+                "x": 3445,
+                "y": 881
             }
         }
     },
@@ -304,8 +310,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1492,
-                "y": 571
+                "x": 1481,
+                "y": 563
             }
         }
     },
@@ -338,6 +344,7 @@
                 ]
             }
         },
+        "focus": "已全部擊敗",
         "next": [
             "領取礦區寶藏"
         ],
@@ -367,6 +374,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "挖到礦區寶箱",
         "$__mpe_code": {
             "position": {
                 "x": 2321,
@@ -393,6 +401,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "未擊敗目前波次",
         "next": [
             "嘗試公會協力"
         ],
@@ -418,6 +427,7 @@
                 ]
             }
         },
+        "focus": "夥伴已用盡",
         "next": [
             "嘗試公會協力"
         ],
@@ -477,14 +487,17 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "使用快速清剿"
+        },
         "next": [
             "確認清剿訊息",
             "未能擊敗"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1754,
-                "y": 501
+                "x": 1750,
+                "y": 487
             }
         }
     },
@@ -566,6 +579,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": "開啟一次礦區寶箱",
         "$__mpe_code": {
             "position": {
                 "x": 4417,
@@ -593,13 +607,16 @@
         },
         "post_wait_freezes": 3000,
         "timeout": 120000,
+        "focus": {
+            "Node.Action.Succeeded": "使用自動清剿"
+        },
         "next": [
             "發現夥伴用盡"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1753,
-                "y": 742
+                "x": 1749,
+                "y": 765
             }
         }
     },
@@ -627,8 +644,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 964,
-                "y": 566
+                "x": 955,
+                "y": 567
             }
         }
     },
@@ -854,13 +871,14 @@
         }
     },
     "領取礦區寶藏": {
+        "focus": "領取礦區寶箱",
         "next": [
             "開啟消息欄"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3257,
-                "y": 1217
+                "x": 3254,
+                "y": 1245
             }
         }
     }

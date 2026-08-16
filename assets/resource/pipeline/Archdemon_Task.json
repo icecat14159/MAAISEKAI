@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786206696593,
+            "lastSyncTime": 1786721174962,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Archdemon_Task.json",
             "savedViewport": {
-                "x": -1271,
-                "y": -257,
-                "zoom": 1.05
+                "x": -1634,
+                "y": -583,
+                "zoom": 0.76
             },
             "filename": "Archdemon_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Archdemon_Task": {
@@ -172,6 +172,9 @@
                 291
             ]
         },
+        "focus": {
+            "Node.Action.Succeeded": "挑戰下一位魔王"
+        },
         "next": [
             "開始魔王挑戰"
         ],
@@ -201,6 +204,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次魔王挑戰"
+        },
         "next": [
             "完成挑戰魔王"
         ],
@@ -235,8 +241,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2730,
-                "y": 1084
+                "x": 2724,
+                "y": 1101
             }
         }
     },
@@ -289,13 +295,16 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "領取魔王任務"
+        },
         "next": [
             "領取魔王獎勵"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2983,
-                "y": 1086
+                "x": 2977,
+                "y": 1088
             }
         }
     },
@@ -327,6 +336,9 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "成功進入魔王挑戰"
+        },
         "next": [
             "[JumpBack]向右對齊",
             "開始魔王挑戰"
@@ -482,8 +494,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3241,
-                "y": 1080
+                "x": 3242,
+                "y": 1084
             }
         }
     }
