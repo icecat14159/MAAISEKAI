@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786200758367,
+            "lastSyncTime": 1786200804167,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\my_task.json",
             "savedViewport": {
-                "x": -277,
-                "y": 219,
-                "zoom": 0.91
+                "x": -70,
+                "y": 95,
+                "zoom": 1
             },
             "filename": "my_task",
-            "version": "v1.7.4"
+            "version": "v1.7.5"
         }
     },
     "MyTask1": {
@@ -94,6 +94,9 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": ""
+        },
         "$__mpe_code": {
             "position": {
                 "x": 625,
@@ -132,6 +135,9 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": ""
+        },
         "$__mpe_code": {
             "position": {
                 "x": 918,

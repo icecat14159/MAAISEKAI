@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786205698578,
+            "lastSyncTime": 1786722295874,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Farm_Task.json",
             "savedViewport": {
-                "x": -2692,
-                "y": -627,
-                "zoom": 1.38
+                "x": -1296,
+                "y": -233,
+                "zoom": 0.61
             },
             "filename": "Farm_Task",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "$__mpe_external_嘗試重置畫面_Farm_Task": {
@@ -121,11 +121,14 @@
             "type": "Click"
         },
         "post_wait_freezes": 500,
+        "focus": {
+            "Node.Action.Succeeded": "嘗試首次播種"
+        },
         "next": [
             "發現派遣事件",
-            "發現農田寶箱",
+            "發現農地寶箱",
             "全部種植完畢",
-            "發現剩餘田地",
+            "發現剩餘農地",
             "進入自訂種植介面"
         ],
         "$__mpe_code": {
@@ -154,13 +157,16 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次收割"
+        },
         "next": [
             "進入訂單"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1575,
-                "y": 533
+                "x": 1573,
+                "y": 542
             }
         }
     },
@@ -180,6 +186,9 @@
             }
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "完成所有農地播種"
+        },
         "next": [
             "返回主介面"
         ],
@@ -232,6 +241,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "完成所有訂單交付"
+        },
         "next": [
             "一鍵播種",
             "全部種植完畢"
@@ -265,12 +277,13 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1001,
-                "y": 792
+                "x": 996,
+                "y": 824
             }
         }
     },
     "滑動種植介面": {
+        "max_hit": 15,
         "action": {
             "type": "Swipe",
             "param": {
@@ -297,7 +310,7 @@
             }
         }
     },
-    "發現剩餘田地": {
+    "發現剩餘農地": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -314,6 +327,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "發現空閒農地"
         },
         "next": [
             "進入自訂種植介面"
@@ -347,17 +363,20 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "處理農地事件-派遣"
+        },
         "next": [
             "進入委任"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2928,
-                "y": 288
+                "x": 2927,
+                "y": 259
             }
         }
     },
-    "發現農田寶箱": {
+    "發現農地寶箱": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -379,6 +398,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "處理農地事件-寶箱"
+        },
         "next": [
             "確認農田寶箱訊息"
         ],
@@ -402,13 +424,16 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次訂單交付"
+        },
         "next": [
             "一鍵交付訂單"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2375,
-                "y": 496
+                "x": 2373,
+                "y": 514
             }
         }
     },
@@ -488,6 +513,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 500,
+        "focus": {
+            "Node.Action.Succeeded": "指定植物種植完成"
+        },
         "next": [
             "返回主介面"
         ],
@@ -648,6 +676,9 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "進入訂單頁面"
+        },
         "next": [
             "一鍵交付訂單"
         ],
@@ -685,6 +716,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "進入魔法農莊"
+        },
         "next": [
             "開始農莊事務"
         ],

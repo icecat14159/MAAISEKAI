@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786204591498,
+            "lastSyncTime": 1786812456444,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Start.json",
             "savedViewport": {
-                "x": 872,
-                "y": 352,
-                "zoom": 0.91
+                "x": -425,
+                "y": 68,
+                "zoom": 1
             },
             "filename": "Start",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "StartGame_Task": {
@@ -74,10 +74,11 @@
         }
     },
     "成功進入自宅": {
+        "focus": "已進入自宅",
         "$__mpe_code": {
             "position": {
-                "x": 1279,
-                "y": 207
+                "x": 1245,
+                "y": 188
             }
         }
     },
@@ -99,6 +100,9 @@
             }
         },
         "post_wait_freezes": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "進入遊戲"
+        },
         "next": [
             "關閉各項通知"
         ],
@@ -156,6 +160,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "確認藏品/使魔訊息",
         "$__mpe_code": {
             "position": {
                 "x": 245,
@@ -173,13 +178,14 @@
             }
         },
         "post_wait_freezes": 5000,
+        "focus": "已確認遊戲標題",
         "next": [
             "成功開啟遊戲"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -273,
-                "y": -257
+                "x": -278,
+                "y": -268
             }
         }
     },
@@ -202,6 +208,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
+        "focus": "購買心願禮包",
         "$__mpe_code": {
             "position": {
                 "x": 965,
@@ -247,6 +254,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
+        "focus": "關閉命定羈絆彈窗",
         "$__mpe_code": {
             "position": {
                 "x": 474,
@@ -272,6 +280,7 @@
         "action": {
             "type": "Click"
         },
+        "focus": "發現維護公告",
         "$__mpe_code": {
             "position": {
                 "x": -574,
@@ -298,6 +307,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
+        "focus": "關閉道具過期彈窗",
         "$__mpe_code": {
             "position": {
                 "x": 725,
@@ -324,6 +334,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
+        "focus": "關閉活動/儲值彈窗",
         "$__mpe_code": {
             "position": {
                 "x": 240,
@@ -350,6 +361,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
+        "focus": "領取離線收益",
         "$__mpe_code": {
             "position": {
                 "x": 483,
@@ -377,13 +389,14 @@
         },
         "repeat": 2,
         "timeout": 180000,
+        "focus": "點擊標題",
         "next": [
             "檢查點_是否進入遊戲"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -572,
-                "y": 136
+                "x": -575,
+                "y": 173
             }
         }
     }
