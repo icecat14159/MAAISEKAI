@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786722295874,
+            "lastSyncTime": 1786979393797,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Farm_Task.json",
             "savedViewport": {
-                "x": -1296,
-                "y": -233,
-                "zoom": 0.61
+                "x": -2502,
+                "y": -893,
+                "zoom": 1.32
             },
             "filename": "Farm_Task",
             "version": "v1.7.6"
@@ -233,7 +233,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "關閉鈕.png"
+                    "返回按鈕.png"
                 ]
             }
         },
@@ -250,8 +250,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2375,
-                "y": 754
+                "x": 2373,
+                "y": 774
             }
         }
     },
@@ -417,6 +417,12 @@
             "param": {
                 "expected": [
                     "點擊螢幕繼續"
+                ],
+                "replace": [
+                    [
+                        "origin",
+                        "target"
+                    ]
                 ]
             }
         },

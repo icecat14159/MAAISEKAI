@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786888123668,
+            "lastSyncTime": 1786979628190,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Receive_Task.json",
             "savedViewport": {
-                "x": 457,
-                "y": -872,
-                "zoom": 0.53
+                "x": -252,
+                "y": -1934,
+                "zoom": 1.14
             },
             "filename": "Receive_Task",
             "version": "v1.7.6"
@@ -350,8 +350,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 499,
-                "y": 2059
+                "x": 494,
+                "y": 2056
             }
         }
     },
@@ -720,6 +720,9 @@
                 ],
                 "template": [
                     "自宅權益卡.png"
+                ],
+                "threshold": [
+                    0.55
                 ]
             }
         },
@@ -735,8 +738,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 62,
-                "y": 2334
+                "x": 48,
+                "y": 2304
             }
         }
     },
@@ -1012,16 +1015,18 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "focus": "領取每日任務獎勵",
+        "post_wait_freezes": 3000,
+        "focus": {
+            "Node.Action.Succeeded": "領取每日任務獎勵"
+        },
         "next": [
-            "準備開啟活躍寶箱",
-            "[JumpBack]確認日任務領取訊息"
+            "[JumpBack]確認日任務領取訊息",
+            "準備開啟活躍寶箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 501,
-                "y": 1782
+                "x": 496,
+                "y": 1776
             }
         }
     },
@@ -1044,8 +1049,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -201,
-                "y": 2363
+                "x": -207,
+                "y": 2345
             }
         }
     },
