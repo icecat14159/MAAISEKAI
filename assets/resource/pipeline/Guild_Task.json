@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786811519784,
+            "lastSyncTime": 1786978900589,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Guild_Task.json",
             "savedViewport": {
-                "x": -2541,
-                "y": -769,
-                "zoom": 0.87
+                "x": -752,
+                "y": -443,
+                "zoom": 1.15
             },
             "filename": "Guild_Task",
             "version": "v1.7.6"
@@ -514,7 +514,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "post_wait_freezes": 3000,
         "next": [
             "[JumpBack]關閉公告",
             "[JumpBack]關閉公會訊息",
