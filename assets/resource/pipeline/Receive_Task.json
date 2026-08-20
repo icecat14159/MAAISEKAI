@@ -3,16 +3,42 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786979628190,
+            "lastSyncTime": 1787149872487,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Receive_Task.json",
             "savedViewport": {
-                "x": -252,
-                "y": -1934,
-                "zoom": 1.14
+                "x": 125,
+                "y": -1739,
+                "zoom": 0.99
             },
             "filename": "Receive_Task",
             "version": "v1.7.6"
+        }
+    },
+    "日任務已全部完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    500,
+                    400,
+                    190,
+                    135
+                ],
+                "template": [
+                    "任務完成.png"
+                ]
+            }
+        },
+        "focus": "沒有可領取獎勵",
+        "next": [
+            "準備開啟活躍寶箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 478,
+                "y": 1963
+            }
         }
     },
     "$__mpe_external_嘗試重置畫面_Receive_Task": {
@@ -344,14 +370,28 @@
         }
     },
     "無日任務可領取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    501,
+                    399,
+                    186,
+                    129
+                ],
+                "expected": [
+                    "前往"
+                ]
+            }
+        },
         "focus": "沒有可領取獎勵",
         "next": [
             "準備開啟活躍寶箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 494,
-                "y": 2056
+                "x": 476,
+                "y": 1734
             }
         }
     },
@@ -446,8 +486,8 @@
         "post_wait_freezes": 1000,
         "$__mpe_code": {
             "position": {
-                "x": 777,
-                "y": 1682
+                "x": 779,
+                "y": 1436
             }
         }
     },
@@ -859,7 +899,8 @@
         "focus": "進入自宅任務",
         "next": [
             "開始領取日任務",
-            "無日任務可領取"
+            "無日任務可領取",
+            "日任務已全部完成"
         ],
         "$__mpe_code": {
             "position": {
@@ -1025,8 +1066,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 496,
-                "y": 1776
+                "x": 475,
+                "y": 1463
             }
         }
     },

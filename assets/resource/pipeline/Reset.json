@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786204989994,
+            "lastSyncTime": 1787206778639,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Reset.json",
             "savedViewport": {
-                "x": -778,
-                "y": -1166,
-                "zoom": 0.69
+                "x": -759,
+                "y": -1929,
+                "zoom": 0.87
             },
             "filename": "Reset",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "嘗試一般關閉鈕": {
@@ -27,7 +27,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1664,
@@ -47,7 +47,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1663,
@@ -67,7 +67,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1670,
@@ -87,7 +87,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1652,
@@ -107,7 +107,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1664,
@@ -127,7 +127,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1667,
@@ -147,7 +147,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1655,
@@ -167,7 +167,8 @@
             "[JumpBack]嘗試關閉羈絆提醒",
             "[JumpBack]嘗試取消",
             "[JumpBack]嘗試返回按鈕",
-            "完成畫面重置"
+            "完成畫面重置",
+            "畫面重置失敗"
         ],
         "$__mpe_code": {
             "position": {
@@ -188,7 +189,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1654,
@@ -208,7 +209,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1658,
@@ -228,7 +229,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1666,
@@ -250,15 +251,27 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1657,
-                "y": 2335
+                "x": 1656,
+                "y": 2314
+            }
+        }
+    },
+    "畫面重置失敗": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1658,
+                "y": 2534
             }
         }
     },
     "返回主介面": {
         "next": [
             "[JumpBack]嘗試返回按鈕",
-            "完成畫面重置"
+            "完成畫面重置",
+            "畫面重置失敗"
         ],
         "$__mpe_code": {
             "position": {

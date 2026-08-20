@@ -3,81 +3,71 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786016918925,
+            "lastSyncTime": 1787157131630,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\test.json",
             "savedViewport": {
-                "x": 198,
-                "y": -303,
-                "zoom": 0.82
+                "x": 148,
+                "y": -513,
+                "zoom": 1.15
             },
             "filename": "test",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
-    "測試": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "倉庫.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
+    "測試2": {
         "next": [
-            "成功"
-        ],
-        "on_error": [
-            "失敗"
+            "自訂測試"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 385,
-                "y": 574
+                "x": 101,
+                "y": 737
             }
         }
     },
-    "成功": {
-        "$__mpe_code": {
-            "position": {
-                "x": 661,
-                "y": 517
-            }
-        }
-    },
-    "失敗": {
-        "max_hit": 2,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1,
-                    1
-                ]
-            }
-        },
+    "測試1": {
         "next": [
-            "測試"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 674
-            }
-        }
-    },
-    "新建节点293": {
-        "timeout": 5000,
-        "next": [
-            "測試"
+            "自訂測試"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 102,
-                "y": 588
+                "y": 543
+            }
+        }
+    },
+    "$__mpe_external_返回主介面_test": {
+        "$__mpe_code": {
+            "position": {
+                "x": 710,
+                "y": 491
+            }
+        }
+    },
+    "自訂測試": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "context.clear_hit_count(\"畫面重置失敗計數器\")  "
+            }
+        },
+        "next": [
+            "[JumpBack]返回主介面",
+            "測試完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 366,
+                "y": 617
+            }
+        }
+    },
+    "測試完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 710,
+                "y": 630
             }
         }
     }

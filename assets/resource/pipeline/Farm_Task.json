@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786979393797,
+            "lastSyncTime": 1787150044169,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Farm_Task.json",
             "savedViewport": {
-                "x": -2502,
-                "y": -893,
-                "zoom": 1.32
+                "x": -3076,
+                "y": -706,
+                "zoom": 1.52
             },
             "filename": "Farm_Task",
             "version": "v1.7.6"
@@ -416,13 +416,8 @@
             "type": "OCR",
             "param": {
                 "expected": [
-                    "點擊螢幕繼續"
-                ],
-                "replace": [
-                    [
-                        "origin",
-                        "target"
-                    ]
+                    "點擊螢幕繼續",
+                    "確定"
                 ]
             }
         },

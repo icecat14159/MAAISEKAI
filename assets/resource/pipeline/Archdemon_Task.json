@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786721174962,
+            "lastSyncTime": 1787150202657,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Archdemon_Task.json",
             "savedViewport": {
-                "x": -1634,
-                "y": -583,
-                "zoom": 0.76
+                "x": -601,
+                "y": -321,
+                "zoom": 0.87
             },
             "filename": "Archdemon_Task",
             "version": "v1.7.6"
@@ -335,7 +335,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 3000,
         "focus": {
             "Node.Action.Succeeded": "成功進入魔王挑戰"
         },

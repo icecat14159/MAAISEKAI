@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786810861545,
+            "lastSyncTime": 1787154446458,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Fishing_Task.json",
             "savedViewport": {
-                "x": -1287,
-                "y": -4262,
-                "zoom": 1.15
+                "x": -208,
+                "y": -407,
+                "zoom": 0.87
             },
             "filename": "Fishing_Task",
             "version": "v1.7.6"
@@ -661,7 +661,7 @@
                 "end": [
                     [
                         350,
-                        420,
+                        220,
                         15,
                         15
                     ]

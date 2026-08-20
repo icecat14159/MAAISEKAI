@@ -114,6 +114,13 @@
             "description": "本任務會直接使用上次陣型出戰"
         },
         {
+            "name": "尋寶",
+            "entry": "TreasureHunt_Task",
+            "option": [
+                "尋寶選項"
+            ]
+        },
+        {
             "name": "其他日常任務",
             "entry": "Daily_Task",
             "option": [
@@ -394,6 +401,81 @@
                 }
             ]
         },
+        "尋寶選項": {
+            "type": "checkbox",
+            "description": "請勾選要執行的任務",
+            "default_case": [
+                "尋寶"
+            ],
+            "cases": [
+                {
+                    "name": "尋寶",
+                    "description": "請確保已啟用掃蕩功能",
+                    "option": [
+                        "指定尋寶區域"
+                    ],
+                    "pipeline_override": {
+                        "進入尋寶任務": {
+                            "next": "尋寶任務"
+                        }
+                    }
+                },
+                {
+                    "name": "鑑定晶石",
+                    "pipeline_override": {
+                        "進入鑑定晶石任務": {
+                            "next": "鑑定晶石任務"
+                        }
+                    }
+                }
+            ]
+        },
+        "指定尋寶區域": {
+            "type": "select",
+            "default_case": "不指定",
+            "cases": [
+                {
+                    "name": "不指定",
+                    "pipeline_override": {
+                        "檢查點_切換遺跡": {
+                            "next": "掃蕩遺跡"
+                        }
+                    }
+                },
+                {
+                    "name": "初始遺跡",
+                    "pipeline_override": {
+                        "選擇指定遺跡": {
+                            "expected": "初始遺跡"
+                        }
+                    }
+                },
+                {
+                    "name": "回憶洞穴",
+                    "pipeline_override": {
+                        "選擇指定遺跡": {
+                            "expected": "回憶洞穴"
+                        }
+                    }
+                },
+                {
+                    "name": "冰封深窟",
+                    "pipeline_override": {
+                        "選擇指定遺跡": {
+                            "expected": "冰封深窟"
+                        }
+                    }
+                },
+                {
+                    "name": "冰海沉船",
+                    "pipeline_override": {
+                        "選擇指定遺跡": {
+                            "expected": "冰海沉船"
+                        }
+                    }
+                }
+            ]
+        },
         "日常任務雜項": {
             "type": "checkbox",
             "description": "請勾選要執行的任務",
@@ -639,6 +721,10 @@
                 },
                 {
                     "name": "魔王挑戰",
+                    "enabled": true
+                },
+                {
+                    "name": "尋寶",
                     "enabled": true
                 },
                 {
