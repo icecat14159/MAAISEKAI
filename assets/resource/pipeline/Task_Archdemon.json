@@ -1,47 +1,9 @@
 {
-    "$__mpe_config_Archdemon_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787245547343,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Archdemon_Task.json",
-            "savedViewport": {
-                "x": -157,
-                "y": -248,
-                "zoom": 0.76
-            },
-            "filename": "Archdemon_Task",
-            "version": "v1.8.0"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Archdemon_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 665,
-                "y": 462
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Archdemon_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3589,
-                "y": 1144
-            }
-        }
-    },
     "Archdemon_Task": {
         "next": [
             "進入龍城_魔王",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 394,
-                "y": 591
-            }
-        }
+        ]
     },
     "出戰魔王挑戰": {
         "recognition": {
@@ -65,13 +27,7 @@
         "next": [
             "[JumpBack]加速魔王挑戰",
             "確認魔王挑戰訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1794,
-                "y": 682
-            }
-        }
+        ]
     },
     "加速魔王挑戰": {
         "max_hit": 1,
@@ -95,13 +51,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 2105,
-                "y": 510
-            }
-        }
+        "post_wait_freezes": 1000
     },
     "向右對齊": {
         "max_hit": 2,
@@ -123,25 +73,13 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500,
-        "$__mpe_code": {
-            "position": {
-                "x": 1512,
-                "y": 417
-            }
-        }
+        "post_wait_freezes": 500
     },
     "完成挑戰魔王": {
         "next": [
             "挑戰下一位魔王",
             "返回魔王介面_挑戰"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2443,
-                "y": 1023
-            }
-        }
+        ]
     },
     "挑戰下一位魔王": {
         "max_hit": 2,
@@ -177,13 +115,7 @@
         },
         "next": [
             "開始魔王挑戰"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2727,
-                "y": 790
-            }
-        }
+        ]
     },
     "確認魔王挑戰訊息": {
         "recognition": {
@@ -209,13 +141,7 @@
         },
         "next": [
             "完成挑戰魔王"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2106,
-                "y": 788
-            }
-        }
+        ]
     },
     "返回魔王介面_挑戰": {
         "recognition": {
@@ -238,13 +164,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "進入魔王任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2724,
-                "y": 1101
-            }
-        }
+        ]
     },
     "進入魔王": {
         "recognition": {
@@ -268,13 +188,7 @@
         "next": [
             "進入魔王挑戰",
             "[JumpBack]關閉雙倍獎勵提醒"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 948,
-                "y": 565
-            }
-        }
+        ]
     },
     "進入魔王任務": {
         "recognition": {
@@ -300,13 +214,7 @@
         },
         "next": [
             "領取魔王獎勵"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2977,
-                "y": 1088
-            }
-        }
+        ]
     },
     "進入魔王挑戰": {
         "recognition": {
@@ -342,13 +250,7 @@
         "next": [
             "[JumpBack]向右對齊",
             "開始魔王挑戰"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1221,
-                "y": 575
-            }
-        }
+        ]
     },
     "進入龍城_魔王": {
         "recognition": {
@@ -380,13 +282,7 @@
         "next": [
             "進入魔王",
             "[JumpBack]重整畫面_魔王"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 670,
-                "y": 557
-            }
-        }
+        ]
     },
     "重整畫面_魔王": {
         "action": {
@@ -402,12 +298,6 @@
                         150
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 961,
-                "y": 372
             }
         }
     },
@@ -433,13 +323,7 @@
         "next": [
             "出戰魔王挑戰",
             "完成挑戰魔王"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1513,
-                "y": 679
-            }
-        }
+        ]
     },
     "關閉雙倍獎勵提醒": {
         "recognition": {
@@ -459,13 +343,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1216,
-                "y": 363
-            }
-        }
+        "post_wait_freezes": 1000
     },
     "領取魔王獎勵": {
         "recognition": {
@@ -491,12 +369,6 @@
         "post_wait_freezes": 1000,
         "next": [
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3242,
-                "y": 1084
-            }
-        }
+        ]
     }
 }

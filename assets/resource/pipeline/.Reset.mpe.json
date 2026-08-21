@@ -1,0 +1,102 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1787306376235,
+        "isModifiedExternally": false,
+        "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Reset.json",
+        "savedViewport": {
+            "x": 51,
+            "y": -407,
+            "zoom": 0.5
+        },
+        "filename": "Reset",
+        "version": "v1.8.0"
+    },
+    "node_configs": {
+        "嘗試一般關閉鈕": {
+            "position": {
+                "x": 1664,
+                "y": 1050
+            }
+        },
+        "嘗試任意處返回": {
+            "position": {
+                "x": 1663,
+                "y": 794
+            }
+        },
+        "嘗試前進對話": {
+            "position": {
+                "x": 1670,
+                "y": 370
+            }
+        },
+        "嘗試取消": {
+            "position": {
+                "x": 1652,
+                "y": 1900
+            }
+        },
+        "嘗試圓形關閉鈕": {
+            "position": {
+                "x": 1664,
+                "y": 1268
+            }
+        },
+        "嘗試跳過": {
+            "position": {
+                "x": 1667,
+                "y": 166
+            }
+        },
+        "嘗試返回按鈕": {
+            "position": {
+                "x": 1655,
+                "y": 2109
+            }
+        },
+        "嘗試重置畫面": {
+            "position": {
+                "x": 986,
+                "y": 1456
+            }
+        },
+        "嘗試關閉羈絆提醒": {
+            "position": {
+                "x": 1654,
+                "y": 1687
+            }
+        },
+        "嘗試離開鈕": {
+            "position": {
+                "x": 1658,
+                "y": 1476
+            }
+        },
+        "嘗試點擊螢幕繼續": {
+            "position": {
+                "x": 1666,
+                "y": 577
+            }
+        },
+        "完成畫面重置": {
+            "position": {
+                "x": 1656,
+                "y": 2314
+            }
+        },
+        "畫面重置失敗": {
+            "position": {
+                "x": 1658,
+                "y": 2534
+            }
+        },
+        "返回主介面": {
+            "position": {
+                "x": 998,
+                "y": 2344
+            }
+        }
+    }
+}

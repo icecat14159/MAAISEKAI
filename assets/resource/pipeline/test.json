@@ -1,50 +1,15 @@
 {
-    "$__mpe_config_test": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787157131630,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\test.json",
-            "savedViewport": {
-                "x": 148,
-                "y": -513,
-                "zoom": 1.15
-            },
-            "filename": "test",
-            "version": "v1.7.6"
-        }
+    "測試1": {
+        "next": [
+            "自訂測試"
+        ]
     },
     "測試2": {
         "next": [
             "自訂測試"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 101,
-                "y": 737
-            }
-        }
+        ]
     },
-    "測試1": {
-        "next": [
-            "自訂測試"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 102,
-                "y": 543
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_test": {
-        "$__mpe_code": {
-            "position": {
-                "x": 710,
-                "y": 491
-            }
-        }
-    },
+    "測試完成": {},
     "自訂測試": {
         "action": {
             "type": "Custom",
@@ -55,20 +20,6 @@
         "next": [
             "[JumpBack]返回主介面",
             "測試完成"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 366,
-                "y": 617
-            }
-        }
-    },
-    "測試完成": {
-        "$__mpe_code": {
-            "position": {
-                "x": 710,
-                "y": 630
-            }
-        }
+        ]
     }
 }

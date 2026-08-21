@@ -1,47 +1,9 @@
 {
-    "$__mpe_config_Farm_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787150044169,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Farm_Task.json",
-            "savedViewport": {
-                "x": -3076,
-                "y": -706,
-                "zoom": 1.52
-            },
-            "filename": "Farm_Task",
-            "version": "v1.7.6"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Farm_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 385,
-                "y": 557
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Farm_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4404,
-                "y": 839
-            }
-        }
-    },
     "Fram_Task": {
         "next": [
             "進入村莊_農莊",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 108,
-                "y": 698
-            }
-        }
+        ]
     },
     "一鍵交付訂單": {
         "recognition": {
@@ -65,13 +27,7 @@
         "next": [
             "確認交付",
             "完成訂單交付"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2113,
-                "y": 541
-            }
-        }
+        ]
     },
     "一鍵委任": {
         "recognition": {
@@ -94,13 +50,7 @@
         "post_wait_freezes": 500,
         "next": [
             "完成派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3460,
-                "y": 293
-            }
-        }
+        ]
     },
     "一鍵播種": {
         "recognition": {
@@ -130,13 +80,7 @@
             "全部種植完畢",
             "發現剩餘農地",
             "進入自訂種植介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2685,
-                "y": 882
-            }
-        }
+        ]
     },
     "一鍵收割": {
         "recognition": {
@@ -162,13 +106,7 @@
         },
         "next": [
             "進入訂單"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1573,
-                "y": 542
-            }
-        }
+        ]
     },
     "全部種植完畢": {
         "recognition": {
@@ -191,13 +129,7 @@
         },
         "next": [
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3797,
-                "y": 788
-            }
-        }
+        ]
     },
     "完成派遣": {
         "recognition": {
@@ -220,13 +152,7 @@
         "post_wait_freezes": 500,
         "next": [
             "確認派遣訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3719,
-                "y": 292
-            }
-        }
+        ]
     },
     "完成訂單交付": {
         "recognition": {
@@ -247,13 +173,7 @@
         "next": [
             "一鍵播種",
             "全部種植完畢"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2373,
-                "y": 774
-            }
-        }
+        ]
     },
     "滑動合集視窗_農莊": {
         "action": {
@@ -273,12 +193,6 @@
                         15
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 996,
-                "y": 824
             }
         }
     },
@@ -301,12 +215,6 @@
                         5
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3800,
-                "y": 1054
             }
         }
     },
@@ -333,13 +241,7 @@
         },
         "next": [
             "進入自訂種植介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3229,
-                "y": 1028
-            }
-        }
+        ]
     },
     "發現派遣事件": {
         "recognition": {
@@ -368,13 +270,7 @@
         },
         "next": [
             "進入委任"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2927,
-                "y": 259
-            }
-        }
+        ]
     },
     "發現農地寶箱": {
         "recognition": {
@@ -403,13 +299,7 @@
         },
         "next": [
             "確認農田寶箱訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2928,
-                "y": 546
-            }
-        }
+        ]
     },
     "確認交付": {
         "recognition": {
@@ -430,13 +320,7 @@
         },
         "next": [
             "一鍵交付訂單"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2373,
-                "y": 514
-            }
-        }
+        ]
     },
     "確認派遣訊息": {
         "recognition": {
@@ -459,13 +343,7 @@
         "post_wait_freezes": 500,
         "next": [
             "一鍵播種"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3976,
-                "y": 297
-            }
-        }
+        ]
     },
     "確認農田寶箱訊息": {
         "recognition": {
@@ -487,13 +365,7 @@
         },
         "next": [
             "一鍵播種"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3196,
-                "y": 571
-            }
-        }
+        ]
     },
     "種植指定植物": {
         "recognition": {
@@ -519,13 +391,7 @@
         },
         "next": [
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4069,
-                "y": 1250
-            }
-        }
+        ]
     },
     "進入委任": {
         "recognition": {
@@ -548,13 +414,7 @@
         "post_wait_freezes": 500,
         "next": [
             "一鍵委任"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3202,
-                "y": 297
-            }
-        }
+        ]
     },
     "進入村莊_農莊": {
         "recognition": {
@@ -585,13 +445,7 @@
         "post_wait_freezes": 3000,
         "next": [
             "進入玩法合集_農莊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 383,
-                "y": 658
-            }
-        }
+        ]
     },
     "進入玩法合集_農莊": {
         "recognition": {
@@ -623,13 +477,7 @@
         "next": [
             "進入農莊",
             "[JumpBack]滑動合集視窗_農莊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 656,
-                "y": 663
-            }
-        }
+        ]
     },
     "進入自訂種植介面": {
         "recognition": {
@@ -650,13 +498,7 @@
         "next": [
             "選擇指定植物",
             "[JumpBack]滑動種植介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3511,
-                "y": 1196
-            }
-        }
+        ]
     },
     "進入訂單": {
         "recognition": {
@@ -682,13 +524,7 @@
         },
         "next": [
             "一鍵交付訂單"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1849,
-                "y": 542
-            }
-        }
+        ]
     },
     "進入農莊": {
         "recognition": {
@@ -722,13 +558,7 @@
         },
         "next": [
             "開始農莊事務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 999,
-                "y": 528
-            }
-        }
+        ]
     },
     "選擇指定植物": {
         "recognition": {
@@ -744,24 +574,12 @@
         },
         "next": [
             "種植指定植物"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3800,
-                "y": 1260
-            }
-        }
+        ]
     },
     "開始農莊事務": {
         "next": [
             "一鍵收割",
             "進入訂單"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1307,
-                "y": 569
-            }
-        }
+        ]
     }
 }

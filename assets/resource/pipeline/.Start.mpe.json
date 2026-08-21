@@ -1,0 +1,120 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1787306383559,
+        "isModifiedExternally": false,
+        "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Start.json",
+        "savedViewport": {
+            "x": 621,
+            "y": 250,
+            "zoom": 0.5
+        },
+        "filename": "Start",
+        "version": "v1.8.0"
+    },
+    "node_configs": {
+        "StartGame_Task": {
+            "position": {
+                "x": -869,
+                "y": 60
+            }
+        },
+        "勾選今日不再提醒": {
+            "position": {
+                "x": 720,
+                "y": -148
+            }
+        },
+        "啟動遊戲": {
+            "position": {
+                "x": -544,
+                "y": -256
+            }
+        },
+        "成功進入自宅": {
+            "position": {
+                "x": 1245,
+                "y": 188
+            }
+        },
+        "成功開啟遊戲": {
+            "position": {
+                "x": -10,
+                "y": -231
+            }
+        },
+        "檢查點_是否進入遊戲": {
+            "position": {
+                "x": -296,
+                "y": -15
+            }
+        },
+        "確認已進入自宅": {
+            "position": {
+                "x": 971,
+                "y": 151
+            }
+        },
+        "確認藏品/使魔訊息": {
+            "position": {
+                "x": 245,
+                "y": -145
+            }
+        },
+        "確認遊戲開啟": {
+            "position": {
+                "x": -278,
+                "y": -268
+            }
+        },
+        "購買心願免費禮包": {
+            "position": {
+                "x": 965,
+                "y": -149
+            }
+        },
+        "關閉各項通知": {
+            "position": {
+                "x": -23,
+                "y": -36
+            }
+        },
+        "關閉命定羈絆提醒": {
+            "position": {
+                "x": 474,
+                "y": 169
+            }
+        },
+        "關閉維護公告": {
+            "position": {
+                "x": -574,
+                "y": -40
+            }
+        },
+        "關閉道具過期提示": {
+            "position": {
+                "x": 725,
+                "y": 168
+            }
+        },
+        "關閉首儲廣告/活動提醒": {
+            "position": {
+                "x": 240,
+                "y": 170
+            }
+        },
+        "領取離線收益": {
+            "position": {
+                "x": 483,
+                "y": -145
+            }
+        },
+        "點擊標題進入遊戲": {
+            "position": {
+                "x": -575,
+                "y": 173
+            }
+        }
+    }
+}

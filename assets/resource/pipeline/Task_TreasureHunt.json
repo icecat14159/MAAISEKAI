@@ -1,423 +1,22 @@
 {
-    "$__mpe_config_TreasureHunt_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787243432160,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\TreasureHunt_Task.json",
-            "savedViewport": {
-                "x": -511,
-                "y": -1056,
-                "zoom": 0.66
-            },
-            "filename": "TreasureHunt_Task",
-            "version": "v1.8.0"
-        }
-    },
-    "進入鑑定晶石": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    58,
-                    590,
-                    208,
-                    115
-                ],
-                "expected": [
-                    "晶石"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "[JumpBack]跳過鑑定動畫",
-            "進行鑑定"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1187,
-                "y": 2021
-            }
-        }
-    },
-    "跳過鑑定動畫": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    244,
-                    999,
-                    108,
-                    106
-                ],
-                "template": [
-                    "一鍵遊玩.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.55
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1466,
-                "y": 1780
-            }
-        }
-    },
-    "進行鑑定": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    401,
-                    1053,
-                    186,
-                    114
-                ],
-                "expected": [
-                    "鑑定"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 5000,
-        "next": [
-            "確認鑑定結果",
-            "返回尋寶介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1463,
-                "y": 2150
-            }
-        }
-    },
-    "確認鑑定結果": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "expected": [
-                    "點擊螢幕繼續"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "focus": {
-            "Node.Action.Succeeded": "完成一次鑑定"
-        },
-        "next": [
-            "進行鑑定"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1733,
-                "y": 2149
-            }
-        }
-    },
     "TreasureHunt_Task": {
         "next": [
             "進入村莊_尋寶",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 641,
-                "y": 480
-            }
-        }
+        ]
     },
-    "進入村莊_尋寶": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    104,
-                    1151,
-                    155,
-                    129
-                ],
-                "template": [
-                    "我的村莊.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    10,
-                    10,
-                    -20,
-                    -20
-                ]
-            }
-        },
-        "post_wait_freezes": 3000,
-        "next": [
-            "進入玩法合集_尋寶"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 915,
-                "y": 493
-            }
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_TreasureHunt_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 916,
-                "y": 383
-            }
-        }
-    },
-    "進入玩法合集_尋寶": {
+    "切換遺跡": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    564,
-                    1030,
-                    156,
-                    91
+                    577,
+                    594,
+                    143,
+                    94
                 ],
                 "expected": [
-                    "模擬玩法合集"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    10,
-                    5,
-                    -20,
-                    -10
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "進入尋寶",
-            "[JumpBack]滑動合集視窗_尋寶"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1173,
-                "y": 504
-            }
-        }
-    },
-    "進入尋寶": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    2,
-                    113,
-                    696,
-                    693
-                ],
-                "expected": [
-                    "尋寶"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    320,
-                    0,
-                    0
-                ]
-            }
-        },
-        "post_wait_freezes": 1500,
-        "focus": {
-            "Node.Action.Succeeded": "進入尋寶頁面"
-        },
-        "next": [
-            "開始尋寶事務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1465,
-                "y": 378
-            }
-        }
-    },
-    "滑動合集視窗_尋寶": {
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    350,
-                    520,
-                    15,
-                    15
-                ],
-                "end": [
-                    [
-                        350,
-                        220,
-                        15,
-                        15
-                    ]
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1467,
-                "y": 660
-            }
-        }
-    },
-    "開始尋寶事務": {
-        "next": [
-            "進入尋寶任務",
-            "進入鑑定晶石任務",
-            "完成尋寶事務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1782,
-                "y": 435
-            }
-        }
-    },
-    "進入尋寶任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 2132,
-                "y": 349
-            }
-        }
-    },
-    "進入鑑定晶石任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 2132,
-                "y": 499
-            }
-        }
-    },
-    "完成尋寶事務": {
-        "next": [
-            "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2131,
-                "y": 655
-            }
-        }
-    },
-    "尋寶任務": {
-        "focus": "開始尋寶",
-        "next": [
-            "進入遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 922,
-                "y": 1002
-            }
-        }
-    },
-    "鑑定晶石任務": {
-        "focus": "開始鑑定晶石",
-        "next": [
-            "進入鑑定晶石"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 928,
-                "y": 2049
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_TreasureHunt_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2399,
-                "y": 677
-            }
-        }
-    },
-    "進入遺跡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    523,
-                    1088,
-                    195,
-                    99
-                ],
-                "expected": [
-                    "探索遺跡"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    10,
-                    5,
-                    -20,
-                    -10
-                ]
-            }
-        },
-        "post_wait_freezes": 3000,
-        "next": [
-            "[JumpBack]關閉遺跡提示",
-            "檢查點_切換遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1199,
-                "y": 974
-            }
-        }
-    },
-    "關閉遺跡提示": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "點擊螢幕繼續"
+                    "切換"
                 ]
             }
         },
@@ -425,20 +24,109 @@
             "type": "Click",
             "param": {
                 "target": [
-                    344,
-                    1209,
-                    51,
+                    621,
+                    576,
+                    88,
                     51
                 ]
             }
         },
         "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1495,
-                "y": 884
+        "next": [
+            "選擇指定遺跡"
+        ]
+    },
+    "前往遺跡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    596,
+                    1077,
+                    118,
+                    91
+                ],
+                "expected": [
+                    "前往"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    631,
+                    1049,
+                    53,
+                    54
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "focus": {
+            "Node.Action.Succeeded": "進入指定遺跡"
+        },
+        "next": [
+            "[JumpBack]確定前往遺跡",
+            "掃蕩遺跡"
+        ]
+    },
+    "完成一次掃蕩": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    225,
+                    968,
+                    272,
+                    145
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "完成一次掃蕩"
+        },
+        "next": [
+            "掃蕩遺跡"
+        ]
+    },
+    "完成尋寶事務": {
+        "next": [
+            "返回主介面"
+        ]
+    },
+    "尋寶任務": {
+        "focus": "開始尋寶",
+        "next": [
+            "進入遺跡"
+        ]
+    },
+    "尋寶體力不足": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    187,
+                    572,
+                    353,
+                    126
+                ],
+                "expected": [
+                    "體力不足"
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回遺跡介面"
+        ]
     },
     "掃蕩遺跡": {
         "recognition": {
@@ -473,129 +161,31 @@
         },
         "next": [
             "開始掃蕩遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1782,
-                "y": 1224
-            }
-        }
-    },
-    "切換遺跡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    577,
-                    594,
-                    143,
-                    94
-                ],
-                "expected": [
-                    "切換"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    621,
-                    576,
-                    88,
-                    51
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "選擇指定遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 920,
-                "y": 1423
-            }
-        }
+        ]
     },
     "檢查點_切換遺跡": {
         "next": [
             "切換遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1491,
-                "y": 1134
-            }
-        }
+        ]
     },
-    "選擇指定遺跡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    51,
-                    720,
-                    878
-                ],
-                "expected": [
-                    ""
-                ]
-            }
-        },
+    "滑動合集視窗_尋寶": {
         "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "前往遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1183,
-                "y": 1434
-            }
-        }
-    },
-    "前往遺跡": {
-        "recognition": {
-            "type": "OCR",
+            "type": "Swipe",
             "param": {
-                "roi": [
-                    596,
-                    1077,
-                    118,
-                    91
+                "begin": [
+                    350,
+                    520,
+                    15,
+                    15
                 ],
-                "expected": [
-                    "前往"
+                "end": [
+                    [
+                        350,
+                        220,
+                        15,
+                        15
+                    ]
                 ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    592,
-                    1068,
-                    123,
-                    106
-                ]
-            }
-        },
-        "post_wait_freezes": 3000,
-        "focus": {
-            "Node.Action.Succeeded": "進入指定遺跡"
-        },
-        "next": [
-            "[JumpBack]確定前往遺跡",
-            "掃蕩遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1445,
-                "y": 1409
             }
         }
     },
@@ -611,44 +201,9 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1784,
-                "y": 1544
-            }
-        }
+        "post_wait_freezes": 1000
     },
-    "開始掃蕩遺跡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    286,
-                    835,
-                    154,
-                    77
-                ],
-                "expected": [
-                    "掃蕩"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "尋寶體力不足",
-            "確認掃蕩結果"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2039,
-                "y": 1233
-            }
-        }
-    },
-    "確認掃蕩結果": {
+    "確認尋寶任務尋訊息": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -660,29 +215,45 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000
+    },
+    "確認掃蕩結果": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1209,
+                    51,
+                    51
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "完成一次掃蕩"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2330,
-                "y": 1239
-            }
-        }
+        ]
     },
-    "完成一次掃蕩": {
+    "確認鑑定結果": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    225,
-                    968,
-                    272,
-                    145
+                    0,
+                    0,
+                    0,
+                    0
                 ],
                 "expected": [
-                    "確定"
+                    "點擊螢幕繼續"
                 ]
             }
         },
@@ -691,43 +262,57 @@
         },
         "post_wait_freezes": 1000,
         "focus": {
-            "Node.Action.Succeeded": "完成一次掃蕩"
+            "Node.Action.Succeeded": "完成一次鑑定"
         },
         "next": [
-            "掃蕩遺跡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2606,
-                "y": 1212
-            }
-        }
+            "進行鑑定"
+        ]
     },
-    "尋寶體力不足": {
+    "跳過鑑定動畫": {
+        "max_hit": 1,
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    187,
-                    572,
-                    353,
-                    126
+                    244,
+                    999,
+                    108,
+                    106
                 ],
-                "expected": [
-                    "體力不足"
+                "template": [
+                    "一鍵遊玩.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
                 ]
             }
         },
-        "post_wait_freezes": 1000,
-        "next": [
-            "返回遺跡介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2318,
-                "y": 1534
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000
+    },
+    "返回尋寶介面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    1189,
+                    107,
+                    90
+                ],
+                "template": [
+                    "返回按鈕.png"
+                ],
+                "green_mask": true
             }
-        }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000
     },
     "返回遺跡介面": {
         "recognition": {
@@ -752,13 +337,272 @@
         "next": [
             "[JumpBack]領取尋寶任務",
             "返回尋寶介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2603,
-                "y": 1519
+        ]
+    },
+    "進入尋寶": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    113,
+                    696,
+                    693
+                ],
+                "expected": [
+                    "尋寶"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "進入尋寶頁面"
+        },
+        "next": [
+            "開始尋寶事務"
+        ]
+    },
+    "進入尋寶任務": {
+        "max_hit": 1
+    },
+    "進入村莊_尋寶": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1151,
+                    155,
+                    129
+                ],
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入玩法合集_尋寶"
+        ]
+    },
+    "進入玩法合集_尋寶": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    564,
+                    1030,
+                    156,
+                    91
+                ],
+                "expected": [
+                    "模擬玩法合集"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入尋寶",
+            "[JumpBack]滑動合集視窗_尋寶"
+        ]
+    },
+    "進入遺跡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    523,
+                    1088,
+                    195,
+                    99
+                ],
+                "expected": [
+                    "探索遺跡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "[JumpBack]關閉遺跡提示",
+            "檢查點_切換遺跡"
+        ]
+    },
+    "進入鑑定晶石": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    58,
+                    590,
+                    208,
+                    115
+                ],
+                "expected": [
+                    "晶石"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]跳過鑑定動畫",
+            "進行鑑定"
+        ]
+    },
+    "進入鑑定晶石任務": {
+        "max_hit": 1
+    },
+    "進行鑑定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    401,
+                    1053,
+                    186,
+                    114
+                ],
+                "expected": [
+                    "鑑定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 5000,
+        "next": [
+            "確認鑑定結果",
+            "返回尋寶介面"
+        ]
+    },
+    "選擇指定遺跡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    51,
+                    720,
+                    878
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "前往遺跡"
+        ]
+    },
+    "鑑定晶石任務": {
+        "focus": "開始鑑定晶石",
+        "next": [
+            "進入鑑定晶石"
+        ]
+    },
+    "開始尋寶事務": {
+        "next": [
+            "[JumpBack]進入尋寶任務",
+            "[JumpBack]進入鑑定晶石任務",
+            "完成尋寶事務"
+        ]
+    },
+    "開始掃蕩遺跡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    286,
+                    835,
+                    154,
+                    77
+                ],
+                "expected": [
+                    "掃蕩"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "尋寶體力不足",
+            "確認掃蕩結果"
+        ]
+    },
+    "關閉遺跡提示": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1209,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000
     },
     "領取尋寶任務": {
         "recognition": {
@@ -785,59 +629,6 @@
         },
         "next": [
             "確認尋寶任務尋訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2884,
-                "y": 1310
-            }
-        }
-    },
-    "確認尋寶任務尋訊息": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "點擊螢幕繼續"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 3131,
-                "y": 1345
-            }
-        }
-    },
-    "返回尋寶介面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    1189,
-                    107,
-                    90
-                ],
-                "template": [
-                    "返回按鈕.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 2960,
-                "y": 1948
-            }
-        }
+        ]
     }
 }

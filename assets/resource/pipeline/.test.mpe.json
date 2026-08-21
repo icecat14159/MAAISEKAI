@@ -1,0 +1,50 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1787306453051,
+        "isModifiedExternally": false,
+        "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\test.json",
+        "savedViewport": {
+            "x": 513,
+            "y": -43,
+            "zoom": 0.5
+        },
+        "filename": "test",
+        "version": "v1.8.0"
+    },
+    "node_configs": {
+        "測試1": {
+            "position": {
+                "x": 102,
+                "y": 543
+            }
+        },
+        "測試2": {
+            "position": {
+                "x": 101,
+                "y": 737
+            }
+        },
+        "測試完成": {
+            "position": {
+                "x": 710,
+                "y": 630
+            }
+        },
+        "自訂測試": {
+            "position": {
+                "x": 366,
+                "y": 617
+            }
+        }
+    },
+    "external_nodes": {
+        "返回主介面": {
+            "position": {
+                "x": 710,
+                "y": 491
+            }
+        }
+    }
+}

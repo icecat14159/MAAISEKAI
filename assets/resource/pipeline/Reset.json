@@ -1,20 +1,4 @@
 {
-    "$__mpe_config_Reset": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787206778639,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Reset.json",
-            "savedViewport": {
-                "x": -759,
-                "y": -1929,
-                "zoom": 0.87
-            },
-            "filename": "Reset",
-            "version": "v1.7.6"
-        }
-    },
     "嘗試一般關閉鈕": {
         "recognition": {
             "type": "TemplateMatch",
@@ -27,13 +11,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1664,
-                "y": 1050
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試任意處返回": {
         "recognition": {
@@ -47,13 +25,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1663,
-                "y": 794
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試前進對話": {
         "recognition": {
@@ -67,13 +39,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1670,
-                "y": 370
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試取消": {
         "recognition": {
@@ -87,13 +53,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1652,
-                "y": 1900
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試圓形關閉鈕": {
         "recognition": {
@@ -107,13 +67,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1664,
-                "y": 1268
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試跳過": {
         "recognition": {
@@ -127,13 +81,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1667,
-                "y": 166
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試返回按鈕": {
         "recognition": {
@@ -147,13 +95,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1655,
-                "y": 2109
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試重置畫面": {
         "next": [
@@ -169,13 +111,7 @@
             "[JumpBack]嘗試返回按鈕",
             "完成畫面重置",
             "畫面重置失敗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 986,
-                "y": 1456
-            }
-        }
+        ]
     },
     "嘗試關閉羈絆提醒": {
         "recognition": {
@@ -189,13 +125,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1654,
-                "y": 1687
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試離開鈕": {
         "recognition": {
@@ -209,13 +139,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1658,
-                "y": 1476
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "嘗試點擊螢幕繼續": {
         "recognition": {
@@ -229,13 +153,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1666,
-                "y": 577
-            }
-        }
+        "post_wait_freezes": 2000
     },
     "完成畫面重置": {
         "recognition": {
@@ -248,23 +166,11 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "已重置畫面"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1656,
-                "y": 2314
-            }
         }
     },
     "畫面重置失敗": {
         "action": {
             "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1658,
-                "y": 2534
-            }
         }
     },
     "返回主介面": {
@@ -272,12 +178,6 @@
             "[JumpBack]嘗試返回按鈕",
             "完成畫面重置",
             "畫面重置失敗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 998,
-                "y": 2344
-            }
-        }
+        ]
     }
 }

@@ -1,0 +1,131 @@
+{
+    "Museum_Task": {
+        "next": [
+            "進入村莊_博物館",
+            "[JumpBack]嘗試重置畫面"
+        ]
+    },
+    "滑動合集視窗_博物館": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    350,
+                    520,
+                    15,
+                    15
+                ],
+                "end": [
+                    [
+                        350,
+                        220,
+                        15,
+                        15
+                    ]
+                ]
+            }
+        }
+    },
+    "進入博物館": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    113,
+                    696,
+                    693
+                ],
+                "expected": [
+                    "博物館"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 3000,
+            "target": [
+                447,
+                141,
+                243,
+                255
+            ]
+        },
+        "focus": {
+            "Node.Action.Succeeded": "進入博物館"
+        }
+    },
+    "進入村莊_博物館": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1151,
+                    155,
+                    129
+                ],
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入玩法合集_博物館"
+        ]
+    },
+    "進入玩法合集_博物館": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    564,
+                    1030,
+                    156,
+                    91
+                ],
+                "expected": [
+                    "模擬玩法合集"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入博物館",
+            "[JumpBack]滑動合集視窗_博物館"
+        ]
+    }
+}

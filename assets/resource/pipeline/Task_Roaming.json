@@ -1,47 +1,9 @@
 {
-    "$__mpe_config_Roaming_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786812543831,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Roaming_Task.json",
-            "savedViewport": {
-                "x": 387,
-                "y": -84,
-                "zoom": 0.44
-            },
-            "filename": "Roaming_Task",
-            "version": "v1.7.6"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Roaming_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 81,
-                "y": 210
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Roaming_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1499,
-                "y": 876
-            }
-        }
-    },
     "Roaming_Task": {
         "next": [
             "進入龍城_遊玩",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -192,
-                "y": 368
-            }
-        }
+        ]
     },
     "出發": {
         "recognition": {
@@ -77,13 +39,7 @@
             "確認遊玩訊息",
             "發現沒有遊玩次數",
             "[JumpBack]關閉體力藥禮包"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 882,
-                "y": 509
-            }
-        }
+        ]
     },
     "勾選一鍵遊玩": {
         "max_hit": 1,
@@ -107,13 +63,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 883,
-                "y": 231
-            }
-        }
+        "post_wait_freezes": 1000
     },
     "完成相遇事件": {
         "recognition": {
@@ -136,13 +86,7 @@
         "post_wait_freezes": 1500,
         "next": [
             "點擊任意處_遊玩"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2051,
-                "y": 630
-            }
-        }
+        ]
     },
     "發現來信": {
         "recognition": {
@@ -167,13 +111,7 @@
         "focus": "發現來信",
         "next": [
             "處理相遇事件"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1472,
-                "y": 434
-            }
-        }
+        ]
     },
     "發現沒有遊玩次數": {
         "recognition": {
@@ -199,13 +137,7 @@
         },
         "next": [
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1216,
-                "y": 825
-            }
-        }
+        ]
     },
     "確認遊玩訊息": {
         "recognition": {
@@ -230,13 +162,7 @@
             "[JumpBack]發現來信",
             "出發",
             "[JumpBack]處理相遇事件"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1215,
-                "y": 583
-            }
-        }
+        ]
     },
     "處理相遇事件": {
         "focus": "處理相遇事件",
@@ -244,13 +170,7 @@
             "[JumpBack]跳過相遇事件",
             "[JumpBack]跳過對話",
             "完成相遇事件"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1721,
-                "y": 544
-            }
-        }
+        ]
     },
     "跳過對話": {
         "recognition": {
@@ -269,12 +189,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2046,
-                "y": 438
-            }
         }
     },
     "跳過相遇事件": {
@@ -295,13 +209,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
-        "$__mpe_code": {
-            "position": {
-                "x": 2048,
-                "y": 231
-            }
-        }
+        "post_wait_freezes": 1500
     },
     "進入遊玩": {
         "recognition": {
@@ -328,13 +236,7 @@
         "next": [
             "[JumpBack]勾選一鍵遊玩",
             "出發"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 469,
-                "y": 374
-            }
-        }
+        ]
     },
     "進入龍城_遊玩": {
         "recognition": {
@@ -366,13 +268,7 @@
         "next": [
             "進入遊玩",
             "[JumpBack]重整畫面_遊玩"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 82,
-                "y": 338
-            }
-        }
+        ]
     },
     "重整畫面_遊玩": {
         "action": {
@@ -388,12 +284,6 @@
                         150
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 469,
-                "y": 177
             }
         }
     },
@@ -416,13 +306,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
-        "focus": "關閉體力藥禮包",
-        "$__mpe_code": {
-            "position": {
-                "x": 1216,
-                "y": 1083
-            }
-        }
+        "focus": "關閉體力藥禮包"
     },
     "點擊任意處_遊玩": {
         "action": {
@@ -436,12 +320,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 2316,
-                "y": 643
-            }
-        }
+        "post_wait_freezes": 1000
     }
 }

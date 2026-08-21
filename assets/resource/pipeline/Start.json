@@ -1,32 +1,10 @@
 {
-    "$__mpe_config_Start": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786812456444,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Start.json",
-            "savedViewport": {
-                "x": -425,
-                "y": 68,
-                "zoom": 1
-            },
-            "filename": "Start",
-            "version": "v1.7.6"
-        }
-    },
     "StartGame_Task": {
         "next": [
             "[JumpBack]關閉維護公告",
             "點擊標題進入遊戲",
             "檢查點_是否進入遊戲"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -869,
-                "y": 60
-            }
-        }
+        ]
     },
     "勾選今日不再提醒": {
         "max_hit": 1,
@@ -47,13 +25,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
-        "$__mpe_code": {
-            "position": {
-                "x": 720,
-                "y": -148
-            }
-        }
+        "post_wait_freezes": 1500
     },
     "啟動遊戲": {
         "action": {
@@ -65,31 +37,12 @@
         "timeout": 60000,
         "next": [
             "確認遊戲開啟"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -544,
-                "y": -256
-            }
-        }
+        ]
     },
     "成功進入自宅": {
-        "focus": "已進入自宅",
-        "$__mpe_code": {
-            "position": {
-                "x": 1245,
-                "y": 188
-            }
-        }
+        "focus": "已進入自宅"
     },
-    "成功開啟遊戲": {
-        "$__mpe_code": {
-            "position": {
-                "x": -10,
-                "y": -231
-            }
-        }
-    },
+    "成功開啟遊戲": {},
     "檢查點_是否進入遊戲": {
         "recognition": {
             "type": "TemplateMatch",
@@ -105,13 +58,7 @@
         },
         "next": [
             "關閉各項通知"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -296,
-                "y": -15
-            }
-        }
+        ]
     },
     "確認已進入自宅": {
         "recognition": {
@@ -133,13 +80,7 @@
         },
         "next": [
             "成功進入自宅"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 971,
-                "y": 151
-            }
-        }
+        ]
     },
     "確認藏品/使魔訊息": {
         "recognition": {
@@ -160,13 +101,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
-        "focus": "確認藏品/使魔訊息",
-        "$__mpe_code": {
-            "position": {
-                "x": 245,
-                "y": -145
-            }
-        }
+        "focus": "確認藏品/使魔訊息"
     },
     "確認遊戲開啟": {
         "recognition": {
@@ -181,13 +116,7 @@
         "focus": "已確認遊戲標題",
         "next": [
             "成功開啟遊戲"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -278,
-                "y": -268
-            }
-        }
+        ]
     },
     "購買心願免費禮包": {
         "recognition": {
@@ -208,13 +137,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1500,
-        "focus": "購買心願禮包",
-        "$__mpe_code": {
-            "position": {
-                "x": 965,
-                "y": -149
-            }
-        }
+        "focus": "購買心願禮包"
     },
     "關閉各項通知": {
         "post_wait_freezes": 5000,
@@ -227,13 +150,7 @@
             "[JumpBack]關閉命定羈絆提醒",
             "[JumpBack]關閉道具過期提示",
             "確認已進入自宅"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -23,
-                "y": -36
-            }
-        }
+        ]
     },
     "關閉命定羈絆提醒": {
         "recognition": {
@@ -254,13 +171,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
-        "focus": "關閉命定羈絆彈窗",
-        "$__mpe_code": {
-            "position": {
-                "x": 474,
-                "y": 169
-            }
-        }
+        "focus": "關閉命定羈絆彈窗"
     },
     "關閉維護公告": {
         "recognition": {
@@ -280,13 +191,7 @@
         "action": {
             "type": "Click"
         },
-        "focus": "發現維護公告",
-        "$__mpe_code": {
-            "position": {
-                "x": -574,
-                "y": -40
-            }
-        }
+        "focus": "發現維護公告"
     },
     "關閉道具過期提示": {
         "recognition": {
@@ -307,13 +212,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
-        "focus": "關閉道具過期彈窗",
-        "$__mpe_code": {
-            "position": {
-                "x": 725,
-                "y": 168
-            }
-        }
+        "focus": "關閉道具過期彈窗"
     },
     "關閉首儲廣告/活動提醒": {
         "recognition": {
@@ -334,13 +233,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
-        "focus": "關閉活動/儲值彈窗",
-        "$__mpe_code": {
-            "position": {
-                "x": 240,
-                "y": 170
-            }
-        }
+        "focus": "關閉活動/儲值彈窗"
     },
     "領取離線收益": {
         "recognition": {
@@ -361,13 +254,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 3000,
-        "focus": "領取離線收益",
-        "$__mpe_code": {
-            "position": {
-                "x": 483,
-                "y": -145
-            }
-        }
+        "focus": "領取離線收益"
     },
     "點擊標題進入遊戲": {
         "recognition": {
@@ -392,12 +279,6 @@
         "focus": "點擊標題",
         "next": [
             "檢查點_是否進入遊戲"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -575,
-                "y": 173
-            }
-        }
+        ]
     }
 }

@@ -1,49 +1,11 @@
 {
-    "$__mpe_config_Daily_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786722121200,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Daily_Task.json",
-            "savedViewport": {
-                "x": -2022,
-                "y": -2569,
-                "zoom": 1
-            },
-            "filename": "Daily_Task",
-            "version": "v1.7.6"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Daily_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1682,
-                "y": 1665
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Daily_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4082,
-                "y": 1909
-            }
-        }
-    },
     "Daily_Task": {
         "next": [
             "[JumpBack]進入洗一次藏品任務",
             "[JumpBack]進入升一次夥伴任務",
             "[JumpBack]進入好友贈禮任務",
             "完成所有日常任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1486,
-                "y": 24
-            }
-        }
+        ]
     },
     "一鍵贈送好友": {
         "recognition": {
@@ -69,13 +31,7 @@
         },
         "next": [
             "一鍵領取好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2190,
-                "y": 2854
-            }
-        }
+        ]
     },
     "一鍵領取好友": {
         "recognition": {
@@ -99,13 +55,7 @@
         "next": [
             "[JumpBack]確認領取好友訊息",
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2464,
-                "y": 2844
-            }
-        }
+        ]
     },
     "切換到下個藏品": {
         "max_hit": 0,
@@ -135,12 +85,6 @@
                 127,
                 113
             ]
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3052,
-                "y": 1498
-            }
         }
     },
     "切換夥伴排序": {
@@ -172,13 +116,7 @@
         "post_wait_freezes": 500,
         "next": [
             "設定夥伴實力排序"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1955,
-                "y": 2208
-            }
-        }
+        ]
     },
     "切換為升級1次": {
         "recognition": {
@@ -201,26 +139,14 @@
         "post_wait_freezes": 500,
         "next": [
             "進行夥伴升級"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3026,
-                "y": 2088
-            }
-        }
+        ]
     },
     "升一次夥伴任務": {
         "focus": "開始升級一次夥伴",
         "next": [
             "進入夥伴",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1396,
-                "y": 2012
-            }
-        }
+        ]
     },
     "右滑自宅_藏品": {
         "max_hit": 3,
@@ -237,12 +163,6 @@
                         1100
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1973,
-                "y": 1682
             }
         }
     },
@@ -264,13 +184,7 @@
         "focus": "發現夥伴滿級",
         "next": [
             "找下一位夥伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3023,
-                "y": 2545
-            }
-        }
+        ]
     },
     "夥伴需要突破": {
         "recognition": {
@@ -290,35 +204,16 @@
         "focus": "發現夥伴需要突破",
         "next": [
             "找下一位夥伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3026,
-                "y": 2319
-            }
-        }
+        ]
     },
     "好友贈禮任務": {
         "focus": "開始好友贈禮",
         "next": [
             "進入自宅_贈禮",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1362,
-                "y": 2866
-            }
-        }
+        ]
     },
-    "完成所有日常任務": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1784,
-                "y": 496
-            }
-        }
-    },
+    "完成所有日常任務": {},
     "左滑自宅_藏品": {
         "max_hit": 3,
         "action": {
@@ -334,12 +229,6 @@
                         1100
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1975,
-                "y": 1478
             }
         }
     },
@@ -361,13 +250,7 @@
         "post_wait_freezes": 500,
         "next": [
             "點擊第一位夥伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1957,
-                "y": 1982
-            }
-        }
+        ]
     },
     "已是藏品預設排序": {
         "max_hit": 1,
@@ -388,13 +271,7 @@
         "post_wait_freezes": 500,
         "next": [
             "進入第一個藏品"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2251,
-                "y": 1015
-            }
-        }
+        ]
     },
     "找下一位夥伴": {
         "max_hit": 10,
@@ -424,12 +301,6 @@
                 74,
                 71
             ]
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3302,
-                "y": 2391
-            }
         }
     },
     "找最弱的夥伴": {
@@ -464,13 +335,7 @@
             "切換為升級1次",
             "[JumpBack]夥伴需要突破",
             "[JumpBack]夥伴滿級"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2768,
-                "y": 2079
-            }
-        }
+        ]
     },
     "收合活動列表": {
         "max_hit": 1,
@@ -491,13 +356,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500,
-        "$__mpe_code": {
-            "position": {
-                "x": 1975,
-                "y": 975
-            }
-        }
+        "post_wait_freezes": 500
     },
     "更換藏品排序": {
         "max_hit": 1,
@@ -529,26 +388,14 @@
         "post_wait_freezes": 500,
         "next": [
             "設定藏品預設排序"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2251,
-                "y": 695
-            }
-        }
+        ]
     },
     "洗一次藏品任務": {
         "focus": "開始洗一次藏品",
         "next": [
             "進入自宅_洗藏品",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1424,
-                "y": 1183
-            }
-        }
+        ]
     },
     "滑動夥伴選單": {
         "max_hit": 50,
@@ -565,12 +412,6 @@
                         460
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2768,
-                "y": 1651
             }
         }
     },
@@ -589,12 +430,6 @@
         "post_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "處理經營能力彈窗"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3582,
-                "y": 2159
-            }
         }
     },
     "確認領取好友訊息": {
@@ -618,12 +453,6 @@
         "post_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一鍵領取"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2730,
-                "y": 2675
-            }
         }
     },
     "設定夥伴實力排序": {
@@ -658,13 +487,7 @@
         },
         "next": [
             "點擊第一位夥伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2206,
-                "y": 2212
-            }
-        }
+        ]
     },
     "設定藏品預設排序": {
         "recognition": {
@@ -698,22 +521,10 @@
         },
         "next": [
             "進入第一個藏品"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2511,
-                "y": 719
-            }
-        }
+        ]
     },
     "進入升一次夥伴任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1785,
-                "y": 30
-            }
-        }
+        "max_hit": 1
     },
     "進入夥伴": {
         "recognition": {
@@ -745,13 +556,7 @@
         "next": [
             "已是夥伴實力排序",
             "切換夥伴排序"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1680,
-                "y": 1987
-            }
-        }
+        ]
     },
     "進入好友": {
         "recognition": {
@@ -781,31 +586,13 @@
         },
         "next": [
             "一鍵贈送好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1922,
-                "y": 2829
-            }
-        }
+        ]
     },
     "進入好友贈禮任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1786,
-                "y": 178
-            }
-        }
+        "max_hit": 1
     },
     "進入洗一次藏品任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1784,
-                "y": -113
-            }
-        }
+        "max_hit": 1
     },
     "進入第一個藏品": {
         "action": {
@@ -822,13 +609,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "選擇第一格插槽"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2795,
-                "y": 1247
-            }
-        }
+        ]
     },
     "進入自宅_洗藏品": {
         "recognition": {
@@ -862,13 +643,7 @@
             "進入藏品",
             "[JumpBack]左滑自宅_藏品",
             "[JumpBack]右滑自宅_藏品"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1686,
-                "y": 1137
-            }
-        }
+        ]
     },
     "進入自宅_贈禮": {
         "recognition": {
@@ -899,13 +674,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "進入好友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1650,
-                "y": 2836
-            }
-        }
+        ]
     },
     "進入藏品": {
         "recognition": {
@@ -931,13 +700,7 @@
         },
         "next": [
             "進入第一個藏品"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1977,
-                "y": 1227
-            }
-        }
+        ]
     },
     "進行一次重塑": {
         "recognition": {
@@ -963,13 +726,7 @@
         },
         "next": [
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3313,
-                "y": 1236
-            }
-        }
+        ]
     },
     "進行夥伴升級": {
         "recognition": {
@@ -996,13 +753,7 @@
         "next": [
             "[JumpBack]確定解鎖經營訊息",
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3282,
-                "y": 2080
-            }
-        }
+        ]
     },
     "選擇第一格插槽": {
         "action": {
@@ -1019,13 +770,7 @@
         "post_wait_freezes": 500,
         "next": [
             "進行一次重塑"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3055,
-                "y": 1245
-            }
-        }
+        ]
     },
     "點擊指定夥伴": {
         "recognition": {
@@ -1051,13 +796,7 @@
         },
         "next": [
             "切換為升級1次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2768,
-                "y": 1855
-            }
-        }
+        ]
     },
     "點擊第一位夥伴": {
         "action": {
@@ -1077,12 +816,6 @@
         },
         "next": [
             "找最弱的夥伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2508,
-                "y": 2104
-            }
-        }
+        ]
     }
 }

@@ -1,0 +1,122 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1787306437244,
+        "isModifiedExternally": false,
+        "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Task_Roaming.json",
+        "savedViewport": {
+            "x": 184,
+            "y": -77,
+            "zoom": 0.5
+        },
+        "filename": "Task_Roaming",
+        "version": "v1.8.0"
+    },
+    "node_configs": {
+        "Roaming_Task": {
+            "position": {
+                "x": -192,
+                "y": 368
+            }
+        },
+        "出發": {
+            "position": {
+                "x": 882,
+                "y": 509
+            }
+        },
+        "勾選一鍵遊玩": {
+            "position": {
+                "x": 883,
+                "y": 231
+            }
+        },
+        "完成相遇事件": {
+            "position": {
+                "x": 2051,
+                "y": 630
+            }
+        },
+        "發現來信": {
+            "position": {
+                "x": 1472,
+                "y": 434
+            }
+        },
+        "發現沒有遊玩次數": {
+            "position": {
+                "x": 1216,
+                "y": 825
+            }
+        },
+        "確認遊玩訊息": {
+            "position": {
+                "x": 1215,
+                "y": 583
+            }
+        },
+        "處理相遇事件": {
+            "position": {
+                "x": 1721,
+                "y": 544
+            }
+        },
+        "跳過對話": {
+            "position": {
+                "x": 2046,
+                "y": 438
+            }
+        },
+        "跳過相遇事件": {
+            "position": {
+                "x": 2048,
+                "y": 231
+            }
+        },
+        "進入遊玩": {
+            "position": {
+                "x": 469,
+                "y": 374
+            }
+        },
+        "進入龍城_遊玩": {
+            "position": {
+                "x": 82,
+                "y": 338
+            }
+        },
+        "重整畫面_遊玩": {
+            "position": {
+                "x": 469,
+                "y": 177
+            }
+        },
+        "關閉體力藥禮包": {
+            "position": {
+                "x": 1216,
+                "y": 1083
+            }
+        },
+        "點擊任意處_遊玩": {
+            "position": {
+                "x": 2316,
+                "y": 643
+            }
+        }
+    },
+    "external_nodes": {
+        "嘗試重置畫面": {
+            "position": {
+                "x": 81,
+                "y": 210
+            }
+        },
+        "返回主介面": {
+            "position": {
+                "x": 1499,
+                "y": 876
+            }
+        }
+    }
+}

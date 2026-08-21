@@ -1,47 +1,9 @@
 {
-    "$__mpe_config_Golemore_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786811252571,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Golemore_Task.json",
-            "savedViewport": {
-                "x": -1938,
-                "y": -533,
-                "zoom": 0.66
-            },
-            "filename": "Golemore_Task",
-            "version": "v1.7.6"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Golemore_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 636,
-                "y": 446
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Golemore_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4336,
-                "y": 1645
-            }
-        }
-    },
     "Golemore_Task": {
         "next": [
             "進入龍城_礦區",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 363,
-                "y": 595
-            }
-        }
+        ]
     },
     "使用第一位協力": {
         "max_hit": 1,
@@ -60,13 +22,7 @@
         "focus": "使用第一位公會協力",
         "next": [
             "確定協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2908,
-                "y": 759
-            }
-        }
+        ]
     },
     "使用第三位協力": {
         "max_hit": 1,
@@ -85,13 +41,7 @@
         "focus": "使用第三位公會協力",
         "next": [
             "確定協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2914,
-                "y": 405
-            }
-        }
+        ]
     },
     "使用第二位協力": {
         "max_hit": 1,
@@ -110,13 +60,7 @@
         "focus": "使用第二位公會協力",
         "next": [
             "確定協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2910,
-                "y": 580
-            }
-        }
+        ]
     },
     "使用第五位協力": {
         "max_hit": 1,
@@ -135,13 +79,7 @@
         "focus": "使用第五位公會協力",
         "next": [
             "確定協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2916,
-                "y": 47
-            }
-        }
+        ]
     },
     "使用第四位協力": {
         "max_hit": 1,
@@ -160,13 +98,7 @@
         "focus": "使用第四位公會協力",
         "next": [
             "確定協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2914,
-                "y": 228
-            }
-        }
+        ]
     },
     "公會協助": {
         "recognition": {
@@ -194,13 +126,7 @@
             "使用第二位協力",
             "使用第一位協力",
             "協力用盡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2578,
-                "y": 546
-            }
-        }
+        ]
     },
     "出擊": {
         "recognition": {
@@ -223,13 +149,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "確認協力清剿訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3444,
-                "y": 529
-            }
-        }
+        ]
     },
     "協力用盡": {
         "recognition": {
@@ -256,25 +176,13 @@
         "focus": "協力次數用盡",
         "next": [
             "領取礦區寶藏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3445,
-                "y": 881
-            }
-        }
+        ]
     },
     "嘗試公會協力": {
         "next": [
             "已全部擊敗",
             "公會協助"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2320,
-                "y": 773
-            }
-        }
+        ]
     },
     "嘗試快速清剿": {
         "recognition": {
@@ -307,13 +215,7 @@
             "發現夥伴用盡",
             "確定快速清剿",
             "自動清剿"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1481,
-                "y": 563
-            }
-        }
+        ]
     },
     "嘗試開啟礦區寶箱": {
         "next": [
@@ -321,13 +223,7 @@
             "開啟第二個礦區寶箱",
             "開啟第三個礦區寶箱",
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3747,
-                "y": 1068
-            }
-        }
+        ]
     },
     "已全部擊敗": {
         "recognition": {
@@ -347,13 +243,7 @@
         "focus": "已全部擊敗",
         "next": [
             "領取礦區寶藏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2597,
-                "y": 1030
-            }
-        }
+        ]
     },
     "挖到礦區寶箱訊息": {
         "recognition": {
@@ -374,13 +264,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
-        "focus": "挖到礦區寶箱",
-        "$__mpe_code": {
-            "position": {
-                "x": 2321,
-                "y": 179
-            }
-        }
+        "focus": "挖到礦區寶箱"
     },
     "未能擊敗": {
         "recognition": {
@@ -404,13 +288,7 @@
         "focus": "未擊敗目前波次",
         "next": [
             "嘗試公會協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2025,
-                "y": 482
-            }
-        }
+        ]
     },
     "發現夥伴用盡": {
         "recognition": {
@@ -430,13 +308,7 @@
         "focus": "夥伴已用盡",
         "next": [
             "嘗試公會協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2055,
-                "y": 764
-            }
-        }
+        ]
     },
     "確定協力": {
         "recognition": {
@@ -460,13 +332,7 @@
         "next": [
             "出擊",
             "協力用盡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3203,
-                "y": 526
-            }
-        }
+        ]
     },
     "確定快速清剿": {
         "recognition": {
@@ -493,13 +359,7 @@
         "next": [
             "確認清剿訊息",
             "未能擊敗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1750,
-                "y": 487
-            }
-        }
+        ]
     },
     "確認協力清剿訊息": {
         "recognition": {
@@ -522,13 +382,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "嘗試公會協力"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3689,
-                "y": 532
-            }
-        }
+        ]
     },
     "確認清剿訊息": {
         "recognition": {
@@ -552,13 +406,7 @@
         "next": [
             "嘗試公會協力",
             "[JumpBack]挖到礦區寶箱訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2022,
-                "y": 228
-            }
-        }
+        ]
     },
     "確認礦區寶箱訊息": {
         "recognition": {
@@ -579,13 +427,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
-        "focus": "開啟一次礦區寶箱",
-        "$__mpe_code": {
-            "position": {
-                "x": 4417,
-                "y": 1041
-            }
-        }
+        "focus": "開啟一次礦區寶箱"
     },
     "自動清剿": {
         "recognition": {
@@ -612,13 +454,7 @@
         },
         "next": [
             "發現夥伴用盡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1749,
-                "y": 765
-            }
-        }
+        ]
     },
     "進入礦區": {
         "recognition": {
@@ -641,13 +477,7 @@
         "post_wait_freezes": 1500,
         "next": [
             "進入開採"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 955,
-                "y": 567
-            }
-        }
+        ]
     },
     "進入開採": {
         "recognition": {
@@ -671,13 +501,7 @@
         "next": [
             "已全部擊敗",
             "嘗試快速清剿"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1223,
-                "y": 572
-            }
-        }
+        ]
     },
     "進入龍城_礦區": {
         "recognition": {
@@ -709,13 +533,7 @@
         "next": [
             "進入礦區",
             "[JumpBack]重整畫面_礦區"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 633,
-                "y": 551
-            }
-        }
+        ]
     },
     "重整畫面_礦區": {
         "action": {
@@ -731,12 +549,6 @@
                         150
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 961,
-                "y": 347
             }
         }
     },
@@ -760,13 +572,7 @@
         },
         "next": [
             "嘗試開啟礦區寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3503,
-                "y": 1226
-            }
-        }
+        ]
     },
     "開啟第一個礦區寶箱": {
         "max_hit": 1,
@@ -794,13 +600,7 @@
         "next": [
             "[JumpBack]確認礦區寶箱訊息",
             "嘗試開啟礦區寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4055,
-                "y": 688
-            }
-        }
+        ]
     },
     "開啟第三個礦區寶箱": {
         "max_hit": 1,
@@ -828,13 +628,7 @@
         "next": [
             "[JumpBack]確認礦區寶箱訊息",
             "嘗試開啟礦區寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4054,
-                "y": 1296
-            }
-        }
+        ]
     },
     "開啟第二個礦區寶箱": {
         "max_hit": 1,
@@ -862,24 +656,12 @@
         "next": [
             "[JumpBack]確認礦區寶箱訊息",
             "嘗試開啟礦區寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4053,
-                "y": 987
-            }
-        }
+        ]
     },
     "領取礦區寶藏": {
         "focus": "領取礦區寶箱",
         "next": [
             "開啟消息欄"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3254,
-                "y": 1245
-            }
-        }
+        ]
     }
 }

@@ -1,44 +1,7 @@
 {
-    "$__mpe_config_my_task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786200804167,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\my_task.json",
-            "savedViewport": {
-                "x": -70,
-                "y": 95,
-                "zoom": 1
-            },
-            "filename": "my_task",
-            "version": "v1.7.5"
-        }
-    },
-    "MyTask1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 12
-            }
-        }
-    },
-    "MyTask2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 242,
-                "y": 12
-            }
-        }
-    },
-    "MyTask3": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 138
-            }
-        }
-    },
+    "MyTask1": {},
+    "MyTask2": {},
+    "MyTask3": {},
     "MyTask4": {
         "recognition": {
             "type": "Custom",
@@ -51,59 +14,9 @@
             "param": {
                 "custom_action": "my_action_111"
             }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 264
-            }
         }
     },
-    "OcrTask": {
-        "$__mpe_code": {
-            "position": {
-                "x": 242,
-                "y": 138
-            }
-        }
-    },
-    "文字識別模板": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "expected": [
-                    ""
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    0,
-                    0,
-                    0
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "focus": {
-            "Node.Action.Succeeded": ""
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 625,
-                "y": -64
-            }
-        }
-    },
+    "OcrTask": {},
     "圖像識別模板": {
         "recognition": {
             "type": "TemplateMatch",
@@ -137,12 +50,37 @@
         "post_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": ""
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 918,
-                "y": -67
+        }
+    },
+    "文字識別模板": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "expected": [
+                    ""
+                ]
             }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": ""
         }
     },
     "滑動模板": {
@@ -163,12 +101,6 @@
                         0
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1199,
-                "y": -66
             }
         }
     }

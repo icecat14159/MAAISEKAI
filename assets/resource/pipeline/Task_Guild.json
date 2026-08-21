@@ -1,47 +1,9 @@
 {
-    "$__mpe_config_Guild_Task": {
-        "$__mpe_code": {
-            "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786978900589,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Guild_Task.json",
-            "savedViewport": {
-                "x": -752,
-                "y": -443,
-                "zoom": 1.15
-            },
-            "filename": "Guild_Task",
-            "version": "v1.7.6"
-        }
-    },
-    "$__mpe_external_嘗試重置畫面_Guild_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 571,
-                "y": 405
-            }
-        }
-    },
-    "$__mpe_external_返回主介面_Guild_Task": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1567,
-                "y": 623
-            }
-        }
-    },
     "GuildAffairs_Task": {
         "next": [
             "進入龍城_公會",
             "[JumpBack]嘗試重置畫面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 295,
-                "y": 536
-            }
-        }
+        ]
     },
     "公會禮物任務": {
         "recognition": {
@@ -66,13 +28,7 @@
         "next": [
             "發現公會禮物",
             "領取豪華寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1814,
-                "y": 821
-            }
-        }
+        ]
     },
     "勾選自動處理委託": {
         "max_hit": 1,
@@ -96,39 +52,14 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 3581,
-                "y": 811
-            }
-        }
+        "post_wait_freezes": 1000
     },
-    "完成公會禮物任務": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2943,
-                "y": 1077
-            }
-        }
-    },
+    "完成公會禮物任務": {},
     "完成捐贈任務": {
-        "focus": "完成捐贈",
-        "$__mpe_code": {
-            "position": {
-                "x": 1682,
-                "y": 1525
-            }
-        }
+        "focus": "完成捐贈"
     },
     "完成雜務委託任務": {
-        "focus": "完成雜務委託",
-        "$__mpe_code": {
-            "position": {
-                "x": 4080,
-                "y": 1147
-            }
-        }
+        "focus": "完成雜務委託"
     },
     "捐贈任務": {
         "recognition": {
@@ -151,13 +82,7 @@
         "focus": "開始捐贈",
         "next": [
             "開始捐贈"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 35,
-                "y": 989
-            }
-        }
+        ]
     },
     "未開啟豪華寶箱": {
         "recognition": {
@@ -187,13 +112,7 @@
         },
         "next": [
             "退出公會禮物"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2406,
-                "y": 1299
-            }
-        }
+        ]
     },
     "發現公會禮物": {
         "recognition": {
@@ -215,13 +134,7 @@
         },
         "next": [
             "領取禮物"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2094,
-                "y": 787
-            }
-        }
+        ]
     },
     "發現寶箱未開啟": {
         "recognition": {
@@ -252,13 +165,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "退出捐贈"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1177,
-                "y": 1238
-            }
-        }
+        ]
     },
     "確認公會禮物訊息": {
         "recognition": {
@@ -282,13 +189,7 @@
         "focus": "領取公會禮物",
         "next": [
             "領取豪華寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2609,
-                "y": 790
-            }
-        }
+        ]
     },
     "確認捐贈獎勵訊息": {
         "recognition": {
@@ -311,13 +212,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "領取捐贈獎勵"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1170,
-                "y": 1003
-            }
-        }
+        ]
     },
     "確認捐贈訊息": {
         "recognition": {
@@ -340,13 +235,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "開始捐贈"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 861,
-                "y": 831
-            }
-        }
+        ]
     },
     "確認豪華寶箱訊息": {
         "recognition": {
@@ -370,13 +259,7 @@
         "focus": "領取豪華寶箱",
         "next": [
             "退出公會禮物"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2408,
-                "y": 1043
-            }
-        }
+        ]
     },
     "處理雜務委託": {
         "recognition": {
@@ -401,13 +284,7 @@
         "post_wait_freezes": 3000,
         "next": [
             "退出雜務委託"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3578,
-                "y": 1095
-            }
-        }
+        ]
     },
     "退出公會禮物": {
         "recognition": {
@@ -430,13 +307,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "完成公會禮物任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2693,
-                "y": 1043
-            }
-        }
+        ]
     },
     "退出捐贈": {
         "recognition": {
@@ -459,13 +330,7 @@
         "post_wait_freezes": 1500,
         "next": [
             "完成捐贈任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1417,
-                "y": 1490
-            }
-        }
+        ]
     },
     "退出雜務委託": {
         "recognition": {
@@ -488,13 +353,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "完成雜務委託任務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3833,
-                "y": 1113
-            }
-        }
+        ]
     },
     "進入公會": {
         "recognition": {
@@ -519,40 +378,16 @@
             "[JumpBack]關閉公告",
             "[JumpBack]關閉公會訊息",
             "開始公會事務"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 864,
-                "y": 516
-            }
-        }
+        ]
     },
     "進入公會禮物任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1565,
-                "y": 311
-            }
-        }
+        "max_hit": 1
     },
     "進入捐贈任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1565,
-                "y": 155
-            }
-        }
+        "max_hit": 1
     },
     "進入雜務委託任務": {
-        "max_hit": 1,
-        "$__mpe_code": {
-            "position": {
-                "x": 1565,
-                "y": 469
-            }
-        }
+        "max_hit": 1
     },
     "進入龍城_公會": {
         "recognition": {
@@ -584,13 +419,7 @@
         "next": [
             "進入公會",
             "[JumpBack]重整畫面_公會"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 570,
-                "y": 507
-            }
-        }
+        ]
     },
     "重整畫面_公會": {
         "action": {
@@ -606,12 +435,6 @@
                         150
                     ]
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 861,
-                "y": 322
             }
         }
     },
@@ -637,13 +460,7 @@
         "focus": "完成一次金幣捐贈",
         "next": [
             "確認捐贈訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 618,
-                "y": 830
-            }
-        }
+        ]
     },
     "金幣捐贈完畢": {
         "recognition": {
@@ -663,13 +480,7 @@
         "next": [
             "領取捐贈獎勵",
             "退出捐贈"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 616,
-                "y": 1090
-            }
-        }
+        ]
     },
     "開始公會事務": {
         "focus": "進入公會",
@@ -678,26 +489,14 @@
             "[JumpBack]進入公會禮物任務",
             "[JumpBack]進入雜務委託任務",
             "返回主介面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1151,
-                "y": 319
-            }
-        }
+        ]
     },
     "開始捐贈": {
         "post_wait_freezes": 1500,
         "next": [
             "金幣捐贈",
             "金幣捐贈完畢"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 320,
-                "y": 997
-            }
-        }
+        ]
     },
     "關閉公告": {
         "recognition": {
@@ -717,13 +516,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1150,
-                "y": 527
-            }
-        }
+        "post_wait_freezes": 1000
     },
     "關閉公會訊息": {
         "recognition": {
@@ -737,13 +530,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1149,
-                "y": 731
-            }
-        }
+        "post_wait_freezes": 1000
     },
     "雜務委託任務": {
         "recognition": {
@@ -768,13 +555,7 @@
         "next": [
             "[JumpBack]勾選自動處理委託",
             "處理雜務委託"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3292,
-                "y": 815
-            }
-        }
+        ]
     },
     "領取捐贈獎勵": {
         "max_hit": 5,
@@ -805,13 +586,7 @@
             "確認捐贈獎勵訊息",
             "發現寶箱未開啟",
             "退出捐贈"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 878,
-                "y": 1122
-            }
-        }
+        ]
     },
     "領取禮物": {
         "recognition": {
@@ -834,13 +609,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "確認公會禮物訊息"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2354,
-                "y": 787
-            }
-        }
+        ]
     },
     "領取豪華寶箱": {
         "recognition": {
@@ -867,12 +636,6 @@
         "next": [
             "確認豪華寶箱訊息",
             "未開啟豪華寶箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2095,
-                "y": 1103
-            }
-        }
+        ]
     }
 }

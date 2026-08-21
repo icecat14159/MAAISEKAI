@@ -1,0 +1,72 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1787306442269,
+        "isModifiedExternally": false,
+        "filePath": "C:\\Users\\user\\Desktop\\MAA_Test\\assets\\resource\\pipeline\\Task_Store.json",
+        "savedViewport": {
+            "x": 727,
+            "y": 171,
+            "zoom": 0.5
+        },
+        "filename": "Task_Store",
+        "version": "v1.8.0"
+    },
+    "node_configs": {
+        "Store_Task_Maze": {
+            "position": {
+                "x": -523,
+                "y": -79
+            }
+        },
+        "尋找商品": {
+            "position": {
+                "x": -218,
+                "y": 229
+            }
+        },
+        "滑動商店": {
+            "position": {
+                "x": -218,
+                "y": 442
+            }
+        },
+        "瀏覽商店": {
+            "position": {
+                "x": -512,
+                "y": 123
+            }
+        },
+        "進入迷宮": {
+            "position": {
+                "x": 219,
+                "y": -83
+            }
+        },
+        "進入迷宮商店": {
+            "position": {
+                "x": 478,
+                "y": -80
+            }
+        },
+        "進入龍城_迷宮商店": {
+            "position": {
+                "x": -267,
+                "y": -107
+            }
+        },
+        "重整畫面_迷宮商店": {
+            "position": {
+                "x": -25,
+                "y": -113
+            }
+        },
+        "關閉視窗": {
+            "position": {
+                "x": 53,
+                "y": 239
+            }
+        }
+    }
+}
