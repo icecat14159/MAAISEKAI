@@ -500,16 +500,16 @@
     },
     "關閉公告": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    231,
-                    1011,
-                    267,
-                    254
+                    583,
+                    70,
+                    133,
+                    147
                 ],
-                "expected": [
-                    "確認"
+                "template": [
+                    "關閉鈕.png"
                 ]
             }
         },
