@@ -75,12 +75,6 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": [
-                    225,
-                    968,
-                    272,
-                    145
-                ],
                 "expected": [
                     "確定"
                 ]
