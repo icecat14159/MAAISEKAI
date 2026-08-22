@@ -226,6 +226,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -576,7 +577,6 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 3000,
         "next": [
             "尋寶體力不足",
             "確認掃蕩結果"
