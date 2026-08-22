@@ -1,4 +1,104 @@
 {
+    "點擊博物館收益箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    342,
+                    824,
+                    201,
+                    165
+                ],
+                "template": [
+                    "博物館收益箱.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "領取博物館收益"
+        ]
+    },
+    "領取博物館收益": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    225,
+                    813,
+                    272,
+                    173
+                ],
+                "expected": [
+                    "領取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]確認博物館收益訊息",
+            "返回博物館界面"
+        ]
+    },
+    "確認博物館收益訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1209,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "focus": {
+            "Node.Action.Succeeded": "成功領取"
+        }
+    },
+    "返回博物館界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    589,
+                    222,
+                    113,
+                    117
+                ],
+                "template": [
+                    "關閉鈕.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回主介面"
+        ]
+    },
     "Museum_Task": {
         "next": [
             "進入村莊_博物館",
@@ -63,7 +163,10 @@
         },
         "focus": {
             "Node.Action.Succeeded": "進入博物館"
-        }
+        },
+        "next": [
+            "點擊博物館收益箱"
+        ]
     },
     "進入村莊_博物館": {
         "recognition": {

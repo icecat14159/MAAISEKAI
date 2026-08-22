@@ -111,14 +111,20 @@
         {
             "name": "魔王挑戰",
             "entry": "Archdemon_Task",
-            "description": "本任務會直接使用上次陣型出戰"
+            "description": "本任務需要直接使用上次陣型出戰"
         },
         {
             "name": "尋寶",
             "entry": "TreasureHunt_Task",
+            "description": "添加本任務時請確保已啟用掃蕩功能",
             "option": [
                 "尋寶選項"
             ]
+        },
+        {
+            "name": "領取博物館收益",
+            "entry": "Museum_Task",
+            "description": "添加本任務時請確保已啟用博物館功能"
         },
         {
             "name": "其他日常任務",
@@ -725,6 +731,10 @@
                 },
                 {
                     "name": "尋寶",
+                    "enabled": true
+                },
+                {
+                    "name": "領取博物館收益",
                     "enabled": true
                 },
                 {
