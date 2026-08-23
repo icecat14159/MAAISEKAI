@@ -281,7 +281,8 @@
                 ],
                 "template": [
                     "綠勾勾.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
