@@ -126,6 +126,11 @@
             "description": "添加本任務時請確保已啟用博物館功能"
         },
         {
+            "name": "旅館經營",
+            "entry": "Restaurant_Task",
+            "description": "請確保啟用一鍵接待功能"
+        },
+        {
             "name": "其他日常任務",
             "entry": "Daily_Task",
             "option": [
@@ -736,6 +741,10 @@
                 },
                 {
                     "name": "領取博物館收益",
+                    "enabled": true
+                },
+                {
+                    "name": "旅館經營",
                     "enabled": true
                 },
                 {

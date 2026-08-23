@@ -1,0 +1,259 @@
+{
+    "Restaurant_Task": {
+        "next": [
+            "進入村莊_旅館",
+            "[JumpBack]嘗試重置畫面"
+        ]
+    },
+    "進入村莊_旅館": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1151,
+                    155,
+                    129
+                ],
+                "template": [
+                    "我的村莊.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    10,
+                    -20,
+                    -20
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "進入玩法合集_旅館"
+        ]
+    },
+    "進入玩法合集_旅館": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    564,
+                    1030,
+                    156,
+                    91
+                ],
+                "expected": [
+                    "模擬玩法合集"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    10,
+                    5,
+                    -20,
+                    -10
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "進入旅館"
+        ]
+    },
+    "進入旅館": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    113,
+                    696,
+                    693
+                ],
+                "expected": [
+                    "旅館"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 3000,
+            "target": [
+                447,
+                141,
+                243,
+                255
+            ]
+        },
+        "focus": {
+            "Node.Action.Succeeded": "進入旅館"
+        },
+        "next": [
+            "確保一鍵接客",
+            "[JumpBack]一鍵接客"
+        ]
+    },
+    "接客": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    453,
+                    992,
+                    233,
+                    131
+                ],
+                "expected": [
+                    "接客"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "[JumpBack]沒有客人",
+            "領取旅館收益"
+        ]
+    },
+    "確保一鍵接客": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    452,
+                    1101,
+                    97,
+                    95
+                ],
+                "template": [
+                    "小綠勾勾.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "接客"
+        ]
+    },
+    "一鍵接客": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    490,
+                    1136,
+                    22,
+                    24
+                ]
+            }
+        },
+        "post_wait_freezes": 1000
+    },
+    "沒有客人": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "關閉鈕.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000
+    },
+    "領取旅館收益": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    304,
+                    596,
+                    90,
+                    92
+                ],
+                "template": [
+                    "旅館收益箱.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "暫無旅館收益",
+            "領取收益"
+        ]
+    },
+    "暫無旅館收益": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    211,
+                    483,
+                    324,
+                    251
+                ],
+                "expected": [
+                    "暫無"
+                ]
+            }
+        },
+        "next": [
+            "返回主介面"
+        ]
+    },
+    "領取收益": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    260,
+                    946,
+                    205,
+                    117
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回主介面"
+        ]
+    }
+}
