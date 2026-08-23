@@ -385,7 +385,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1209,
+                    51,
+                    51
+                ]
+            }
         },
         "post_wait_freezes": 1000,
         "next": [
