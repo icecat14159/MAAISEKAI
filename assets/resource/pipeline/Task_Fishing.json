@@ -1020,7 +1020,11 @@
         "action": {
             "type": "Click"
         },
-        "focus": "發現釣到新種類"
+        "post_wait_freezes": 1000,
+        "focus": "發現釣到新種類",
+        "next": [
+            "[JumpBack]釣魚等級提升"
+        ]
     },
     "釣魚任務": {
         "focus": "開始釣魚",
