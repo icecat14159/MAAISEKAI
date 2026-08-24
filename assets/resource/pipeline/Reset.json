@@ -6,7 +6,6 @@
                 "template": [
                     "關閉鈕.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -36,7 +35,6 @@
                 "template": [
                     "對話箭頭.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -66,7 +64,6 @@
                 "template": [
                     "關閉鈕_圓形.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -96,7 +93,6 @@
                 "template": [
                     "返回按鈕.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -128,7 +124,6 @@
                 "template": [
                     "關閉命定羈絆.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -144,7 +139,6 @@
                 "template": [
                     "關閉雜務.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },
@@ -174,7 +168,6 @@
                 "template": [
                     "我的村莊.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },

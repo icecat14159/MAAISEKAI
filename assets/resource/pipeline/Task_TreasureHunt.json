@@ -135,8 +135,6 @@
                 "template": [
                     "掃蕩羅盤.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -280,8 +278,6 @@
                     "一鍵遊玩.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
-                "green_mask": true,
                 "threshold": [
                     0.55
                 ]
@@ -305,8 +301,6 @@
                 "template": [
                     "返回按鈕.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -328,8 +322,6 @@
                 "template": [
                     "關閉鈕.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -620,8 +612,6 @@
                 "template": [
                     "綠勾勾.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },

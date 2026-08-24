@@ -71,8 +71,6 @@
                 "template": [
                     "向右移動.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -289,8 +287,6 @@
                 "template": [
                     "向左移動.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -320,8 +316,6 @@
                 "template": [
                     "向左移動.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -579,8 +573,6 @@
                 "template": [
                     "自宅好友.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true,
                 "threshold": [
                     0.55

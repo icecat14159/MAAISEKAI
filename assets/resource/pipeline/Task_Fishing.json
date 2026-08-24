@@ -20,7 +20,6 @@
                     "驚嘆號.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -286,8 +285,6 @@
                 "template": [
                     "綠勾勾.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true
             }
         },
@@ -671,7 +668,6 @@
                     "一鍵遊玩.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.7
                 ]
@@ -1026,7 +1022,6 @@
                     "對話箭頭.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -1145,7 +1140,6 @@
                     "水晶貝.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.6
                 ]
@@ -1196,7 +1190,6 @@
                     "領取魚餌.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]

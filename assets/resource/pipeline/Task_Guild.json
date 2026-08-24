@@ -45,7 +45,6 @@
                     "自動委託.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.85
                 ]
@@ -132,7 +131,6 @@
                     "捐贈寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -584,8 +582,6 @@
                     "捐贈寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
-                "green_mask": true,
                 "threshold": [
                     0.3
                 ]
@@ -640,7 +636,6 @@
                     "公會禮物.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -668,7 +663,6 @@
                 "template": [
                     "捐贈寶箱_已開啟.png"
                 ],
-                "green_mask": true,
                 "green_mask": true
             }
         },

@@ -173,7 +173,6 @@
                     "關閉鈕.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -609,7 +608,6 @@
                     "礦區寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.3
                 ]
@@ -639,7 +637,6 @@
                     "礦區寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.3
                 ]
@@ -669,7 +666,6 @@
                     "礦區寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.3
                 ]

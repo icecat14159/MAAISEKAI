@@ -548,7 +548,6 @@
                     "自宅權益卡.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -652,8 +651,6 @@
                 "template": [
                     "自宅任務.png"
                 ],
-                "green_mask": true,
-                "green_mask": true
                 "green_mask": true,
                 "threshold": [
                     0.4
@@ -820,7 +817,6 @@
                     "捐贈寶箱.png"
                 ],
                 "green_mask": true,
-                "green_mask": true
                 "threshold": [
                     0.4
                 ]
