@@ -5,39 +5,29 @@
 
 <div align="center">
 
-# MaaPracticeBoilerplate
+# MaaISEKAI
 
 </div>
 
-本仓库为 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 所提供的项目模板，开发者可基于此模板直接创建自己的 MaaXXX 项目。
+本倉庫基於 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 所提供的项目模板創建。
 
 > **MaaFramework** 是基于图像识别技术、运用 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights) 开发经验去芜存菁、完全重写的新一代自动化黑盒测试框架。
 > 低代码的同时仍拥有高扩展性，旨在打造一款丰富、领先、且实用的开源库，助力开发者轻松编写出更好的黑盒测试程序，并推广普及。
 
-## 即刻开始
+## 如何使用
+在 Releases 中下載適合你裝置的安裝包(例如: MaaISEKAI-win-x86_64-v1.1.1.zip)，解壓縮後，直接運行裡面的 .exe 檔案即可
 
-**请不要直接克隆本仓库！你应该通过模板创建自己的项目！**  
+## 參與開發
+請閱讀 [如何開發](./docs/zh_cn/develop/how_to_develop.md)。
 
-请阅读 [如何开发](./docs/zh_cn/develop/how_to_develop.md)。
+## 常見問題
 
-向本模板仓库提交改动前，请阅读 [PR 规范](./docs/zh_cn/develop/pull_request_guidelines.md)。
+請閱讀 [常見問題](./docs/zh_cn/develop/faq.md)。
 
-## 生态共建
+## 銘謝
 
-MAA 正计划建设为一类项目，而非舟的单一软件。
+本項目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 強力驅動！
 
-若您的项目依赖于 MaaFramework，我们欢迎您将它命名为 MaaXXX, MXA, MAX 等等。当然，这是许可而不是限制，您也可以自由选择其他与 MAA 无关的名字，完全取决于您自己的想法！
+感謝以下開發者對本項目做出的貢獻:
 
-同时，我们也非常欢迎您提出 PR，在 [社区项目列表](https://github.com/MaaXYZ/MaaFramework#%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE) 中添加上您的项目！
-
-## 常见问题
-
-请阅读 [常见问题](./docs/zh_cn/develop/faq.md)。
-
-## 鸣谢
-
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
-
-感谢以下开发者对本项目作出的贡献（下面链接改成你自己的项目地址）:
-
-[![Contributors](https://contrib.rocks/image?repo=MaaXYZ/MaaFramework&max=1000)](https://github.com/MaaXYZ/MaaFramework/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=icecat14159/MAA_Test&max=1000)](https://github.com/icecat14159/MAA_Test/graphs/contributors)
