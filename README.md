@@ -1,8 +1,9 @@
 <!-- markdownlint-disable MD033 MD041 -->
+<!--
 <p align="center">
   <img alt="LOGO" src="https://cdn.jsdelivr.net/gh/MaaAssistantArknights/design@main/v1/icons/maa-logo_512x512.png" width="256" height="256" />
 </p>
-
+-->
 <div align="center">
 
 # MaaISEKAI
@@ -10,6 +11,7 @@
 </div>
 
 本倉庫基於 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 所提供的项目模板創建。
+由一名小白胡亂創建，歡迎各路大佬助力
 
 > **MaaFramework** 是基于图像识别技术、运用 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights) 开发经验去芜存菁、完全重写的新一代自动化黑盒测试框架。
 > 低代码的同时仍拥有高扩展性，旨在打造一款丰富、领先、且实用的开源库，助力开发者轻松编写出更好的黑盒测试程序，并推广普及。
@@ -19,6 +21,7 @@
 
 ## 參與開發
 請閱讀 [如何開發](./docs/zh_cn/develop/how_to_develop.md)。
+零代碼基礎、甚麼都不懂，也可以開發!
 
 ## 常見問題
 
