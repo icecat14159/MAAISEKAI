@@ -62,6 +62,26 @@
     "完成雜務委託任務": {
         "focus": "完成雜務委託"
     },
+    "所有捐贈寶箱已開啟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    565,
+                    124,
+                    151,
+                    191
+                ],
+                "template": [
+                    "寶箱_已開啟.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "退出捐贈"
+        ]
+    },
     "捐贈任務": {
         "recognition": {
             "type": "TemplateMatch",
@@ -648,26 +668,6 @@
         "next": [
             "確認豪華寶箱訊息",
             "未開啟豪華寶箱"
-        ]
-    },
-    "所有捐贈寶箱已開啟": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    565,
-                    124,
-                    151,
-                    191
-                ],
-                "template": [
-                    "捐贈寶箱_已開啟.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "next": [
-            "退出捐贈"
         ]
     }
 }
