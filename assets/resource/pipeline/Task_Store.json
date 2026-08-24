@@ -12,7 +12,8 @@
                     "商店商品/黃魔礦.png",
                     "商店商品/幸運石.png",
                     "商店商品/農田改建圖殘頁.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -100,7 +101,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -139,7 +141,8 @@
             "param": {
                 "template": [
                     "關閉鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {

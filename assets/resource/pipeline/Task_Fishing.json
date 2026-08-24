@@ -19,6 +19,8 @@
                 "template": [
                     "驚嘆號.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -215,7 +217,8 @@
                 ],
                 "template": [
                     "釣魚向上翻頁.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -235,7 +238,8 @@
                 ],
                 "template": [
                     "釣魚向下翻頁.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -282,6 +286,8 @@
                 "template": [
                     "綠勾勾.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true
             }
         },
@@ -313,7 +319,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -663,6 +670,8 @@
                 "template": [
                     "一鍵遊玩.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.7
                 ]
@@ -710,7 +719,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -734,7 +744,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -804,7 +815,8 @@
                 ],
                 "template": [
                     "我的村莊.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -1013,6 +1025,8 @@
                 "template": [
                     "對話箭頭.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -1022,11 +1036,7 @@
             "type": "Click"
         },
         "post_wait_freezes": 1000,
-        "focus": "發現釣到新種類",
-        "next": [
-            "[JumpBack]釣魚等級提升/新種類確認",
-            "金冠對話完成"
-        ]
+        "focus": "發現釣到新種類"
     },
     "釣魚任務": {
         "focus": "開始釣魚",
@@ -1087,7 +1097,8 @@
             "param": {
                 "template": [
                     "關閉鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -1110,7 +1121,8 @@
                 ],
                 "template": [
                     "關閉鈕_圓形.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -1132,6 +1144,8 @@
                 "template": [
                     "水晶貝.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.6
                 ]
@@ -1181,6 +1195,8 @@
                 "template": [
                     "領取魚餌.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -1226,7 +1242,8 @@
             "param": {
                 "template": [
                     "關閉鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -1250,6 +1267,5 @@
                 ]
             }
         }
-    },
-    "金冠對話完成": {}
+    }
 }

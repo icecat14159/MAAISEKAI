@@ -71,6 +71,8 @@
                 "template": [
                     "向右移動.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true
             }
         },
@@ -287,6 +289,8 @@
                 "template": [
                     "向左移動.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true
             }
         },
@@ -316,6 +320,8 @@
                 "template": [
                     "向左移動.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true
             }
         },
@@ -350,7 +356,8 @@
                 ],
                 "template": [
                     "收合鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -538,7 +545,8 @@
                 ],
                 "template": [
                     "夥伴.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -571,6 +579,8 @@
                 "template": [
                     "自宅好友.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true,
                 "threshold": [
                     0.55
@@ -623,7 +633,8 @@
                 ],
                 "template": [
                     "自宅.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -657,7 +668,8 @@
                 ],
                 "template": [
                     "自宅.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {

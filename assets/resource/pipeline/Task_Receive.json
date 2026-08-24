@@ -67,7 +67,8 @@
             "param": {
                 "template": [
                     "紅點.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -97,7 +98,8 @@
                 ],
                 "template": [
                     "寶箱_已開啟.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "focus": "評級獎勵已領取過",
@@ -161,7 +163,8 @@
                 ],
                 "template": [
                     "新魔王消息.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -185,7 +188,8 @@
                 ],
                 "template": [
                     "任務完成.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "focus": "沒有可領取獎勵",
@@ -443,7 +447,8 @@
                 ],
                 "template": [
                     "祝賀.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -542,6 +547,8 @@
                 "template": [
                     "自宅權益卡.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -594,7 +601,8 @@
                 ],
                 "template": [
                     "自宅.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -619,7 +627,8 @@
                 ],
                 "template": [
                     "自宅.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -643,6 +652,8 @@
                 "template": [
                     "自宅任務.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true,
                 "threshold": [
                     0.4
@@ -679,7 +690,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -711,7 +723,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -806,6 +819,8 @@
                 "template": [
                     "捐贈寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -832,7 +847,8 @@
                 ],
                 "template": [
                     "寶箱_未開啟.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {

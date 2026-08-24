@@ -172,6 +172,8 @@
                 "template": [
                     "關閉鈕.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -531,7 +533,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -580,7 +583,8 @@
                 ],
                 "template": [
                     "消息欄.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -604,6 +608,8 @@
                 "template": [
                     "礦區寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.3
                 ]
@@ -632,6 +638,8 @@
                 "template": [
                     "礦區寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.3
                 ]
@@ -660,6 +668,8 @@
                 "template": [
                     "礦區寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.3
                 ]

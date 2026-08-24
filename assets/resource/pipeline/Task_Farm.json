@@ -161,7 +161,8 @@
             "param": {
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -255,6 +256,8 @@
                 "template": [
                     "農田派遣.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -284,6 +287,8 @@
                 "template": [
                     "農田寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.55
                 ]
@@ -427,7 +432,8 @@
                 ],
                 "template": [
                     "我的村莊.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {

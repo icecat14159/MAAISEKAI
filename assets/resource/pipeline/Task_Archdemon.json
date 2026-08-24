@@ -43,6 +43,7 @@
                 "template": [
                     "一鍵遊玩.png"
                 ],
+                "green_mask": true,
                 "threshold": [
                     0.7
                 ]
@@ -155,7 +156,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -265,7 +267,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -359,6 +362,7 @@
                 "template": [
                     "禮物圖標.png"
                 ],
+                "green_mask": true,
                 "threshold": [
                     0.55
                 ]

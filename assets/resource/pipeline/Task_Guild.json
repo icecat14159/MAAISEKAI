@@ -44,6 +44,8 @@
                 "template": [
                     "自動委託.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.85
                 ]
@@ -73,7 +75,8 @@
                 ],
                 "template": [
                     "捐贈.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -96,7 +99,8 @@
                 ],
                 "template": [
                     "框框左下角落.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -127,6 +131,8 @@
                 "template": [
                     "捐贈寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -148,7 +154,8 @@
                 ],
                 "template": [
                     "框框左下角落.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -298,7 +305,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -321,7 +329,8 @@
                 ],
                 "template": [
                     "返回按鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -344,7 +353,8 @@
                 ],
                 "template": [
                     "關閉雜務.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -401,7 +411,8 @@
                 ],
                 "template": [
                     "龍城.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -479,7 +490,7 @@
         },
         "next": [
             "領取捐贈獎勵",
-            "退出捐贈"
+            "所有捐贈寶箱已開啟"
         ]
     },
     "開始公會事務": {
@@ -510,7 +521,8 @@
                 ],
                 "template": [
                     "關閉鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -571,6 +583,9 @@
                 "template": [
                     "捐贈寶箱.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
+                "green_mask": true,
                 "threshold": [
                     0.3
                 ]
@@ -624,6 +639,8 @@
                 "template": [
                     "公會禮物.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -636,6 +653,27 @@
         "next": [
             "確認豪華寶箱訊息",
             "未開啟豪華寶箱"
+        ]
+    },
+    "所有捐贈寶箱已開啟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    565,
+                    124,
+                    151,
+                    191
+                ],
+                "template": [
+                    "捐贈寶箱_已開啟.png"
+                ],
+                "green_mask": true,
+                "green_mask": true
+            }
+        },
+        "next": [
+            "退出捐贈"
         ]
     }
 }

@@ -49,7 +49,8 @@
             "param": {
                 "template": [
                     "自宅.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "post_wait_freezes": 5000,
@@ -73,6 +74,8 @@
                 "template": [
                     "自宅_支援部.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "threshold": [
                     0.4
                 ]
@@ -109,7 +112,8 @@
             "param": {
                 "template": [
                     "遊戲標題.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "post_wait_freezes": 5000,
@@ -164,7 +168,8 @@
                 ],
                 "template": [
                     "關閉命定羈絆.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -205,7 +210,8 @@
                 ],
                 "template": [
                     "關閉鈕.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -226,7 +232,8 @@
                 ],
                 "template": [
                     "關閉鈕_圓形.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -268,7 +275,8 @@
                 ],
                 "template": [
                     "遊戲標題.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {

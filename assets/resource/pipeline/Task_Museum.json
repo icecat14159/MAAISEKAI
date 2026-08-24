@@ -13,6 +13,8 @@
                     "博物館收益箱.png"
                 ],
                 "green_mask": true,
+                "green_mask": true
+                "green_mask": true,
                 "threshold": [
                     0.55
                 ]
@@ -88,6 +90,8 @@
                 "template": [
                     "關閉鈕.png"
                 ],
+                "green_mask": true,
+                "green_mask": true
                 "green_mask": true
             }
         },
@@ -180,7 +184,8 @@
                 ],
                 "template": [
                     "我的村莊.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
