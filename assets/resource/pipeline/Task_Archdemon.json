@@ -77,6 +77,20 @@
         "post_wait_freezes": 500
     },
     "完成挑戰魔王": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    369,
+                    1013,
+                    138,
+                    107
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
         "next": [
             "挑戰下一位魔王",
             "返回魔王介面_挑戰"
