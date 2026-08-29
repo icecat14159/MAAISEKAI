@@ -554,6 +554,7 @@
         ]
     },
     "重整畫面_礦區": {
+        "max_hit": 5,
         "action": {
             "type": "Swipe",
             "param": {

@@ -144,6 +144,28 @@
             "完成挑戰魔王"
         ]
     },
+    "確認魔王排行獎勵訊息": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "點擊螢幕繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1209,
+                    51,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000
+    },
     "返回魔王介面_挑戰": {
         "recognition": {
             "type": "TemplateMatch",
@@ -289,6 +311,7 @@
         ]
     },
     "重整畫面_魔王": {
+        "max_hit": 5,
         "action": {
             "type": "Swipe",
             "param": {
@@ -349,33 +372,6 @@
         },
         "post_wait_freezes": 1000
     },
-    "領取魔王獎勵": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    552,
-                    236,
-                    138,
-                    959
-                ],
-                "template": [
-                    "禮物圖標.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.55
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "返回主介面"
-        ]
-    },
     "領取昨日魔王排行獎勵": {
         "recognition": {
             "type": "OCR",
@@ -410,26 +406,31 @@
             "確認魔王排行獎勵訊息"
         ]
     },
-    "確認魔王排行獎勵訊息": {
+    "領取魔王獎勵": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
-                "expected": [
-                    "點擊螢幕繼續"
+                "roi": [
+                    552,
+                    236,
+                    138,
+                    959
+                ],
+                "template": [
+                    "禮物圖標.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    344,
-                    1209,
-                    51,
-                    51
-                ]
-            }
+            "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "post_wait_freezes": 1000,
+        "next": [
+            "返回主介面"
+        ]
     }
 }

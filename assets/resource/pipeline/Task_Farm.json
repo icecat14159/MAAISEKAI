@@ -178,6 +178,7 @@
         ]
     },
     "滑動合集視窗_農莊": {
+        "max_hit": 5,
         "action": {
             "type": "Swipe",
             "param": {

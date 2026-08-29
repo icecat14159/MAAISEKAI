@@ -451,6 +451,7 @@
         ]
     },
     "重整畫面_公會": {
+        "max_hit": 5,
         "action": {
             "type": "Swipe",
             "param": {
