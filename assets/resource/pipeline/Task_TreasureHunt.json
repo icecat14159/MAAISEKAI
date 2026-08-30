@@ -31,7 +31,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "選擇指定遺跡"
         ]
@@ -62,7 +62,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "focus": {
             "Node.Action.Succeeded": "進入指定遺跡"
         },
@@ -83,7 +83,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次掃蕩"
         },
@@ -117,7 +117,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "返回遺跡介面"
         ]
@@ -149,7 +149,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "開始掃蕩"
         },
@@ -196,7 +196,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "確認尋寶任務尋訊息": {
         "recognition": {
@@ -210,7 +210,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "確認掃蕩結果": {
         "recognition": {
@@ -233,7 +233,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "完成一次掃蕩"
         ]
@@ -256,7 +255,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次鑑定"
         },
@@ -287,7 +286,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "返回尋寶介面": {
         "recognition": {
@@ -308,7 +307,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "返回遺跡介面": {
         "recognition": {
@@ -329,7 +328,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]領取尋寶任務",
             "返回尋寶介面"
@@ -361,7 +360,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "進入尋寶頁面"
         },
@@ -399,7 +398,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "進入玩法合集_尋寶"
         ]
@@ -430,7 +429,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入尋寶",
             "[JumpBack]滑動合集視窗_尋寶"
@@ -462,7 +461,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "[JumpBack]關閉遺跡提示",
             "檢查點_切換遺跡"
@@ -486,7 +485,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]跳過鑑定動畫",
             "進行鑑定"
@@ -513,7 +512,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 5000,
+        "pre_wait_freezes": 5000,
         "next": [
             "確認鑑定結果",
             "返回尋寶介面"
@@ -537,7 +536,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "前往遺跡"
         ]
@@ -598,7 +597,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "領取尋寶任務": {
         "recognition": {
@@ -619,7 +618,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "領取尋寶任務"
         },

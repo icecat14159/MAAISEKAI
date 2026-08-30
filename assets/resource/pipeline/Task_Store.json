@@ -108,7 +108,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "重整畫面_迷宮商店"
         ]

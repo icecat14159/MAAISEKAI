@@ -23,7 +23,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "focus": "開始領取公會禮物",
         "next": [
             "發現公會禮物",
@@ -53,7 +53,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "完成公會禮物任務": {},
     "完成捐贈任務": {
@@ -187,7 +187,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "退出捐贈"
         ]
@@ -210,7 +210,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "領取公會禮物",
         "next": [
             "領取豪華寶箱"
@@ -234,7 +234,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "領取捐贈獎勵"
         ]
@@ -257,7 +257,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "開始捐贈"
         ]
@@ -280,7 +280,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "領取豪華寶箱",
         "next": [
             "退出公會禮物"
@@ -306,7 +306,7 @@
         },
         "repeat": 8,
         "repeat_delay": 200,
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "退出雜務委託"
         ]
@@ -330,7 +330,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "完成公會禮物任務"
         ]
@@ -354,7 +354,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "完成捐贈任務"
         ]
@@ -378,7 +378,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "完成雜務委託任務"
         ]
@@ -401,7 +401,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "[JumpBack]關閉公告",
             "[JumpBack]關閉公會訊息",
@@ -444,7 +444,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "進入公會",
             "[JumpBack]重整畫面_公會"
@@ -486,7 +486,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "完成一次金幣捐贈",
         "next": [
             "確認捐贈訊息"
@@ -522,7 +522,7 @@
         ]
     },
     "開始捐贈": {
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "金幣捐贈",
             "金幣捐贈完畢"
@@ -547,7 +547,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "關閉公會訊息": {
         "recognition": {
@@ -561,7 +561,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "雜務委託任務": {
         "recognition": {
@@ -581,7 +581,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "開始雜務委託",
         "next": [
             "[JumpBack]勾選自動處理委託",
@@ -611,7 +611,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "timeout": 10000,
         "focus": "領取一次捐贈寶箱",
         "next": [
@@ -638,7 +638,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認公會禮物訊息"
         ]
@@ -665,7 +665,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認豪華寶箱訊息",
             "未開啟豪華寶箱"

@@ -31,7 +31,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "出發"
         },
@@ -64,7 +64,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "完成相遇事件": {
         "recognition": {
@@ -84,7 +84,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "點擊任意處_遊玩"
         ]
@@ -108,7 +108,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "timeout": 30000,
         "focus": "發現來信",
         "next": [
@@ -134,7 +134,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Recognition.Succeeded": "遊玩次數用盡"
         },
@@ -160,7 +160,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]發現來信",
             "出發",
@@ -213,7 +213,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500
+        "pre_wait_freezes": 1500
     },
     "進入遊玩": {
         "recognition": {
@@ -233,7 +233,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "進入遊玩"
         },
@@ -269,7 +269,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入遊玩",
             "[JumpBack]重整畫面_遊玩"
@@ -312,7 +312,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "關閉體力藥禮包"
     },
     "點擊任意處_遊玩": {
@@ -327,6 +327,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     }
 }

@@ -23,7 +23,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]加速魔王挑戰",
             "確認魔王挑戰訊息"
@@ -52,7 +52,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "向右對齊": {
         "max_hit": 2,
@@ -74,7 +74,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500
+        "pre_wait_freezes": 500
     },
     "完成挑戰魔王": {
         "recognition": {
@@ -116,7 +116,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": {
+        "pre_wait_freezes": {
             "time": 500,
             "target": [
                 192,
@@ -150,7 +150,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次魔王挑戰"
         },
@@ -178,7 +178,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "返回魔王介面_挑戰": {
         "recognition": {
@@ -199,7 +199,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]領取昨日魔王排行獎勵",
             "進入魔王任務"
@@ -223,7 +223,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入魔王挑戰",
             "[JumpBack]關閉雙倍獎勵提醒"
@@ -247,7 +247,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "領取魔王任務"
         },
@@ -282,7 +282,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "focus": {
             "Node.Action.Succeeded": "成功進入魔王挑戰"
         },
@@ -318,7 +318,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入魔王",
             "[JumpBack]重整畫面_魔王"
@@ -360,7 +360,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "出戰魔王挑戰",
             "完成挑戰魔王"
@@ -384,7 +384,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "領取昨日魔王排行獎勵": {
         "recognition": {
@@ -412,7 +412,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "領取昨日排行獎勵"
         },
@@ -442,7 +442,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "返回主介面"
         ]

@@ -36,7 +36,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]跳過動畫",
             "進行許願"
@@ -54,7 +54,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進行撒網",
             "[JumpBack]切換釣具",
@@ -73,7 +73,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認是普通魚餌"
         ]
@@ -90,7 +90,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認是高級魚餌"
         ]
@@ -141,7 +141,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "開始切換釣點"
         },
@@ -175,7 +175,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "準備釣魚",
             "已在釣點"
@@ -199,7 +199,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進行撒網_魚群"
         ]
@@ -223,7 +223,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "向下翻頁釣點": {
         "recognition": {
@@ -244,7 +244,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "嘗試使用高級魚餌": {
         "max_hit": 1,
@@ -259,7 +259,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認是高級魚餌",
             "切換至高級魚餌"
@@ -291,7 +291,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "領取釣魚任務"
         ]
@@ -323,7 +323,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Recognition.Succeeded": "已在指定釣點"
         },
@@ -349,7 +349,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認是普通魚餌",
             "切換至普通魚餌"
@@ -367,7 +367,7 @@
         ]
     },
     "檢查點_領取魚餌": {
-        "post_wait_freezes": {
+        "pre_wait_freezes": {
             "time": 1000,
             "target": [
                 400,
@@ -405,7 +405,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "pre_wait_freezes": 200,
         "focus": "沒有點數可以轉換",
         "next": [
             "完成釣魚點數任務"
@@ -483,7 +483,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次撒網"
         },
@@ -510,7 +510,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]釣魚等級提升/新種類確認",
             "完成魚群聚集"
@@ -574,7 +574,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成領取水晶貝"
         }
@@ -597,7 +597,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "完成領取釣魚任務"
     },
     "確認領取魚餌訊息": {
@@ -612,7 +612,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": {
+        "pre_wait_freezes": {
             "time": 1000,
             "target": [
                 400,
@@ -646,7 +646,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Recognition.Succeeded": "處理魚群聚集事件"
         },
@@ -677,7 +677,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000
+        "pre_wait_freezes": 1000
     },
     "轉換釣魚點數": {
         "recognition": {
@@ -699,7 +699,7 @@
         },
         "repeat": 2,
         "repeat_delay": 1500,
-        "post_wait_freezes": 500,
+        "pre_wait_freezes": 500,
         "next": [
             "完成釣魚點數任務"
         ]
@@ -723,7 +723,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "[Anchor]回來領魚餌",
             "準備領取釣魚任務"
@@ -748,7 +748,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "完成水晶貝任務"
         ]
@@ -772,7 +772,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "進入拋竿"
         },
@@ -795,7 +795,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "前往釣點"
         ]
@@ -827,7 +827,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "進入玩法合集_釣魚"
         ]
@@ -861,7 +861,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入釣魚",
             "[JumpBack]滑動合集視窗_釣魚"
@@ -885,7 +885,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]領取水晶貝",
             "返回釣魚頁面_水晶貝"
@@ -917,7 +917,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "進入釣魚頁面"
         },
@@ -951,7 +951,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "[JumpBack]釣到金冠",
             "確定釣魚訊息",
@@ -976,7 +976,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500,
+        "pre_wait_freezes": 1500,
         "next": [
             "[JumpBack]釣到金冠",
             "確定釣魚訊息_魚群",
@@ -1001,7 +1001,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "發現並完成許願"
         },
@@ -1031,7 +1031,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "發現釣到新種類"
     },
     "釣魚任務": {
@@ -1072,7 +1072,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 200,
+        "pre_wait_freezes": 200,
         "focus": "開始轉換釣魚點數",
         "next": [
             "轉換釣魚點數",
@@ -1100,7 +1100,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "魚餌用盡"
         ]
@@ -1124,7 +1124,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1500
+        "pre_wait_freezes": 1500
     },
     "領取水晶貝": {
         "max_hit": 1,
@@ -1149,7 +1149,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認水晶貝訊息"
         ]
@@ -1172,7 +1172,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "確認釣魚任務訊息"
         ]
@@ -1243,7 +1243,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": "魚餌用盡",
         "next": [
             "返回釣魚頁面"

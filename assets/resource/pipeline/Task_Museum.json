@@ -21,7 +21,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "領取博物館收益"
         ]
@@ -44,7 +44,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]確認博物館收益訊息",
             "返回博物館界面"
@@ -70,7 +70,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "成功領取"
         }
@@ -94,7 +94,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "返回主介面"
         ]
@@ -153,7 +153,7 @@
                 ]
             }
         },
-        "post_wait_freezes": {
+        "pre_wait_freezes": {
             "time": 3000,
             "target": [
                 447,
@@ -196,7 +196,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 3000,
+        "pre_wait_freezes": 3000,
         "next": [
             "進入玩法合集_博物館"
         ]
@@ -227,7 +227,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 1000,
         "next": [
             "進入博物館",
             "[JumpBack]滑動合集視窗_博物館"
