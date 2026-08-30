@@ -1,5 +1,6 @@
 {
     "ReceiveBless_Task": {
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "進入龍城_祝賀",
@@ -19,6 +20,7 @@
         ]
     },
     "ReceiveRatingReward_Task": {
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "進入自宅_評級",
@@ -43,6 +45,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "領取月卡",
         "next": [
@@ -122,6 +125,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入活動月卡",
@@ -146,6 +150,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "點擊任意處_恭喜"
@@ -170,6 +175,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "focus": "發現新魔王消息",
         "next": [
@@ -284,6 +290,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入活動月卡",
@@ -308,6 +315,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000
     },
     "確認日任務領取訊息": {
@@ -322,6 +330,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000
     },
     "確認活躍寶箱訊息": {
@@ -342,6 +351,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "領取活躍寶箱",
         "next": [
@@ -376,6 +386,7 @@
         },
         "repeat": 2,
         "repeat_wait_freezes": 3000,
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000
     },
     "確認膜拜訊息": {
@@ -405,6 +416,7 @@
             }
         },
         "repeat_wait_freezes": 3000,
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "完成一次膜拜",
         "next": [
@@ -429,6 +441,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "領取評級獎勵",
         "next": [
@@ -454,6 +467,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "focus": "進行祝賀",
         "next": [
@@ -479,6 +493,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "timeout": 5000,
         "next": [
@@ -503,6 +518,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "focus": "進入傑出者大廳",
         "next": [
@@ -528,6 +544,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "focus": "進入排行榜",
         "next": [
@@ -556,6 +573,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "進入權益卡"
@@ -583,6 +601,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "準備領取月卡"
@@ -607,6 +626,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "[JumpBack]進入領取日任務",
@@ -633,6 +653,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "點擊頭像位置"
@@ -660,6 +681,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "進入自宅任務",
         "next": [
@@ -702,6 +724,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入傑出者大廳",
@@ -735,6 +758,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入排行榜",
@@ -783,6 +807,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "focus": {
             "Node.Action.Succeeded": "領取每日任務獎勵"
@@ -826,6 +851,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "確認活躍寶箱訊息",
@@ -851,6 +877,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "確認評級訊息"
@@ -901,6 +928,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "領取評級獎勵",

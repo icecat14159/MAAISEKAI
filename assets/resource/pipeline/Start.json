@@ -52,6 +52,7 @@
                 "green_mask": true
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 5000,
         "focus": {
             "Node.Recognition.Succeeded": "進入遊戲"
@@ -136,10 +137,12 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "購買心願禮包"
     },
     "關閉各項通知": {
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 5000,
         "next": [
             "[JumpBack]確認藏品/使魔訊息",
@@ -171,6 +174,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "focus": "關閉命定羈絆彈窗"
     },
@@ -213,6 +217,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "focus": "關閉道具過期彈窗"
     },
@@ -235,6 +240,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "focus": "關閉活動/儲值彈窗"
     },
@@ -253,6 +259,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "action": {
             "type": "Click"

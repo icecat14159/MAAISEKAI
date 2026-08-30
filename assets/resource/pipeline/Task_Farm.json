@@ -23,6 +23,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "確認交付",
@@ -47,6 +48,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "完成派遣"
@@ -70,6 +72,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "focus": {
             "Node.Action.Succeeded": "嘗試首次播種"
@@ -101,6 +104,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次收割"
@@ -124,6 +128,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Recognition.Succeeded": "完成所有農地播種"
@@ -150,6 +155,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "確認派遣訊息"
@@ -168,6 +174,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Recognition.Succeeded": "完成所有訂單交付"
@@ -266,6 +273,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "處理農地事件-派遣"
@@ -296,6 +304,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "處理農地事件-寶箱"
@@ -317,6 +326,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次訂單交付"
@@ -343,6 +353,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "一鍵播種"
@@ -388,6 +399,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "focus": {
             "Node.Action.Succeeded": "指定植物種植完成"
@@ -414,6 +426,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "一鍵委任"
@@ -446,6 +459,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "進入玩法合集_農莊"
@@ -477,6 +491,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入農莊",
@@ -498,6 +513,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "focus": "發現空閒農地",
         "next": [
@@ -523,6 +539,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "進入訂單頁面"
@@ -557,6 +574,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "進入魔法農莊"
@@ -599,6 +617,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "一鍵交付訂單"

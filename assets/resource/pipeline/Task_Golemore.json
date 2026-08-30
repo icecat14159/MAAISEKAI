@@ -18,6 +18,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "使用第一位公會協力",
         "next": [
@@ -37,6 +38,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "使用第三位公會協力",
         "next": [
@@ -56,6 +58,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "使用第二位公會協力",
         "next": [
@@ -75,6 +78,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "使用第五位公會協力",
         "next": [
@@ -94,6 +98,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "使用第四位公會協力",
         "next": [
@@ -126,6 +131,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "使用第五位協力",
@@ -154,6 +160,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "確認協力清剿訊息"
@@ -181,6 +188,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "協力次數用盡",
         "next": [
@@ -219,6 +227,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "發現夥伴用盡",
@@ -272,6 +281,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "挖到礦區寶箱"
     },
@@ -293,6 +303,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "未擊敗目前波次",
         "next": [
@@ -337,6 +348,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "出擊",
@@ -361,6 +373,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "使用快速清剿"
@@ -396,6 +409,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "嘗試公會協力"
@@ -419,6 +433,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "嘗試公會協力",
@@ -443,6 +458,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": "開啟一次礦區寶箱"
     },
@@ -464,6 +480,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "timeout": 120000,
         "focus": {
@@ -491,6 +508,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "進入開採"
@@ -514,6 +532,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1500,
         "next": [
             "已全部擊敗",
@@ -547,6 +566,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 3000,
         "next": [
             "進入礦區",
@@ -617,6 +637,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]確認礦區寶箱訊息",
@@ -646,6 +667,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]確認礦區寶箱訊息",
@@ -675,6 +697,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]確認礦區寶箱訊息",

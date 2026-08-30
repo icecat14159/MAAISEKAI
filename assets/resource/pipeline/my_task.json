@@ -47,6 +47,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": ""
@@ -78,6 +79,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": ""

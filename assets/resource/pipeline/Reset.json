@@ -12,6 +12,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試任意處返回": {
@@ -26,6 +27,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試前進對話": {
@@ -41,6 +43,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試取消": {
@@ -55,6 +58,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試圓形關閉鈕": {
@@ -70,6 +74,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試跳過": {
@@ -84,6 +89,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試返回按鈕": {
@@ -99,6 +105,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試重置畫面": {
@@ -130,6 +137,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試離開鈕": {
@@ -145,6 +153,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "嘗試點擊螢幕繼續": {
@@ -159,6 +168,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 2000
     },
     "完成畫面重置": {

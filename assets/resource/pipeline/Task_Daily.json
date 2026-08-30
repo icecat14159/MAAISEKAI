@@ -25,6 +25,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一鍵贈送"
@@ -51,6 +52,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]確認領取好友訊息",
@@ -77,6 +79,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": {
             "time": 500,
             "target": [
@@ -113,6 +116,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "設定夥伴實力排序"
@@ -136,6 +140,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "進行夥伴升級"
@@ -247,6 +252,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "點擊第一位夥伴"
@@ -268,6 +274,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "進入第一個藏品"
@@ -293,6 +300,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": {
             "time": 1000,
             "target": [
@@ -322,6 +330,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": {
             "time": 1000,
             "target": [
@@ -357,6 +366,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500
     },
     "更換藏品排序": {
@@ -386,6 +396,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "設定藏品預設排序"
@@ -428,6 +439,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "處理經營能力彈窗"
@@ -451,6 +463,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一鍵領取"
@@ -482,6 +495,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "focus": {
             "Node.Action.Succeeded": "完成更變夥伴排序為實力"
@@ -516,6 +530,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "focus": {
             "Node.Action.Succeeded": "完成更變藏品排序為預設"
@@ -554,6 +569,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "已是夥伴實力排序",
@@ -582,6 +598,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "進入好友贈禮"
@@ -608,6 +625,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "選擇第一格插槽"
@@ -640,6 +658,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "[JumpBack]收合活動列表",
@@ -675,6 +694,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "next": [
             "進入好友"
@@ -698,6 +718,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "進入藏品介面"
@@ -724,6 +745,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次重塑"
@@ -750,6 +772,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "完成一次升級"
@@ -771,6 +794,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 500,
         "next": [
             "進行一次重塑"
@@ -814,6 +838,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "pre_wait_freezes": 1000,
         "focus": {
             "Node.Action.Succeeded": "點擊第一位夥伴"
